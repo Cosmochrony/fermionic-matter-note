@@ -1,0 +1,503 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathtools}
+\usepackage{hyperref}
+\usepackage{doi}
+\usepackage{geometry}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{enumitem}
+
+\geometry{margin=2.5cm}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  citecolor=black,
+  urlcolor=black
+}
+
+\theoremstyle{definition}
+\newtheorem{remark}{Remark}
+
+\newcommand{\SU}{\mathrm{SU}}
+\newcommand{\Heis}{\mathrm{Heis}}
+\newcommand{\su}{\mathfrak{su}}
+\newcommand{\UU}{\mathrm{U}}
+\newcommand{\Mp}{\mathrm{Mp}}
+\newcommand{\Spin}{\mathrm{Spin}}
+\newcommand{\SL}{\mathrm{SL}}
+\newcommand{\SPI}{S_\Pi}
+\newcommand{\Vr}{V_\rho}
+\newcommand{\Spi}{S_\Pi}
+\newcommand{\Sbundle}{\mathcal{S}_\Pi}
+\newcommand{\Epi}{E_\Pi}
+\newcommand{\Dpi}{D_{\Pi,g,A}}
+\newcommand{\Cgen}{C^3_{\mathrm{gen}}}
+\newcommand{\adC}{\mathrm{ad}_\mathbb{C}}
+
+\title{The Fermionic Matter Sub-Programme\\[0.4em]
+\large Presentation Note 6}
+
+\author{J\'{e}r\^{o}me Beau\\[0.3em]
+\small Independent Researcher\\
+\small \texttt{jerome.beau@cosmochrony.org}}
+
+\date{2026}
+
+\begin{document}
+
+  \maketitle
+
+  \begin{abstract}
+    The fermionic matter sub-programme of the Cosmochrony corpus addresses a single
+    central question: where do fermions, chirality, hypercharge, and three generations come
+    from?
+    The answer is that they are not postulated as external fields: they arise as the spinorial
+    face of the admissible Weil module $\Vr$, once its metaplectic Lie-algebraic structure is
+    complexified by the Lorentzian metric established in the geometric branch.
+    The structural chain is:
+    \[
+      \Pi \Rightarrow F_n \simeq \Vr \Rightarrow \Mp(2,\mathbb{R})
+      \Rightarrow \mathrm{mp}(2,\mathbb{R})_\mathbb{C} \simeq \mathfrak{sl}_2(\mathbb{C})
+      \rightsquigarrow \Spin(3,1) \simeq \SL(2,\mathbb{C})
+      \Rightarrow \Sbundle.
+    \]
+    Three modular structural results are established in Q14: (A)~the admissible spinor bundle
+    $\Sbundle$ reproduces the $\SU(2)_L \times \UU(1)_Y$ electroweak bundle structure from
+    tensor functors of $\Sbundle$; (B)~the projected Dirac operator $\Dpi$ contains a
+    canonical projective endomorphism $\Epi$ that enforces the $V-A$ chiral structure
+    (conditional on Hypothesis~3.5) and whose $\gamma_5$-weighted $a_4$ coefficient imposes
+    anomaly-cancellation constraints making hypercharge a spectral datum; (C)~the saturation
+    invariant $\sigma_c(n_3) = 3$ has a spinorial multiplicity reading yielding a gauge-singlet
+    three-generation factor $\Cgen$.
+    The colour-coupled quark sector is conditional on $[\mathrm{H\text{-}color}]$.
+    Open deliverables are the explicit form of $\Epi$, the Yukawa sector, and the derivation
+    of Hypothesis~3.5 from A1--A4.
+  \end{abstract}
+
+  \medskip
+  \noindent\textbf{Keywords.}
+  fermionic matter; admissible spinor bundle; metaplectic lift; chirality; V-A structure;
+  hypercharge rigidity; anomaly cancellation; three generations; projected Dirac operator;
+  Weil representation; non-injective projection; presentation note.
+
+  \newpage
+  \tableofcontents
+
+  \newpage
+
+  \section{Motivation and Central Question}
+    \label{sec:motivation}
+
+    The fermionic matter sub-programme answers the following question.
+
+    \medskip
+    \noindent\textit{Central question.}
+    The bosonic spectral stratification — gravity at $a_2$, Yang--Mills at $a_4$ --- derives
+    the bosonic sector of the Standard Model from the same admissible spectral functional.
+    Fermions, chirality, hypercharge assignments, and the three-generation structure are not
+    covered by the bosonic synthesis.
+    \textit{Do these fermionic structures also arise as forced consequences of the admissible
+    Weil fibre, or must they be introduced as additional postulates?}
+
+    \medskip
+    The answer established in Q14~\cite{Beau2026q14} is: they are forced.
+    Fermions arise as the spinorial face of the Weil module $\Vr$ after Lorentzian
+    complexification of its metaplectic lift.
+    Chirality and the $V-A$ structure arise from the projective endomorphism $\Epi$ of the
+    projected Dirac operator, under Hypothesis~3.5.
+    Hypercharge is not a free parameter: it is constrained by spectral anomaly cancellation.
+    Three generations arise from the spinorial multiplicity reading of the same
+    rank-three invariant $\sigma_c(n_3) = 3$ that yields the three spatial directions in the
+    geometric branch.
+
+    \medskip
+    This sub-programme is the first paper of the Q-series that depends simultaneously on all
+    four layers of the programme: the admissible Weil fibre structure (Notes~1 and~5), the
+    closed Lorentzian geometry (Note~2), the gauge bundle (Note~3), and the gauge--gravity
+    synthesis (Note~8/Q13).
+
+    \begin{remark}[Scope: identification only, not mass spectrum]
+      This sub-programme closes the \emph{identification} of the fermionic sector:
+      spinor bundle, chirality, hypercharge quantum numbers, and generation factor.
+      It does not derive the mass spectrum, the Yukawa couplings, or the CKM/PMNS mixing
+      matrices.
+      Those require the explicit construction of $\Epi$ as an operator on the spectral space,
+      and the integration of the projected Yukawa Lagrangian $\mathcal{L}_Y$, both of which
+      are listed as open deliverables.
+    \end{remark}
+
+    \begin{remark}[Vocabulary note]
+      Throughout this note, \emph{admissibility constraint} replaces the earlier
+      ``relaxation'' vocabulary.
+      The substrate $\chi$ is static; fermions are not excitations of $\chi$ but the spinorial
+      interpretation of the admissible fibre after geometric complexification.
+    \end{remark}
+
+  \section{Position in the Cosmochrony Programme}
+    \label{sec:position}
+
+    The fermionic matter sub-programme sits at the apex of Branch~III.
+    It depends on all five preceding sub-programmes and provides the fermionic matter
+    content consumed by any downstream phenomenological application.
+
+    Inputs from upstream:
+    \begin{itemize}
+      \item $F_n \simeq \Vr \simeq L^2(\mathbb{Z}/q\mathbb{Z})$, canonical symplectic structure of
+      $\Vr$, and the parity involution $c \leftrightarrow q-c$ (Notes~1 and~5).
+      \item Effective Lorentzian metric $g^{\mu\nu} = 2\eta^{\mu\nu}$ and effective base manifold
+      $M_{\mathrm{eff}} = \mathbb{R}_\tau \times \Heis_3(\mathbb{R})$ (Note~2, Q5b--Q11).
+      \item Admissible principal bundle $P_{G_\Pi}(M_{\mathrm{eff}}, G_\Pi)$ and gauge connection $A$
+      (Note~3, Q6a).
+      \item $\SU(3) \times \SU(2) \times \UU(1)$ gauge group (Note~3).
+      \item Spectral entropy functional $\SPI[g,A]$ and the $a_4$ variation (Note~4/Q12,
+      Q13~\cite{Beau2026q13}).
+      \item $H_{\mathrm{eff}} = \mathrm{Sym}^2(\Vr)$, three spatial directions from $\operatorname{Im}\mathbb{H}$,
+      $\sigma_c(n_3) = 3$ (Note~2, Q7~\cite{Beau2026q7}).
+    \end{itemize}
+
+  \section{Logical Chain of the Sub-Programme}
+    \label{sec:chain}
+
+    The sub-programme is organised around the following structural chain.
+
+    \begin{equation}
+      \label{eq:chain}
+      \Pi \Rightarrow F_n \simeq \Vr
+      \;\Rightarrow\;
+      \Mp(2,\mathbb{R})
+      \;\Rightarrow\;
+      \mathrm{mp}(2,\mathbb{R})_\mathbb{C} \simeq \mathfrak{sl}_2(\mathbb{C})
+      \;\rightsquigarrow\;
+      \Spin(3,1) \simeq \SL(2,\mathbb{C})
+      \;\Rightarrow\;
+      \Sbundle
+    \end{equation}
+    \[
+      \;\Rightarrow\;
+      \underbrace{\mathrm{Sym}^2(\Sbundle) \Rightarrow \adC(P_\Pi)}_{\SU(2)_L}
+      \;,\quad
+      \underbrace{\wedge^2(\Sbundle) = L_Y}_{\UU(1)_Y}
+      \;,\quad
+      \underbrace{\Epi \text{ left-admissible}}_{V-A}
+      \;,\quad
+      \underbrace{\sigma_c(n_3)=3 \to \Cgen}_{\text{3 generations}}.
+    \]
+
+    Three distinct mechanisms contribute.
+
+    \begin{enumerate}
+      \item \textit{Lorentzian complexification forces the spin group.}
+      The Weil module $\Vr$ carries a canonical symplectic structure; its automorphisms lift to
+      $\Mp(2,\mathbb{R})$.
+      The effective metric $g^{\mu\nu} = 2\eta^{\mu\nu}$ (Lorentzian) forces the Lie algebra
+      complexification $\mathrm{mp}(2,\mathbb{R})_\mathbb{C} \simeq \mathfrak{sl}_2(\mathbb{C})$,
+      whose Lorentzian integration is $\Spin(3,1) \simeq \SL(2,\mathbb{C})$.
+      The spinor bundle $\Sbundle$ is the associated fundamental bundle.
+
+      \item \textit{Tensor functors of $\Sbundle$ reproduce the electroweak bundle.}
+      $\mathrm{Sym}^2(\mathbb{C}^2) \simeq \mathfrak{sl}_2(\mathbb{C})$: the symmetric sector gives
+      the complex adjoint, from which the compact real form selects the $\SU(2)_L$ gauge sector.
+      $\wedge^2(\mathbb{C}^2) \simeq \det(\mathbb{C}^2)$: the determinant line $L_Y$ supports the
+      $\UU(1)_Y$ factor.
+      No independent electroweak matter bundle is introduced.
+
+      \item \textit{The projective endomorphism $\Epi$ enforces chirality and hypercharge.}
+      The projected Dirac operator satisfies the Lichnerowicz-type identity
+      \[
+        D^2_{\Pi,g,A}
+        = -(\nabla^{S,A})^2 + \frac{R}{4} + \frac{1}{2}\gamma^\mu\gamma^\nu F^a_{\mu\nu} T^a_R
+        + \Epi.
+      \]
+      Under Hypothesis~3.5 (spinorial lift of BI parity), $\Epi$ is left-admissible
+      ($P_R \Epi P_R = 0$), giving the $V-A$ structure.
+      $\UU(1)_Y$ invariance of $\SPI[g,A,D_{\Pi,g,A}]$ imposes the anomaly-cancellation
+      trace constraint $\mathrm{Tr}_{\Sbundle}(\gamma_5 Y A_\Pi(x)) = 0$, fixing hypercharge
+      as a spectral coherence datum.
+    \end{enumerate}
+
+  \section{Constituent Papers}
+    \label{sec:papers}
+
+    The sub-programme has a single primary paper.
+
+    \subsection{Q14: Fermionic matter and chirality from projective Dirac admissibility}
+      \label{sec:q14}
+
+      \textbf{Q14}~\cite{Beau2026q14} is the sole constituent paper.
+      It is organised around three independent but mutually compatible structural results.
+
+      \textit{Theorem~A: Spinorial electroweak bundle} (structural; unconditional).
+      The admissible Weil module $\Vr$ induces, via the metaplectic lift and the Lorentzian
+      complexification forced by $g^{\mu\nu} = 2\eta^{\mu\nu}$, an admissible spinor bundle
+      $\Sbundle$.
+      Its tensor sectors satisfy:
+      \[
+        \mathrm{Sym}^2(\Sbundle) \simeq \adC(P_\Pi), \qquad \wedge^2(\Sbundle) = L_Y.
+      \]
+      After selection of the compact real form, these define the $\SU(2)_L \times \UU(1)_Y$
+      electroweak bundle data without any additional input.
+
+      \textit{Theorem~B: Chiral selection and hypercharge rigidity}
+      (structural; conditional on Hypothesis~3.5).
+      The projected Dirac operator $\Dpi$ has the Lichnerowicz-type square above.
+      Under Hypothesis~3.5 (the spinorial lift of BI parity maps right-chiral modes to
+      non-admissible directions), $\Epi$ is left-admissible: $P_R \Epi P_R = 0$.
+      This is the $V-A$ structure.
+      $\UU(1)_Y$ invariance of the projected spectral functional then imposes, at the $a_4$ level:
+      \[
+        \mathrm{Tr}_{\Sbundle}(\gamma_5 Y A_\Pi(x)) = 0 \quad \forall x \in M_{\mathrm{eff}},
+      \]
+      where $A_\Pi$ is the $\gamma_5$-weighted $a_4$ Seeley--DeWitt density of $D^2_{\Pi,g,A}$.
+      This constraint is not postulated: it is the chiral consistency condition of the same $a_4$
+      level that yields Yang--Mills dynamics in the bosonic variation.
+      The hypercharge weights $Y_R$ are thereby not free parameters but spectral coherence data.
+
+      \textit{Theorem~C: Generation multiplicity} (structural; unconditional).
+      The saturation invariant $\sigma_c(n_3) = 3$ has two functorially distinct readings of the
+      same rank-three admissible invariant.
+      In the geometric branch (Note~2), it yields three effective spatial directions.
+      In the spinorial branch, the spinorial multiplicity functor maps it to a gauge-singlet
+      generation space:
+      \[
+        \Cgen \subset \ker(\mathrm{ad}_{\SU(2)} \oplus Y).
+      \]
+      The identity $\mathbb{R}^3_{\mathrm{space}} \neq C^3_{\mathrm{gen}}$ is established
+      explicitly (Q14 §5): the spatial and generation spaces are distinct functorial images of the
+      same admissible invariant.
+      Three generations are forced; their physical distinction requires the explicit construction
+      of $\Epi$ (open).
+
+      \textit{Colour sector} (conditional on $[\mathrm{H\text{-}color}]$).
+      The colour-coupled quark sector $\Sbundle \otimes V_{\mathrm{color}}$ is obtained by
+      tensoring the admissible spinor bundle with the colour module $V_{\mathrm{color}}$.
+      The status of this sector inherits the status of $[\mathrm{H\text{-}color}]$ from
+      Notes~1 and~3: established unconditionally on the colour-adapted graph, and supported
+      on the standard graph at the rank, averaged, effective-exponent, and numerical levels.
+      The remaining open component is $[\mathrm{H\text{-}color}]_{\mathrm{pointwise}}$.
+
+      \textit{Conditional status and Hypothesis~3.5.}
+      Hypothesis~3.5 is the spinorial lift of BI parity to the spinor bundle $\Sbundle$.
+      It asserts that the BI parity involution $c \leftrightarrow q-c$ --- proved at the scalar
+      Weil level in O18 and BornInfeld --- extends to an anti-linear map on $\Sbundle$ that
+      maps right-chiral modes to non-admissible directions.
+      This hypothesis is structurally motivated by the BI parity of the scalar sector, but is
+      not derived from A1--A4 in the current paper.
+      All uses of chirality and $V-A$ in Q14 depend explicitly on Hypothesis~3.5.
+
+      \begin{table}[ht]
+        \centering
+        \caption{Summary of Q14 results by theorem.
+        Status: P = proved; S = structural; C = conditional.}
+        \label{tab:results}
+        \renewcommand{\arraystretch}{1.2}
+        \begin{tabular}{@{}lllll@{}}
+          \toprule
+          Result & Central output & Status \\
+          \midrule
+          Theorem~A & Spinor bundle $\Sbundle$; EW bundle from tensor functors & S (uncond.) \\
+          Theorem~B ($V-A$) & $P_R \Epi P_R = 0$; $V-A$ structure & S (cond.\ on Hyp.~3.5) \\
+          Theorem~B (hypercharge) & $Y_R$ from anomaly-cancellation trace; not free & S (cond.\ on Hyp.~3.5) \\
+          Theorem~C & $\Cgen$; three generations as gauge-singlet factor & S (uncond.) \\
+          Colour sector & $\Sbundle \otimes V_{\mathrm{color}}$; quark bundle & S (cond.\ on H-color) \\
+          \bottomrule
+        \end{tabular}
+      \end{table}
+
+  \section{Inputs from Upstream Results}
+    \label{sec:inputs}
+
+    \begin{enumerate}
+      \item \textbf{$F_n \simeq \Vr$ and symplectic structure} (Notes~1, 5):
+      the identification of the admissible fibre as the Weil representation is the
+      starting point of the metaplectic lift.
+      Without this, the spinor bundle $\Sbundle$ has no canonical definition.
+
+      \item \textbf{Lorentzian metric $g^{\mu\nu} = 2\eta^{\mu\nu}$} (Note~2, Q5b--Q11):
+      the Lorentzian signature forces the complexification
+      $\mathrm{mp}(2,\mathbb{R})_\mathbb{C} \simeq \mathfrak{sl}_2(\mathbb{C})$.
+      Without the Lorentzian metric, the spin group would remain $\mathrm{Sp}(2,\mathbb{R})$
+      and no Dirac spinors would arise.
+
+      \item \textbf{Gauge bundle and $\SU(2)_L \times \UU(1)_Y \times \SU(3)$} (Note~3, Q6a):
+      the admissible principal bundle and gauge connection $A$ enter the spin--gauge
+      connection $\nabla^{S,A}$ of the projected Dirac operator.
+
+      \item \textbf{$a_4$ Yang--Mills variation} (Q12~\cite{Beau2026q12}, Q13):
+      the spectral anomaly cancellation of Theorem~B uses the same $a_4$-level structure
+      that yields Yang--Mills dynamics in the bosonic sector.
+      The fermionic $a_4$ coefficient is a structural extension of the bosonic one.
+
+      \item \textbf{$\sigma_c(n_3) = 3$} (Note~1, O23):
+      the rank-three saturation invariant provides the spinorial multiplicity input for
+      Theorem~C.
+
+      \item \textbf{BI parity involution} (BornInfeld, O18):
+      the scalar BI parity $c \leftrightarrow q-c$ is the structural motivation for
+      Hypothesis~3.5; its derivation at the scalar level is complete.
+    \end{enumerate}
+
+  \section{Outputs to Downstream Branches}
+    \label{sec:outputs}
+
+    \begin{table}[ht]
+      \centering
+      \caption{Principal outputs and downstream consumers.}
+      \label{tab:outputs}
+      \renewcommand{\arraystretch}{1.3}
+      \begin{tabular}{@{}p{5.5cm}p{4.5cm}l@{}}
+        \toprule
+        Output & Consumer & Status \\
+        \midrule
+        Admissible spinor bundle $\Sbundle$ & Phenomenology, Q-series & S \\
+        $\SU(2)_L \times \UU(1)_Y$ from tensor functors & SM phenomenology & S \\
+        $V-A$ chiral structure & Weak interaction pheno & S (Hyp.~3.5) \\
+        Hypercharge as spectral datum & SM charge assignment & S (Hyp.~3.5) \\
+        Three-generation factor $\Cgen$ & Mass/mixing notes & S \\
+        Quark bundle $\Sbundle \otimes V_{\mathrm{color}}$ & QCD sector & S (H-color) \\
+        $\Epi$ as projective endomorphism & Yukawa sector (open) & S (open) \\
+        \bottomrule
+      \end{tabular}
+    \end{table}
+
+  \section{Status of Results}
+    \label{sec:status}
+
+    \subsection{Structural results (unconditional)}
+      \label{sec:structural}
+
+      \begin{enumerate}
+        \item \textit{Admissible spinor bundle} (Theorem~A):
+        $\Sbundle$ is induced from $\Vr$ via the metaplectic lift and Lorentzian
+        complexification.
+        The construction is algebraic and functorial; it depends on the Lorentzian closure
+        of Q5b--Q11 but not on Hypothesis~3.5.
+
+        \item \textit{$\SU(2)_L$ from $\mathrm{Sym}^2(\Sbundle)$} (Theorem~A):
+        the symmetric tensor sector gives the complex adjoint
+        $\adC(P_\Pi) \simeq \mathfrak{sl}_2(\mathbb{C})$; after compact real-form selection,
+        the $\SU(2)_L$ gauge sector is identified.
+
+        \item \textit{$\UU(1)_Y$ from $\wedge^2(\Sbundle)$} (Theorem~A):
+        the determinant line $L_Y = \wedge^2(\Sbundle)$ is the geometric support of the
+        hypercharge factor.
+
+        \item \textit{Generation multiplicity} (Theorem~C):
+        $\Cgen \subset \ker(\mathrm{ad}_{\SU(2)} \oplus Y)$ is a gauge-singlet three-generation
+        space arising from the spinorial multiplicity reading of $\sigma_c(n_3) = 3$.
+        The spatial and generation readings of the rank-three invariant are distinct
+        ($\mathbb{R}^3_{\mathrm{space}} \neq C^3_{\mathrm{gen}}$; Q14 §5).
+      \end{enumerate}
+
+    \subsection{Structural results (conditional on Hypothesis~3.5)}
+      \label{sec:conditional}
+
+      \begin{enumerate}
+        \item \textit{Left-admissibility of $\Epi$} (Theorem~B):
+        $P_R \Epi P_R = 0$ follows from Hypothesis~3.5 applied to the spinorial sector.
+
+        \item \textit{$V-A$ chiral structure} (Theorem~B):
+        the condition $P_R \Epi P_R = 0$ selects the left-chiral admissible projection
+        $P_L \Sbundle$, giving the $V-A$ coupling of weak interactions.
+
+        \item \textit{Hypercharge rigidity} (Theorem~B):
+        the anomaly-cancellation trace condition
+        $\mathrm{Tr}_{\Sbundle}(\gamma_5 Y A_\Pi(x)) = 0$ constrains $Y_R$ to spectral
+        coherence data; hypercharge is not a free parameter of the framework.
+
+        \item \textit{Quark bundle} (§6):
+        $\Sbundle \otimes V_{\mathrm{color}}$ is structural conditional on both Hypothesis~3.5
+        and $[\mathrm{H\text{-}color}]$.
+      \end{enumerate}
+
+    \subsection{Open hypotheses}
+      \label{sec:open-hyp}
+
+      \begin{enumerate}
+        \item \textit{Hypothesis~3.5: spinorial lift of BI parity.}
+        The BI parity involution $c \leftrightarrow q-c$ is proved at the scalar Weil level
+        (O18, BornInfeld).
+        Its extension to an anti-linear endomorphism of $\Sbundle$ mapping right-chiral modes
+        to non-admissible directions is Hypothesis~3.5: structurally motivated, not yet derived
+        from A1--A4.
+        This is the sole remaining conditionality for the $V-A$ structure and hypercharge rigidity.
+
+        \item \textit{Explicit form of $\Epi$.}
+        $\Epi$ is identified as the zero-order endomorphism of the projected Dirac square, the
+        ``internal spectral residue of non-injective projection.''
+        Its explicit form as an operator on the spectral space --- analogous to the finite internal
+        Dirac operator of Connes--Chamseddine spectral triples --- is not yet constructed.
+        Without the explicit $\Epi$, the three-generation distinction and the Yukawa sector
+        cannot be derived.
+
+        \item \textit{Normalisation of $\mathcal{L}_Y$.}
+        The Yukawa Lagrangian $\mathcal{L}_Y$ is identified as arising from the trace
+        $\mathrm{Tr}_{\Sbundle}[\Epi^2]$ variation.
+        Its integral normalisation and the derivation of the mass matrix from the spectral data
+        of $\Epi$ are open.
+
+        \item \textit{$[\mathrm{H\text{-}color}]_{\mathrm{pointwise}}$.}
+        Inherited from Notes~1 and~3.
+        The quark bundle $\Sbundle \otimes V_{\mathrm{color}}$ is fully established once this
+        is resolved.
+      \end{enumerate}
+
+  \section{Open Deliverables}
+    \label{sec:open}
+
+    Three open deliverables define the boundary of the sub-programme.
+
+    \textbf{Open deliverable 1: Derivation of Hypothesis~3.5 from A1--A4.}
+    Hypothesis~3.5 is the only remaining non-axiomatic input to the fermionic sector after
+    O18 and BornInfeld are accepted.
+    Its derivation from the admissibility axioms would make Theorems~B and~C unconditional.
+    The structural mechanism is identified (BI parity at the scalar level is the model);
+    the spinorial extension is an open algebraic problem in the representation theory of
+    $\Mp(2,\mathbb{R})$.
+
+    \textbf{Open deliverable 2: Explicit $\Epi$ and the Yukawa sector.}
+    The mass spectrum of charged leptons and quarks, and the CKM/PMNS mixing matrices,
+    require the explicit spectral construction of $\Epi$ as an operator on the admissible
+    Hilbert space.
+    This requires integrating the projected Yukawa Lagrangian $\mathcal{L}_Y$ and
+    extracting the mass matrix from the eigenvalues of $\Epi^2$.
+    This is the primary open problem of the fermionic sector.
+
+    \textbf{Open deliverable 3: Full matter content in Lorentzian signature.}
+    The complete fermionic content
+    $S^\mathrm{matter}_\Pi = (\Sbundle \oplus (\Sbundle \otimes V_{\mathrm{color}})) \otimes \Cgen$
+    in full Lorentzian signature, with explicit gauge couplings and three-generation Yukawa
+    structure, is the downstream target.
+    It requires the simultaneous resolution of Deliverables~1 and~2 above, and closure of
+    $[\mathrm{H\text{-}color}]_{\mathrm{pointwise}}$.
+
+  \section{Conclusion}
+    \label{sec:conclusion}
+
+    The fermionic matter sub-programme establishes that fermions, chirality, hypercharge,
+    and three generations are not external additions to the Cosmochrony framework.
+    They are the spinorial face of the admissible Weil module $\Vr$, revealed through the
+    Lorentzian complexification of its metaplectic structure.
+
+    The electroweak bundle $\SU(2)_L \times \UU(1)_Y$ arises from the tensor functors of
+    the admissible spinor bundle $\Sbundle$ (Theorem~A, unconditional).
+    The $V-A$ chiral structure and hypercharge rigidity arise from the projective endomorphism
+    $\Epi$ (Theorem~B, conditional on Hypothesis~3.5).
+    Three generations arise from the spinorial multiplicity reading of $\sigma_c(n_3) = 3$
+    (Theorem~C, unconditional).
+    The colour-coupled quark sector follows by tensoring with $V_{\mathrm{color}}$, conditional
+    on $[\mathrm{H\text{-}color}]$.
+
+    The remaining open components are the derivation of Hypothesis~3.5 from A1--A4,
+    the explicit construction of $\Epi$, and the derivation of the Yukawa sector and
+    mass spectrum.
+
+    \newpage
+    \bibliographystyle{plain}
+    \bibliography{cosmochrony-bibliography}
+
+\end{document}
