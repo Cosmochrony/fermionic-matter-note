@@ -19,7 +19,7 @@ Then:
 
 - $\mathrm{Sym}^2(\mathcal{S}_\Pi) \Rightarrow \mathrm{ad}_\mathbb{C}(P_\Pi)$ -- the $\mathrm{SU}(2)_L$ sector.
 - $\wedge^2(\mathcal{S}_\Pi) = L_Y$ -- the $\mathrm{U}(1)_Y$ sector.
-- $E_\Pi$ left-admissible -- the $V-A$ chiral structure (conditional on Hypothesis 3.5).
+- $E_\Pi$ left-admissible -- the $V-A$ chiral structure (established via the spinorial BI lift theorem of Q14).
 - $\sigma_c(n_3) = 3 \to C^3_{\mathrm{gen}}$ -- three generations as a gauge-singlet factor.
 
 ## Three Structural Results (Q14)
@@ -27,10 +27,10 @@ Then:
 | Result | Central output | Status |
 |---|---|---|
 | **Theorem A** (Spinorial electroweak bundle) | $\mathcal{S}_\Pi$; $\mathrm{Sym}^2(\mathcal{S}_\Pi) \simeq \mathrm{ad}_\mathbb{C}(P_\Pi)$ and $\wedge^2(\mathcal{S}_\Pi) = L_Y$ from tensor functors | structural, unconditional |
-| **Theorem B** ($V-A$) | $P_R E_\Pi P_R = 0$; $V-A$ chiral structure | structural, conditional on Hyp. 3.5 |
-| **Theorem B** (hypercharge) | $Y_R$ from anomaly-cancellation trace $\mathrm{Tr}_{\mathcal{S}_\Pi}(\gamma_5 Y A_\Pi(x)) = 0$ | structural, conditional on Hyp. 3.5 |
+| **Theorem B** ($V-A$) | $P_R E_\Pi P_R = 0$; $V-A$ chiral structure | structural, unconditional |
+| **Theorem B** (hypercharge) | $Y_R$ from anomaly-cancellation trace $\mathrm{Tr}_{\mathcal{S}_\Pi}(\gamma_5 Y A_\Pi(x)) = 0$ | structural, unconditional |
 | **Theorem C** (3 generations) | $C^3_{\mathrm{gen}} \subset \ker(\mathrm{ad}_{\mathrm{SU}(2)} \oplus Y)$; gauge-singlet generation space | structural, unconditional |
-| Colour sector | $\mathcal{S}_\Pi \otimes V_{\mathrm{color}}$ (quark bundle) | structural, conditional on [H-color] |
+| Colour sector | $\mathcal{S}_\Pi \otimes V_{\mathrm{color}}$ (quark bundle) | structural, unconditional at the pointwise level ($[H\text{-color}]_{\mathrm{pointwise}}$ proved in O31) |
 
 ## Constituent Papers
 
@@ -51,9 +51,9 @@ This sub-programme closes the **identification** of the fermionic sector: spinor
 
 ## Open Deliverables
 
-- **Derivation of Hypothesis 3.5 from A1--A4.** The spinorial lift of BI parity ($c \leftrightarrow q-c$, proved at the scalar Weil level by O18 and BornInfeld) to an anti-linear endomorphism of $\mathcal{S}_\Pi$ mapping right-chiral modes to non-admissible directions is currently the sole non-axiomatic input to Theorems B and the $V-A$/hypercharge results.
 - **Explicit $E_\Pi$ and the Yukawa sector.** The mass spectrum of charged leptons and quarks, and the CKM/PMNS mixing matrices, require the explicit spectral construction of $E_\Pi$ as an operator on the admissible Hilbert space, then integration of the projected Yukawa Lagrangian $\mathcal{L}_Y$ and extraction of the mass matrix from the eigenvalues of $E_\Pi^2$.
-- **Full matter content in Lorentzian signature.** $S^{\mathrm{matter}}_\Pi = (\mathcal{S}_\Pi \oplus (\mathcal{S}_\Pi \otimes V_{\mathrm{color}})) \otimes C^3_{\mathrm{gen}}$ with explicit gauge couplings and three-generation Yukawa structure, requiring simultaneous resolution of the two deliverables above and closure of $[\mathrm{H\text{-}color}]_{\mathrm{pointwise}}$.
+- **$[H\text{-color}]_{\mathrm{pointwise}}$ beyond the standard Cayley graph.** The colour-coupled sector is unconditional at the pointwise level on the standard Cayley graph (O31); extension to general admissible graphs is open.
+- **Full matter content in Lorentzian signature.** $S^{\mathrm{matter}}_\Pi = (\mathcal{S}_\Pi \oplus (\mathcal{S}_\Pi \otimes V_{\mathrm{color}})) \otimes C^3_{\mathrm{gen}}$ with explicit gauge couplings and three-generation Yukawa structure.
 
 ## Build
 
