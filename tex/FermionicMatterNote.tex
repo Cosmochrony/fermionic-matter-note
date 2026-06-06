@@ -70,13 +70,13 @@
     $\Sbundle$ reproduces the $\SU(2)_L \times \UU(1)_Y$ electroweak bundle structure from
     tensor functors of $\Sbundle$; (B)~the projected Dirac operator $\Dpi$ contains a
     canonical projective endomorphism $\Epi$ that enforces the $V-A$ chiral structure
-    (conditional on Hypothesis~3.5) and whose $\gamma_5$-weighted $a_4$ coefficient imposes
+    (established via the spinorial BI lift theorem of Q14) and whose $\gamma_5$-weighted $a_4$ coefficient imposes
     anomaly-cancellation constraints making hypercharge a spectral datum; (C)~the saturation
     invariant $\sigma_c(n_3) = 3$ has a spinorial multiplicity reading yielding a gauge-singlet
     three-generation factor $\Cgen$.
-    The colour-coupled quark sector is conditional on $[\mathrm{H\text{-}color}]$.
-    Open deliverables are the explicit form of $\Epi$, the Yukawa sector, and the derivation
-    of Hypothesis~3.5 from A1--A4.
+    The colour-coupled quark sector is unconditional at the pointwise level
+    ($[\mathrm{H\text{-}color}]_{\mathrm{pointwise}}$ established in O31).
+    Open deliverables are the explicit form of $\Epi$ and the Yukawa sector.
   \end{abstract}
 
   \medskip
@@ -109,7 +109,7 @@
     Fermions arise as the spinorial face of the Weil module $\Vr$ after Lorentzian
     complexification of its metaplectic lift.
     Chirality and the $V-A$ structure arise from the projective endomorphism $\Epi$ of the
-    projected Dirac operator, under Hypothesis~3.5.
+    projected Dirac operator, via the spinorial lift of BI parity established in Q14.
     Hypercharge is not a free parameter: it is constrained by spectral anomaly cancellation.
     Three generations arise from the spinorial multiplicity reading of the same
     rank-three invariant $\sigma_c(n_3) = 3$ that yields the three spatial directions in the
@@ -213,7 +213,7 @@ interpretation of the admissible fibre after geometric complexification.
         = -(\nabla^{S,A})^2 + \frac{R}{4} + \frac{1}{2}\gamma^\mu\gamma^\nu F^a_{\mu\nu} T^a_R
         + \Epi.
       \]
-      Under Hypothesis~3.5 (spinorial lift of BI parity), $\Epi$ is left-admissible
+      By the spinorial lift of BI parity, established in Q14~\cite{Beau2026q14}, $\Epi$ is left-admissible
       ($P_R \Epi P_R = 0$), giving the $V-A$ structure.
       $\UU(1)_Y$ invariance of $\SPI[g,A,D_{\Pi,g,A}]$ imposes the anomaly-cancellation
       trace constraint $\mathrm{Tr}_{\Sbundle}(\gamma_5 Y A_\Pi(x)) = 0$, fixing hypercharge
@@ -243,10 +243,10 @@ interpretation of the admissible fibre after geometric complexification.
       electroweak bundle data without any additional input.
 
       \textit{Theorem~B: Chiral selection and hypercharge rigidity}
-      (structural; conditional on Hypothesis~3.5).
+      (structural; unconditional).
       The projected Dirac operator $\Dpi$ has the Lichnerowicz-type square above.
-      Under Hypothesis~3.5 (the spinorial lift of BI parity maps right-chiral modes to
-      non-admissible directions), $\Epi$ is left-admissible: $P_R \Epi P_R = 0$.
+      By the spinorial lift of BI parity, established in Q14 (the antilinear $J_\Pi = HK$ maps
+      right-chiral modes to non-admissible directions), $\Epi$ is left-admissible: $P_R \Epi P_R = 0$.
       This is the $V-A$ structure.
       $\UU(1)_Y$ invariance of the projected spectral functional then imposes, at the $a_4$ level:
       \[
@@ -272,27 +272,30 @@ interpretation of the admissible fibre after geometric complexification.
       Three generations are forced; their physical distinction requires the explicit construction
       of $\Epi$ (open).
 
-      \textit{Colour sector} (conditional on $[\mathrm{H\text{-}color}]$).
+      \textit{Colour sector} (unconditional at the pointwise level).
       The colour-coupled quark sector $\Sbundle \otimes V_{\mathrm{color}}$ is obtained by
       tensoring the admissible spinor bundle with the colour module $V_{\mathrm{color}}$.
       The status of this sector inherits the status of $[\mathrm{H\text{-}color}]$ from
-      Notes~1 and~3: established unconditionally on the colour-adapted graph, and supported
-      on the standard graph at the rank, averaged, effective-exponent, and numerical levels.
-      The remaining open component is $[\mathrm{H\text{-}color}]_{\mathrm{pointwise}}$.
+      Notes~1 and~3: established unconditionally on the colour-adapted graph, and on the standard
+      graph at the rank, averaged, and effective-exponent levels, with
+      $[\mathrm{H\text{-}color}]_{\mathrm{pointwise}}$ proved analytically (O31, exact equality of
+      BFS capacity profiles at finite~$q$).
+      The only residual component is the extension beyond the standard Cayley graph to general
+      generating sets, which is non-blocking for the quark bundle.
 
-      \textit{Conditional status and Hypothesis~3.5.}
-      Hypothesis~3.5 is the spinorial lift of BI parity to the spinor bundle $\Sbundle$.
-      It asserts that the BI parity involution $c \leftrightarrow q-c$ --- proved at the scalar
-      Weil level in O18 and BornInfeld --- extends to an anti-linear map on $\Sbundle$ that
-      maps right-chiral modes to non-admissible directions.
-      This hypothesis is structurally motivated by the BI parity of the scalar sector, but is
-      not derived from A1--A4 in the current paper.
-      All uses of chirality and $V-A$ in Q14 depend explicitly on Hypothesis~3.5.
+      \textit{Status of the spinorial BI lift.}
+      The spinorial lift of BI parity to the spinor bundle $\Sbundle$ is established as a theorem
+      in Q14: the BI parity involution $c \leftrightarrow q-c$, proved at the scalar Weil level in
+      O18 and BornInfeld, lifts to the antilinear endomorphism $J_\Pi = HK$ satisfying
+      $J_\Pi^2 = -1$ and $J_\Pi \gamma_5 = -\gamma_5 J_\Pi$, dressing the parity by the weight
+      grading $H = 2J_3$.
+      Chirality and $V-A$ in Q14 are therefore unconditional, their only residual dependence being
+      the axiomatic chain A1--A4~\cite{Beau2026m} and the upstream BI parity datum (O30, U1).
 
       \begin{table}[ht]
         \centering
         \caption{Summary of Q14 results by theorem.
-        Status: P = proved; S = structural; C = conditional.}
+        Status: P = proved; S = structural.}
         \label{tab:results}
         \renewcommand{\arraystretch}{1.2}
         \begin{tabular}{@{}lllll@{}}
@@ -300,10 +303,10 @@ interpretation of the admissible fibre after geometric complexification.
           Result & Central output & Status \\
           \midrule
           Theorem~A & Spinor bundle $\Sbundle$; EW bundle from tensor functors & S (uncond.) \\
-          Theorem~B ($V-A$) & $P_R \Epi P_R = 0$; $V-A$ structure & S (cond.\ on Hyp.~3.5) \\
-          Theorem~B (hypercharge) & $Y_R$ from anomaly-cancellation trace; not free & S (cond.\ on Hyp.~3.5) \\
+          Theorem~B ($V-A$) & $P_R \Epi P_R = 0$; $V-A$ structure & S (uncond.) \\
+          Theorem~B (hypercharge) & $Y_R$ from anomaly-cancellation trace; not free & S (uncond.) \\
           Theorem~C & $\Cgen$; three generations as gauge-singlet factor & S (uncond.) \\
-          Colour sector & $\Sbundle \otimes V_{\mathrm{color}}$; quark bundle & S (cond.\ on H-color) \\
+          Colour sector & $\Sbundle \otimes V_{\mathrm{color}}$; quark bundle & S (uncond., pointwise) \\
           \bottomrule
         \end{tabular}
       \end{table}
@@ -339,8 +342,8 @@ interpretation of the admissible fibre after geometric complexification.
       Theorem~C.
 
       \item \textbf{BI parity involution} (BornInfeld, O18):
-      the scalar BI parity $c \leftrightarrow q-c$ is the structural motivation for
-      Hypothesis~3.5; its derivation at the scalar level is complete.
+      the scalar BI parity $c \leftrightarrow q-c$ is the input from which the spinorial BI lift
+      is derived; its derivation at the scalar level is complete.
     \end{enumerate}
 
   \section{Outputs to Downstream Branches}
@@ -357,10 +360,10 @@ interpretation of the admissible fibre after geometric complexification.
         \midrule
         Admissible spinor bundle $\Sbundle$ & Phenomenology, Q-series & S \\
         $\SU(2)_L \times \UU(1)_Y$ from tensor functors & SM phenomenology & S \\
-        $V-A$ chiral structure & Weak interaction pheno & S (Hyp.~3.5) \\
-        Hypercharge as spectral datum & SM charge assignment & S (Hyp.~3.5) \\
+        $V-A$ chiral structure & Weak interaction pheno & S (uncond.) \\
+        Hypercharge as spectral datum & SM charge assignment & S (uncond.) \\
         Three-generation factor $\Cgen$ & Mass/mixing notes & S \\
-        Quark bundle $\Sbundle \otimes V_{\mathrm{color}}$ & QCD sector & S (H-color) \\
+        Quark bundle $\Sbundle \otimes V_{\mathrm{color}}$ & QCD sector & S (uncond., pointwise) \\
         $\Epi$ as projective endomorphism & Yukawa sector (open) & S (open) \\
         \bottomrule
       \end{tabular}
@@ -377,7 +380,7 @@ interpretation of the admissible fibre after geometric complexification.
         $\Sbundle$ is induced from $\Vr$ via the metaplectic lift and Lorentzian
         complexification.
         The construction is algebraic and functorial; it depends on the Lorentzian closure
-        of Q5b--Q11 but not on Hypothesis~3.5.
+        of Q5b--Q11 but not on the spinorial BI lift.
 
         \item \textit{$\SU(2)_L$ from $\mathrm{Sym}^2(\Sbundle)$} (Theorem~A):
         the symmetric tensor sector gives the complex adjoint
@@ -395,12 +398,12 @@ interpretation of the admissible fibre after geometric complexification.
         ($\mathbb{R}^3_{\mathrm{space}} \neq C^3_{\mathrm{gen}}$; Q14 §5).
       \end{enumerate}
 
-    \subsection{Structural results (conditional on Hypothesis~3.5)}
-      \label{sec:conditional}
+    \subsection{Further structural results (unconditional)}
+      \label{sec:further-structural}
 
       \begin{enumerate}
         \item \textit{Left-admissibility of $\Epi$} (Theorem~B):
-        $P_R \Epi P_R = 0$ follows from Hypothesis~3.5 applied to the spinorial sector.
+        $P_R \Epi P_R = 0$ follows from the spinorial BI lift (Q14), now established.
 
         \item \textit{$V-A$ chiral structure} (Theorem~B):
         the condition $P_R \Epi P_R = 0$ selects the left-chiral admissible projection
@@ -412,22 +415,15 @@ interpretation of the admissible fibre after geometric complexification.
         coherence data; hypercharge is not a free parameter of the framework.
 
         \item \textit{Quark bundle} (§6):
-        $\Sbundle \otimes V_{\mathrm{color}}$ is structural conditional on both Hypothesis~3.5
-        and $[\mathrm{H\text{-}color}]$.
+        $\Sbundle \otimes V_{\mathrm{color}}$ is structural and unconditional at the pointwise
+        level: the spinorial BI lift is established (Q14) and
+        $[\mathrm{H\text{-}color}]_{\mathrm{pointwise}}$ is proved analytically (O31).
       \end{enumerate}
 
-    \subsection{Open hypotheses}
-      \label{sec:open-hyp}
+    \subsection{Open problems}
+      \label{sec:open-problems}
 
       \begin{enumerate}
-        \item \textit{Hypothesis~3.5: spinorial lift of BI parity.}
-        The BI parity involution $c \leftrightarrow q-c$ is proved at the scalar Weil level
-        (O18, BornInfeld).
-        Its extension to an anti-linear endomorphism of $\Sbundle$ mapping right-chiral modes
-        to non-admissible directions is Hypothesis~3.5: structurally motivated, not yet derived
-        from A1--A4.
-        This is the sole remaining conditionality for the $V-A$ structure and hypercharge rigidity.
-
         \item \textit{Explicit form of $\Epi$.}
         $\Epi$ is identified as the zero-order endomorphism of the projected Dirac square, the
         ``internal spectral residue of non-injective projection.''
@@ -442,26 +438,22 @@ interpretation of the admissible fibre after geometric complexification.
         Its integral normalisation and the derivation of the mass matrix from the spectral data
         of $\Epi$ are open.
 
-        \item \textit{$[\mathrm{H\text{-}color}]_{\mathrm{pointwise}}$.}
+        \item \textit{$[\mathrm{H\text{-}color}]_{\mathrm{pointwise}}$ beyond the standard graph.}
         Inherited from Notes~1 and~3.
-        The quark bundle $\Sbundle \otimes V_{\mathrm{color}}$ is fully established once this
-        is resolved.
+        $[\mathrm{H\text{-}color}]_{\mathrm{pointwise}}$ is proved on the standard Cayley graph
+        (O31); its extension to general generating sets is the only residual, and is non-blocking
+        for the quark bundle, which is already established at the pointwise level.
       \end{enumerate}
 
   \section{Open Deliverables}
     \label{sec:open}
 
-    Three open deliverables define the boundary of the sub-programme.
+    The derivation of the spinorial BI lift, formerly the first open deliverable, is now
+    established as a theorem in Q14~\cite{Beau2026q14}: the antilinear lift $J_\Pi = HK$ dresses
+    the BI parity by the weight grading, making Theorems~B and~C unconditional.
+    Two open deliverables remain.
 
-    \textbf{Open deliverable 1: Derivation of Hypothesis~3.5 from A1--A4.}
-    Hypothesis~3.5 is the only remaining non-axiomatic input to the fermionic sector after
-    O18 and BornInfeld are accepted.
-    Its derivation from the admissibility axioms would make Theorems~B and~C unconditional.
-    The structural mechanism is identified (BI parity at the scalar level is the model);
-    the spinorial extension is an open algebraic problem in the representation theory of
-    $\Mp(2,\mathbb{R})$.
-
-    \textbf{Open deliverable 2: Explicit $\Epi$ and the Yukawa sector.}
+    \textbf{Open deliverable 1: Explicit $\Epi$ and the Yukawa sector.}
     The mass spectrum of charged leptons and quarks, and the CKM/PMNS mixing matrices,
     require the explicit spectral construction of $\Epi$ as an operator on the admissible
     Hilbert space.
@@ -469,14 +461,15 @@ interpretation of the admissible fibre after geometric complexification.
     extracting the mass matrix from the eigenvalues of $\Epi^2$.
     This is the primary open problem of the fermionic sector.
 
-    \textbf{Open deliverable 3: Full matter content in Lorentzian signature.}
+    \textbf{Open deliverable 2: Full matter content in Lorentzian signature.}
     The complete fermionic content
     $S^\mathrm{matter}_\Pi = (\Sbundle \oplus (\Sbundle \otimes V_{\mathrm{color}})) \otimes \Cgen$
     in full Lorentzian signature, with explicit gauge couplings and three-generation Yukawa
     structure, is the downstream target.
-    It requires the simultaneous resolution of Deliverables~1 and~2 above, and closure of
-    $[\mathrm{H\text{-}color}]_{\mathrm{pointwise}}$.
+    It requires the resolution of Deliverable~1 above, the colour sector being already
+    established at the pointwise level (O31).
 
+    \newpage
   \section{Conclusion}
     \label{sec:conclusion}
 
@@ -488,17 +481,15 @@ interpretation of the admissible fibre after geometric complexification.
     The electroweak bundle $\SU(2)_L \times \UU(1)_Y$ arises from the tensor functors of
     the admissible spinor bundle $\Sbundle$ (Theorem~A, unconditional).
     The $V-A$ chiral structure and hypercharge rigidity arise from the projective endomorphism
-    $\Epi$ (Theorem~B, conditional on Hypothesis~3.5).
+    $\Epi$ (Theorem~B, unconditional).
     Three generations arise from the spinorial multiplicity reading of $\sigma_c(n_3) = 3$
     (Theorem~C, unconditional).
-    The colour-coupled quark sector follows by tensoring with $V_{\mathrm{color}}$, conditional
-    on $[\mathrm{H\text{-}color}]$.
+    The colour-coupled quark sector follows by tensoring with $V_{\mathrm{color}}$, unconditional
+    at the pointwise level (O31).
 
-    The remaining open components are the derivation of Hypothesis~3.5 from A1--A4,
-    the explicit construction of $\Epi$, and the derivation of the Yukawa sector and
-    mass spectrum.
+    The remaining open components are the explicit construction of $\Epi$ and the derivation of
+    the Yukawa sector and mass spectrum.
 
-    \newpage
     \bibliographystyle{plain}
     \bibliography{cosmochrony-bibliography}
 
