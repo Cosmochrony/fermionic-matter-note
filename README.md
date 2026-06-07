@@ -30,6 +30,7 @@ Then:
 | **Theorem B** ($V-A$) | $P_R E_\Pi P_R = 0$; $V-A$ chiral structure | structural, unconditional |
 | **Theorem B** (hypercharge) | $Y_R$ from anomaly-cancellation trace $\mathrm{Tr}_{\mathcal{S}_\Pi}(\gamma_5 Y A_\Pi(x)) = 0$ | structural, unconditional |
 | **Theorem C** (3 generations) | $C^3_{\mathrm{gen}} \subset \ker(\mathrm{ad}_{\mathrm{SU}(2)} \oplus Y)$; gauge-singlet generation space | structural, unconditional |
+| **Dynamic generation lifting** (Q14 §6) | Static $J_\Pi$-protected degeneracy of $C^3_{\mathrm{gen}}$ is statically obstructed; admissible lifts form a 2D $J_\Pi$-odd sector; the oriented cascade generator carries a non-zero $J_3$ projection ($\alpha \neq 0$) | qualitative mechanism; amplitude deferred to cascade normalisation |
 | Colour sector | $\mathcal{S}_\Pi \otimes V_{\mathrm{color}}$ (quark bundle) | structural, unconditional at the pointwise level ($[H\text{-color}]_{\mathrm{pointwise}}$ proved in O31) |
 
 ## Constituent Papers
@@ -51,7 +52,7 @@ This sub-programme closes the **identification** of the fermionic sector: spinor
 
 ## Open Deliverables
 
-- **Explicit $E_\Pi$ and the Yukawa sector.** The mass spectrum of charged leptons and quarks, and the CKM/PMNS mixing matrices, require the explicit spectral construction of $E_\Pi$ as an operator on the admissible Hilbert space, then integration of the projected Yukawa Lagrangian $\mathcal{L}_Y$ and extraction of the mass matrix from the eigenvalues of $E_\Pi^2$.
+- **Explicit $E_\Pi$, splitting amplitude and the Yukawa sector.** The qualitative mechanism of the inter-generation splitting is closed in Q14 §6 (static obstruction, oriented $J_\Pi$-odd lift, non-zero cascade $J_3$ projection). What remains is quantitative: the cascade normalisation $\mathcal{N}_{\mathrm{casc}}$ fixing the splitting amplitude $\varepsilon = \mathcal{N}_{\mathrm{casc}}\,|\alpha|$ (to be derived from $c_\chi \to \delta_{\mathrm{pair}} \to \beta^*$, not fitted), the integral normalisation of $\mathcal{L}_Y$, and generation mixing via the complex metaplectic phase.
 - **$[H\text{-color}]_{\mathrm{pointwise}}$ beyond the standard Cayley graph.** The colour-coupled sector is unconditional at the pointwise level on the standard Cayley graph (O31); extension to general admissible graphs is open.
 - **Full matter content in Lorentzian signature.** $S^{\mathrm{matter}}_\Pi = (\mathcal{S}_\Pi \oplus (\mathcal{S}_\Pi \otimes V_{\mathrm{color}})) \otimes C^3_{\mathrm{gen}}$ with explicit gauge couplings and three-generation Yukawa structure.
 
