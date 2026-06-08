@@ -76,7 +76,10 @@
     three-generation factor $\Cgen$.
     The colour-coupled quark sector is unconditional at the pointwise level
     ($[\mathrm{H\text{-}color}]_{\mathrm{pointwise}}$ established in O31).
-    Open deliverables are the explicit form of $\Epi$ and the Yukawa sector.
+    The structural form of $\Epi$ is now fixed as a Schur complement of the eliminated spinorial block;
+    the open deliverables are its explicit Lorentzian block, the generation-split amplitude (fixed at A4
+    by matching a discrete chiral-frontier normalisation with the Lorentzian Born--Infeld curvature), and
+    the Yukawa sector.
   \end{abstract}
 
   \medskip
@@ -273,19 +276,23 @@ interpretation of the admissible fibre after geometric complexification.
       A qualitative mechanism for their splitting is identified in Q14 \S6 (summarised below); the
       explicit $\Epi$ and the amplitude of the splitting remain open.
 
-      \textit{Dynamic generation lifting} (qualitative; diagnostic model).
+      \textit{Dynamic generation lifting} (localisation and A4 matching).
       The internal structure of $\Cgen$ is probed by the spectrum of $\Epi^2$ (Q14 \S6).
       A static $J_\Pi$-real, weight-preserving restriction of $\Epi^2$ has a degenerate outer pair:
       the two light generations cannot be split statically (static obstruction).
       The admissible lifts removing this degeneracy form a two-dimensional $J_\Pi$-odd sector, the
       real-split direction being the weight generator $J_3$ and the mixing direction a doublet
       rotation.
-      In a diagnostic model of the Q11 cascade generator $\partial_\tau$, the $J_\Pi$-odd
-      projection carries a non-zero $J_3$ component ($\alpha \neq 0$), whose sign reverses under
-      cascade reversal.
-      The qualitative mechanism of the inter-generation splitting is thereby fixed; its amplitude is
-      deferred to the cascade normalisation, and generation mixing requires the complex metaplectic
-      phase.
+      The generation split is not a finite-front observable in the symmetric sense: the raw finite front
+      remains $J_\Pi$-equivariant and gives $u_{\mathrm{fin}}=0$.
+      After Lorentzian complexification, however, the chiral projector makes it meaningful to read a
+      $J_\Pi$-odd frontier cocycle, and the residual automorphism is the central Weil lift
+      $R_b=W(-I)=\mathrm{FT}^2$, which commutes with $\gamma_5$: it is blind to chirality and does not
+      obstruct the $V-A$ selection.
+      The remaining amplitude is fixed at A4 by matching the discrete chiral-frontier normalisation
+      $\mathcal N_A$ with the Lorentzian Born--Infeld curvature $\mu_\chi^2=\partial_s^2\mathcal B(0)$,
+      neither ingredient reducing to the other (companion oriented-frontier and Schur-complement notes).
+      Generation mixing further requires the complex metaplectic phase.
 
       \textit{Colour sector} (unconditional at the pointwise level).
       The colour-coupled quark sector $\Sbundle \otimes V_{\mathrm{color}}$ is obtained by
@@ -442,11 +449,13 @@ interpretation of the admissible fibre after geometric complexification.
         \item \textit{Explicit form of $\Epi$.}
         $\Epi$ is identified as the zero-order endomorphism of the projected Dirac square, the
         ``internal spectral residue of non-injective projection.''
-        Its explicit form as an operator on the spectral space --- analogous to the finite internal
-        Dirac operator of Connes--Chamseddine spectral triples --- is not yet constructed.
-        A qualitative mechanism for the inter-generation splitting is identified in Q14 \S6;
-        without the explicit $\Epi$, however, its amplitude, the three-generation mass spectrum,
-        and the Yukawa sector cannot be derived.
+        Its structural form is now fixed as the Schur complement of the eliminated spinorial block,
+        $\Epi=-M^{\dagger}M$ with $M=(1-P)D\,\Pi_S^{*}$; what is not yet constructed is its explicit
+        Lorentzian block $1-P(s)$ along the $J_\Pi$-odd modulus.
+        The inter-generation splitting is localised in the $J_\Pi$-odd part of $\Epi^2$, with amplitude
+        fixed at A4 by matching a discrete chiral-frontier normalisation with the Lorentzian Born--Infeld
+        curvature; without the explicit Lorentzian $\Epi$, the three-generation mass spectrum and the
+        Yukawa sector cannot be derived.
 
         \item \textit{Normalisation of $\mathcal{L}_Y$.}
         The Yukawa Lagrangian $\mathcal{L}_Y$ is identified as arising from the trace
@@ -476,12 +485,18 @@ interpretation of the admissible fibre after geometric complexification.
     This requires integrating the projected Yukawa Lagrangian $\mathcal{L}_Y$ and
     extracting the mass matrix from the eigenvalues of $\Epi^2$.
     This is the primary open problem of the fermionic sector.
-    The qualitative segment of this deliverable is closed in Q14 \S6: the inter-generation
-    splitting is statically obstructed, lives in a two-dimensional $J_\Pi$-odd lift sector, and is
-    carried by the oriented cascade generator.
-    What remains is quantitative: the cascade normalisation $\mathcal{N}_{\mathrm{casc}}$ fixing the
-    splitting amplitude $\varepsilon = \mathcal{N}_{\mathrm{casc}}\,|\alpha|$ (to be derived from
-    $c_\chi \to \delta_{\mathrm{pair}} \to \beta^*$, not fitted), the integral normalisation of
+    The structural form of $\Epi$ is now fixed as the Schur complement of the eliminated spinorial block;
+    the open part is its explicit Lorentzian block $1-P(s)$ along the $J_\Pi$-odd modulus.
+    The symmetric finite front is $J_\Pi$-equivariant and gives $u_{\mathrm{fin}}=0$, but the discrete
+    chiral-frontier normalisation $\mathcal N_A$ survives the operator obstruction, since the residual
+    reflection $R_b=\mathrm{FT}^2$ is blind to chirality ($[\gamma_5,R_b]=0$).
+    The split amplitude is therefore fixed at A4 by matching this discrete normalisation with the
+    Lorentzian Born--Infeld curvature $\mu_\chi^2=\partial_s^2\mathcal B(0)$, neither ingredient reducing
+    to the other:
+    \[
+      |u| = \mathrm{A4Match}\!\left(\mathcal N_A,\,\mu_\chi^2\right).
+    \]
+    What remains quantitative is therefore this A4 matching, the integral normalisation of
     $\mathcal{L}_Y$, and generation mixing via the complex metaplectic phase.
 
     \textbf{Open deliverable 2: Full matter content in Lorentzian signature.}
@@ -510,11 +525,14 @@ interpretation of the admissible fibre after geometric complexification.
     The colour-coupled quark sector follows by tensoring with $V_{\mathrm{color}}$, unconditional
     at the pointwise level (O31).
 
-    A qualitative mechanism for the inter-generation splitting is now identified (Q14 \S6: static
-    obstruction, oriented $J_\Pi$-odd lift, non-zero cascade $J_3$ projection).
-    The remaining open components are the explicit construction of $\Epi$, the amplitude of the
-    splitting (the cascade normalisation), and the derivation of the Yukawa sector and mass
-    spectrum.
+    The inter-generation splitting is localised: statically obstructed, living in a two-dimensional
+    $J_\Pi$-odd lift sector, and vanishing on the symmetric finite front ($u_{\mathrm{fin}}=0$,
+    $J_\Pi$-equivariant).
+    Its operator obstruction is resolved, the residual reflection $R_b=\mathrm{FT}^2$ being blind to
+    chirality ($[\gamma_5,R_b]=0$).
+    The remaining open components are the explicit Lorentzian $\Epi$, the split amplitude fixed at A4 by
+    matching the discrete chiral-frontier normalisation with the Lorentzian Born--Infeld curvature
+    $\mu_\chi^2$, and the derivation of the Yukawa sector and mass spectrum.
 
     \bibliographystyle{plain}
     \bibliography{cosmochrony-bibliography}
