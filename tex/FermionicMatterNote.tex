@@ -284,14 +284,14 @@ interpretation of the admissible fibre after geometric complexification.
       real-split direction being the weight generator $J_3$ and the mixing direction a doublet
       rotation.
       The generation split is not a finite-front observable in the symmetric sense: the raw finite front
-      remains $J_\Pi$-equivariant and gives $u_{\mathrm{fin}}=0$.
+      remains $J_\Pi$-equivariant and gives $u_{\mathrm{fin}}=0$~\cite{Beau2026prs}.
       After Lorentzian complexification, however, the chiral projector makes it meaningful to read a
       $J_\Pi$-odd frontier cocycle, and the residual automorphism is the central Weil lift
       $R_b=W(-I)=\mathrm{FT}^2$, which commutes with $\gamma_5$: it is blind to chirality and does not
-      obstruct the $V-A$ selection.
+      obstruct the $V-A$ selection~\cite{Beau2026q11of}.
       The remaining amplitude is fixed at A4 by matching the discrete chiral-frontier normalisation
-      $\mathcal N_A$ with the Lorentzian Born--Infeld curvature $\mu_\chi^2=\partial_s^2\mathcal B(0)$,
-      neither ingredient reducing to the other (companion oriented-frontier and Schur-complement notes).
+      $\mathcal N_A$~\cite{Beau2026aar} with the Lorentzian Born--Infeld curvature
+      $\mu_\chi^2=\partial_s^2\mathcal B(0)$~\cite{Beau2026prs}, neither ingredient reducing to the other.
       Generation mixing further requires the complex metaplectic phase.
 
       \textit{Colour sector} (unconditional at the pointwise level).
@@ -332,6 +332,42 @@ interpretation of the admissible fibre after geometric complexification.
           \bottomrule
         \end{tabular}
       \end{table}
+
+    \subsection{Angular Amplitude Reduction: the $J_3$ split as oriented symplectic
+    area~\cite{Beau2026aar}}
+      This note fixes the numerical observable for the absolute normalisation of the angular generation
+      split before any Weil--BFS computation.
+      A Baker--Campbell--Hausdorff reduction identifies the per-step $J_\Pi$-odd $J_3$ component of the
+      metaplectic cascade with the oriented symplectic area swept per step --- the central,
+      Carnot-degree-2 increment of $\Heis_3$ --- and not with a free shear parameter.
+      The quantity to measure is the accumulated oriented $J_3$-odd area along the cascade, normalised by
+      the projected capacity.
+      A direct evaluation on symmetric BFS shells returns $\Theta_{\mathrm{raw}}=0$ identically: the
+      symmetric capacity data fix the radial sector but cannot select an oriented angular branch, so the
+      orientation prescription is an irreducible input prior to the normalisation $\mathcal N_A$.
+
+    \subsection{Q11 Oriented Frontier: recursive diagnostic and resolution of the operator
+    obstruction~\cite{Beau2026q11of}}
+      The symmetric-shell observable vanishes ($\Theta_{\mathrm{raw}}=0$) because the involution
+      $g\mapsto g^{-1}$ pairs opposite central phases; this note defines the honest replacement, a frontier
+      transfer observable on the directed edges $g\to gs$ whose central increment is the Heisenberg cocycle
+      $a(g)\,s_b$, the discrete counterpart of $\tfrac12[X,Y]$ and hence of the dynamical $J_3$.
+      Its main result resolves the operator obstruction: the residual reflection
+      $R_b=\varphi\circ J_\Pi^{-1}=W(-I)=\mathrm{FT}^2$ is the central Weil lift, and $[\gamma_5,R_b]=0$, so
+      $R_b$ is blind to chirality and the $V-A$ selector removes the $\varphi$-paired obstruction without a
+      spacetime parity.
+      What remains is the amplitude normalisation $\mathcal N_A$, not the operator question.
+
+    \subsection{Projective Residue as a Schur Complement: localisation and finite/Lorentzian
+    separation~\cite{Beau2026prs}}
+      This note fixes the structural status of the split $u$ before the explicit $\Epi$.
+      The projected Dirac square has the Schur--Feshbach form $\Epi=-M^{\dagger}M$ with
+      $M=(1-P)\,D\,\Pi_S^{*}$, exhibiting $\Epi$ as the Schur complement of the eliminated spinorial block;
+      $u$ is localised in the $J_\Pi$-odd part of $\Epi^2|_{\Cgen}$ as the antiunitary equivariance defect
+      $\Delta_\chi(P)=\pi_{LL}-\tau\,\overline{\pi_{RR}}\,\tau^{-1}$.
+      The finite locking is $J_\Pi$-equivariant, so $u_{\mathrm{fin}}=0$ (finite/Lorentzian separation): the
+      split cannot originate in the finite cascade and is a Lorentzian datum, its magnitude reduced to the
+      Born--Infeld saturation curvature $\mu_\chi^2=\partial_s^2\mathcal B(0)$.
 
   \section{Inputs from Upstream Results}
     \label{sec:inputs}
@@ -450,7 +486,8 @@ interpretation of the admissible fibre after geometric complexification.
         $\Epi$ is identified as the zero-order endomorphism of the projected Dirac square, the
         ``internal spectral residue of non-injective projection.''
         Its structural form is now fixed as the Schur complement of the eliminated spinorial block,
-        $\Epi=-M^{\dagger}M$ with $M=(1-P)D\,\Pi_S^{*}$; what is not yet constructed is its explicit
+        $\Epi=-M^{\dagger}M$ with $M=(1-P)D\,\Pi_S^{*}$~\cite{Beau2026prs}; what is not yet constructed is
+        its explicit
         Lorentzian block $1-P(s)$ along the $J_\Pi$-odd modulus.
         The inter-generation splitting is localised in the $J_\Pi$-odd part of $\Epi^2$, with amplitude
         fixed at A4 by matching a discrete chiral-frontier normalisation with the Lorentzian Born--Infeld
@@ -485,11 +522,12 @@ interpretation of the admissible fibre after geometric complexification.
     This requires integrating the projected Yukawa Lagrangian $\mathcal{L}_Y$ and
     extracting the mass matrix from the eigenvalues of $\Epi^2$.
     This is the primary open problem of the fermionic sector.
-    The structural form of $\Epi$ is now fixed as the Schur complement of the eliminated spinorial block;
+    The structural form of $\Epi$ is now fixed as the Schur complement of the eliminated spinorial
+    block~\cite{Beau2026prs};
     the open part is its explicit Lorentzian block $1-P(s)$ along the $J_\Pi$-odd modulus.
     The symmetric finite front is $J_\Pi$-equivariant and gives $u_{\mathrm{fin}}=0$, but the discrete
     chiral-frontier normalisation $\mathcal N_A$ survives the operator obstruction, since the residual
-    reflection $R_b=\mathrm{FT}^2$ is blind to chirality ($[\gamma_5,R_b]=0$).
+    reflection $R_b=\mathrm{FT}^2$ is blind to chirality ($[\gamma_5,R_b]=0$)~\cite{Beau2026q11of}.
     The split amplitude is therefore fixed at A4 by matching this discrete normalisation with the
     Lorentzian Born--Infeld curvature $\mu_\chi^2=\partial_s^2\mathcal B(0)$, neither ingredient reducing
     to the other:
