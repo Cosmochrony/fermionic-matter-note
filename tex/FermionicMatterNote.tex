@@ -11,6 +11,8 @@
 \usepackage{array}
 \usepackage{enumitem}
 \usepackage{amsfonts}
+\usepackage{amstext}
+\usepackage{amsopn}
 
 \geometry{margin=2.5cm}
 
@@ -358,6 +360,11 @@ interpretation of the admissible fibre after geometric complexification.
       $R_b$ is blind to chirality and the $V-A$ selector removes the $\varphi$-paired obstruction without a
       spacetime parity.
       What remains is the amplitude normalisation $\mathcal N_A$, not the operator question.
+      The chiral weight $\gamma_5$ entering this signal is identified in CHO-Note~\cite{Beau2026cho} as the Weyl
+      representation type $\mathbf{2}$ versus $\bar{\mathbf{2}}$, not a function of the cascade generator $T(e)$
+      (arrow inversion and $\varphi$ both send $T\mapsto -T$, fixing equal parities, while the admissible weight is
+      arrow-even and $\varphi$-odd); in the inherited Heisenberg central-phase lift the outgoing-frontier overlap is
+      maximal, $\rho_\chi=1$, so $\mathcal N_A=\theta_{\max}\neq0$ in that lift.
 
     \subsection{Projective Residue as a Schur Complement: localisation and finite/Lorentzian
     separation~\cite{Beau2026prs}}
@@ -401,6 +408,28 @@ interpretation of the admissible fibre after geometric complexification.
       only the full-tower generalisation to every conceivable recursive stratum remains open.
       Hence $\varepsilon=1/10$ is conditional on the gate rather than an independent dictionary parameter, and the
       first-principles front for the value is the gate itself: upstream and structural.
+
+    \subsection{Chiral orientation of the directed frontier: $\sigma_L$ as a representation
+    type~\cite{Beau2026cho}}
+      This note resolves the chiral weight $\sigma_L$ left deferred by Q11OF.
+      A parity argument closes the false route $\sigma_L=f(T(e))$: edge inversion $U(e^{-1})=U(e)^{-1}$ and the
+      residual reflection both send the $J_\Pi$-odd cascade generator $T(e)\mapsto-T(e)$, so every function of $T$
+      has equal arrow- and $\varphi$-parity, whereas the admissible weight must be arrow-even and $\varphi$-odd.
+      The resolution is that $\sigma_L$ is the Weyl representation type $\mathbf{2}$ versus $\bar{\mathbf{2}}$:
+      group inversion preserves the representation (arrow-even) and complex conjugation exchanges it
+      ($\varphi$-odd), the unique label distinguished by the conjugation that separates $\varphi$ from arrow
+      inversion; for a real lift the representation is self-conjugate and the contrast vanishes, matching the
+      chiral symmetry of the real cascade.
+      In the inherited Heisenberg central-phase lift the
+      edge phase is the linear cyclotomic character $\zeta_q^{\Delta A_c}$, with no Gauss, Maslov, or $\sqrt{5}$
+      component; the natural outgoing branch gives $\sigma_L=\operatorname{sign}\Delta A_c$ on the cocycle support,
+      hence $\rho_\chi=1$ and $\mathcal N_A=\theta_{\max}\neq0$, $q$-invariant on $q\in\{61,101,151\}$.
+      The result is therefore $[\mathrm{H\text{-}orient}]$ closed in the inherited central-phase lift; the residual
+      open point is an additional spin-Galois phase of the full Lorentzian chiral lift, in particular a $\sqrt{5}$
+      or ADE-spin factor orthogonal to $\zeta_q$, the same arithmetic orthogonality that governs the ADE
+      gate~\cite{Beau2026aog}.
+      It fixes the frontier amplitude datum conditionally and does not derive $u\neq0$, which still requires the
+      Schur transport~\cite{Beau2026prs}.
 
   \section{Inputs from Upstream Results}
     \label{sec:inputs}
@@ -571,7 +600,8 @@ interpretation of the admissible fibre after geometric complexification.
     the open part is its explicit Lorentzian block $1-P(s)$ along the $J_\Pi$-odd modulus.
     The symmetric finite front is $J_\Pi$-equivariant and gives $u_{\mathrm{fin}}=0$, but the discrete
     chiral-frontier normalisation $\mathcal N_A$ survives the operator obstruction, since the residual
-    reflection $R_b=\mathrm{FT}^2$ is blind to chirality ($[\gamma_5,R_b]=0$)~\cite{Beau2026q11of}.
+    reflection $R_b=\mathrm{FT}^2$ is blind to chirality ($[\gamma_5,R_b]=0$)~\cite{Beau2026q11of}, and is fixed
+    maximally, $\mathcal N_A=\theta_{\max}$, in the inherited central-phase lift~\cite{Beau2026cho}.
     The split amplitude is therefore fixed at A4 by matching this discrete normalisation with the
     Lorentzian Born--Infeld curvature $\mu_\chi^2=\partial_s^2\mathcal B(0)$, neither ingredient reducing
     to the other:
