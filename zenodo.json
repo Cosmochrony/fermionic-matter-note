@@ -4,5 +4,6 @@
   "publication_type": "workingpaper",
   "main_tex": "tex/FermionicMatterNote.tex",
   "zenodo_id": 20562665,
-  "doi": "10.5281/zenodo.20562665"
+  "doi": "10.5281/zenodo.20562665",
+  "version": "1.30.1"
 }

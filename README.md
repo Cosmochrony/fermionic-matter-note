@@ -1,5 +1,5 @@
 This repository contains the source of the **Fermionic Matter Presentation Note** of the Cosmochrony programme
-[*The Fermionic Matter Sub-Programme (Presentation Note 6)*](out/FermionicMatterNote.pdf).
+*The Fermionic Matter Sub-Programme (Presentation Note 6)*.
 
 This note is the synthesis paper of the **fermionic matter sub-programme**. It establishes that fermions, chirality, hypercharge assignments, and the three-generation structure are not external additions to the Cosmochrony framework: they are the spinorial face of the admissible Weil module $V_\rho$, revealed through the Lorentzian complexification of its metaplectic structure.
 
@@ -52,7 +52,7 @@ This sub-programme closes the **identification** of the fermionic sector: spinor
 
 ## Open Deliverables
 
-- **Explicit $E_\Pi$, splitting amplitude and the Yukawa sector.** The qualitative mechanism of the inter-generation splitting is closed in Q14 §6 (static obstruction, oriented $J_\Pi$-odd lift, non-zero cascade $J_3$ projection). What remains is quantitative: the cascade normalisation $\mathcal{N}_{\mathrm{casc}}$ fixing the splitting amplitude $\varepsilon = \mathcal{N}_{\mathrm{casc}}\,|\alpha|$ (to be derived from $c_\chi \to \delta_{\mathrm{pair}} \to \beta^*$, not fitted), the integral normalisation of $\mathcal{L}_Y$, and generation mixing via the complex metaplectic phase.
+- **Explicit $E_\Pi$, splitting amplitude and the Yukawa sector.** The qualitative mechanism of the inter-generation splitting is closed in Q14 §6 (static obstruction, oriented $J_\Pi$-odd lift, non-zero cascade $J_3$ projection). What remains is quantitative: the cascade normalisation $\mathcal{N}_{\mathrm{casc}}$ fixing the splitting amplitude $\varepsilon = \mathcal{N}_{\mathrm{casc}}\,|\alpha|$ (to be derived from $c_{\mathrm{BI}} \to \delta_{\mathrm{pair}} \to \beta^*$, not fitted), the integral normalisation of $\mathcal{L}_Y$, and generation mixing via the complex metaplectic phase.
 - **$[H\text{-color}]_{\mathrm{pointwise}}$ beyond the standard Cayley graph.** The colour-coupled sector is unconditional at the pointwise level on the standard Cayley graph (O31); extension to general admissible graphs is open.
 - **Full matter content in Lorentzian signature.** $S^{\mathrm{matter}}_\Pi = (\mathcal{S}_\Pi \oplus (\mathcal{S}_\Pi \otimes V_{\mathrm{color}})) \otimes C^3_{\mathrm{gen}}$ with explicit gauge couplings and three-generation Yukawa structure.
 
