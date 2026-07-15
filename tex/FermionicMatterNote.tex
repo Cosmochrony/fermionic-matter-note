@@ -69,9 +69,11 @@
       \rightsquigarrow \Spin(3,1) \simeq \SL(2,\mathbb{C})
       \Rightarrow \Sbundle.
     \]
-    Three modular structural results are established in Q14: (A)~the admissible spinor bundle
-    $\Sbundle$ reproduces the $\SU(2)_L \times \UU(1)_Y$ electroweak bundle structure from
-    tensor functors of $\Sbundle$; (B)~the projected Dirac operator $\Dpi$ contains a
+    Three modular structural results are established in Q14: (A)~the tensor functors of the
+    admissible spinor bundle $\Sbundle$ produce the gauge-sector data of
+    $\SU(2)_L \times \UU(1)_Y$ --- the complex adjoint from $\mathrm{Sym}^2(\Sbundle)$ and the
+    hypercharge line from $\wedge^2(\Sbundle)$ --- these being Lorentz-typed bundle data, not an
+    independent fermionic weak doublet carrier; (B)~the projected Dirac operator $\Dpi$ contains a
     canonical projective endomorphism $\Epi$ that enforces the $V-A$ chiral structure
     (established via the spinorial BI lift theorem of Q14) and whose $\gamma_5$-weighted $a_4$ coefficient imposes
     anomaly-cancellation constraints making hypercharge a spectral datum; (C)~the saturation
@@ -83,6 +85,10 @@
     generation-split amplitude mechanism is derived as Born--Infeld saturation in the companion note~\cite{Beau2026bim};
     the open deliverables are its explicit Lorentzian block and the Yukawa sector, while the split value itself is
     dictionary-bound, its first-principles derivation relocated upstream to the ADE case selection and the cascade exponent.
+    A dedicated no-go note~\cite{Beau2026nsr} now closes the two deposited candidates for the independent fermionic weak
+    multiplicity $M_L \simeq \mathbb{C}^2$ (the internal operator doublets and the erased history fibres) through exact
+    obstructions culminating in the no-sequential-re-entry theorem; the matter-sector weak doublet is therefore an open
+    frontier requiring a parallel substrate channel, stated as an explicit extension rather than a derivation.
   \end{abstract}
 
   \medskip
@@ -111,15 +117,28 @@
     Weil fibre, or must they be introduced as additional postulates?}
 
     \medskip
-    The answer established in Q14~\cite{Beau2026q14} is: they are forced.
+    The answer established in Q14~\cite{Beau2026q14} is stratified, not uniform.
     Fermions arise as the spinorial face of the Weil module $\Vr$ after Lorentzian
-    complexification of its metaplectic lift.
+    complexification of its metaplectic lift: spinoriality is forced.
     Chirality and the $V-A$ structure arise from the projective endomorphism $\Epi$ of the
-    projected Dirac operator, via the spinorial lift of BI parity established in Q14.
+    projected Dirac operator, via the spinorial lift of BI parity established in Q14: the
+    chiral selection is forced.
     Hypercharge is not a free parameter: it is constrained by spectral anomaly cancellation.
     Three generations arise from the spinorial multiplicity reading of the same
     rank-three invariant $\sigma_c(n_3) = 3$ that yields the three spatial directions in the
     geometric branch.
+    What is NOT forced at the current stratum is the independent fermionic weak doublet: the
+    tensor functors of $\Sbundle$ produce gauge-sector (adjoint and determinant) data typed by
+    the Lorentz action, and the Lorentz commutant of the irreducible Weyl factor is scalar, so
+    no internal non-abelian factor acts on the same spinor factor.
+    The two deposited candidates for the missing multiplicity carrier $M_L \simeq \mathbb{C}^2$
+    --- the internal Hecke operator doublets and the erased history fibres --- are closed by
+    exact obstructions in the companion no-go note~\cite{Beau2026nsr}, whose central result is
+    the no-sequential-re-entry theorem: information erased by the projective channel cannot be
+    recovered by any tower of subsequent projections.
+    The matter-sector weak doublet is therefore an explicitly open frontier, realisable only
+    through a parallel substrate channel with an oriented central/Weyl datum --- a stated
+    architectural extension, not a consequence of the deposited corpus.
 
     \medskip
     This sub-programme is the first paper of the Q-series that depends simultaneously on all
@@ -205,12 +224,16 @@ interpretation of the admissible fibre after geometric complexification.
       whose Lorentzian integration is $\Spin(3,1) \simeq \SL(2,\mathbb{C})$.
       The spinor bundle $\Sbundle$ is the associated fundamental bundle.
 
-      \item \textit{Tensor functors of $\Sbundle$ reproduce the electroweak bundle.}
+      \item \textit{Tensor functors of $\Sbundle$ reproduce the electroweak gauge-sector data.}
       $\mathrm{Sym}^2(\mathbb{C}^2) \simeq \mathfrak{sl}_2(\mathbb{C})$: the symmetric sector gives
       the complex adjoint, from which the compact real form selects the $\SU(2)_L$ gauge sector.
       $\wedge^2(\mathbb{C}^2) \simeq \det(\mathbb{C}^2)$: the determinant line $L_Y$ supports the
       $\UU(1)_Y$ factor.
-      No independent electroweak matter bundle is introduced.
+      No independent electroweak matter bundle is introduced --- and, by the calibration
+      of~\cite{Beau2026nsr}, none is produced: the adjoint and the line are Lorentz-typed images
+      of the same spinor factor, whereas a fermionic weak doublet requires a multiplicity factor
+      $M_L \simeq \mathbb{C}^2$ commuting with the Lorentz action, which these functors do not
+      supply.
 
       \item \textit{The projective endomorphism $\Epi$ enforces chirality and hypercharge.}
       The projected Dirac operator satisfies the Lichnerowicz-type identity
@@ -246,7 +269,12 @@ interpretation of the admissible fibre after geometric complexification.
         \mathrm{Sym}^2(\Sbundle) \simeq \adC(P_\Pi), \qquad \wedge^2(\Sbundle) = L_Y.
       \]
       After selection of the compact real form, these define the $\SU(2)_L \times \UU(1)_Y$
-      electroweak bundle data without any additional input.
+      gauge-sector bundle data without any additional input.
+      Calibration: these are adjoint and determinant data, typed by the Lorentz action on the
+      same spinor factor.
+      They do not constitute the independent fermionic weak doublet $M_L \simeq \mathbb{C}^2$,
+      whose two deposited candidates are excluded by the exact obstructions
+      of~\cite{Beau2026nsr}.
 
       \textit{Theorem~B: Chiral selection and hypercharge rigidity}
       (structural; unconditional).
@@ -327,7 +355,8 @@ interpretation of the admissible fibre after geometric complexification.
           \toprule
           Result & Central output & Status \\
           \midrule
-          Theorem~A & Spinor bundle $\Sbundle$; EW bundle from tensor functors & S (uncond.) \\
+          Theorem~A & Spinor bundle $\Sbundle$; EW gauge-sector data from tensor functors & S (uncond.) \\
+          Calibration~\cite{Beau2026nsr} & no fermionic weak doublet $M_L$ from these functors & P (no-go) \\
           Theorem~B ($V-A$) & $P_R \Epi P_R = 0$; $V-A$ structure & S (uncond.) \\
           Theorem~B (hypercharge) & $Y_R$ from anomaly-cancellation trace; not free & S (uncond.) \\
           Theorem~C & $\Cgen$; three generations as gauge-singlet factor & S (uncond.) \\
@@ -621,7 +650,8 @@ interpretation of the admissible fibre after geometric complexification.
         Output & Consumer & Status \\
         \midrule
         Admissible spinor bundle $\Sbundle$ & Phenomenology, Q-series & S \\
-        $\SU(2)_L \times \UU(1)_Y$ from tensor functors & SM phenomenology & S \\
+        $\SU(2)_L \times \UU(1)_Y$ gauge-sector data & SM phenomenology & S \\
+        Fermionic weak doublet $M_L$ & --- (open frontier) & no-go~\cite{Beau2026nsr} \\
         $V-A$ chiral structure & Weak interaction pheno & S (uncond.) \\
         Hypercharge as spectral datum & SM charge assignment & S (uncond.) \\
         Three-generation factor $\Cgen$ & Mass/mixing notes & S \\
@@ -644,10 +674,12 @@ interpretation of the admissible fibre after geometric complexification.
         The construction is algebraic and functorial; it depends on the Lorentzian closure
         of Q5b--Q11 but not on the spinorial BI lift.
 
-        \item \textit{$\SU(2)_L$ from $\mathrm{Sym}^2(\Sbundle)$} (Theorem~A):
+        \item \textit{$\SU(2)_L$ gauge sector from $\mathrm{Sym}^2(\Sbundle)$} (Theorem~A):
         the symmetric tensor sector gives the complex adjoint
         $\adC(P_\Pi) \simeq \mathfrak{sl}_2(\mathbb{C})$; after compact real-form selection,
         the $\SU(2)_L$ gauge sector is identified.
+        This identifies gauge-sector data only; the fermionic weak multiplicity is a distinct
+        object, not produced here~\cite{Beau2026nsr}.
 
         \item \textit{$\UU(1)_Y$ from $\wedge^2(\Sbundle)$} (Theorem~A):
         the determinant line $L_Y = \wedge^2(\Sbundle)$ is the geometric support of the
@@ -721,6 +753,21 @@ interpretation of the admissible fibre after geometric complexification.
         $[\mathrm{H\text{-}color}]_{\mathrm{pointwise}}$ is proved on the standard Cayley graph
         (O31); its extension to general generating sets is the only residual, and is non-blocking
         for the quark bundle, which is already established at the pointwise level.
+
+        \item \textit{The fermionic weak multiplicity $M_L$ and the parallel-channel frontier.}
+        The independent weak doublet carrier $M_L \simeq \mathbb{C}^2$ commuting with the
+        Lorentz action is not derived by the corpus, and its two deposited candidates are now
+        excluded exactly~\cite{Beau2026nsr}: the internal Hecke operator doublets have no
+        fermionic lift (the Weil carrier commutant is spanned by the parity projectors), and
+        the erased history fibres are structurally abelian, their alternating line reaching the
+        protected odd operator sector only through a re-entry that the no-sequential-re-entry
+        theorem ($Pv=0 \Rightarrow QPv=0$) forbids to every projection tower.
+        The surviving formulation is architectural: a parallel substrate channel, refining the
+        observable record and carrying an orientation of the central and Weyl generators, would
+        realise the history-derived odd operator and reopen the activation of the protected
+        sector.
+        Both ingredients are new axioms; the frontier is explicitly an extension question, not
+        a derivation question.
 
         \item \textit{Neutrino identity as a projective test case.}
         The weak flavour basis and the mass propagation basis are not aligned, and in the present framework
@@ -844,14 +891,21 @@ interpretation of the admissible fibre after geometric complexification.
     They are the spinorial face of the admissible Weil module $\Vr$, revealed through the
     Lorentzian complexification of its metaplectic structure.
 
-    The electroweak bundle $\SU(2)_L \times \UU(1)_Y$ arises from the tensor functors of
-    the admissible spinor bundle $\Sbundle$ (Theorem~A, unconditional).
+    The electroweak gauge-sector data of $\SU(2)_L \times \UU(1)_Y$ arise from the tensor
+    functors of the admissible spinor bundle $\Sbundle$ (Theorem~A, unconditional); the
+    independent fermionic weak doublet is a distinct object, not produced by those functors
+    and now excluded at the operator and history strata by the companion no-go
+    note~\cite{Beau2026nsr}.
     The $V-A$ chiral structure and hypercharge rigidity arise from the projective endomorphism
     $\Epi$ (Theorem~B, unconditional).
     Three generations arise from the spinorial multiplicity reading of $\sigma_c(n_3) = 3$
     (Theorem~C, unconditional).
     The colour-coupled quark sector follows by tensoring with $V_{\mathrm{color}}$, unconditional
     at the pointwise level (O31).
+    The matter-sector weak doublet stands as the explicitly architectural frontier of the
+    sub-programme: its realisation requires a parallel substrate channel with an oriented
+    central/Weyl datum, two new axioms that no deposited principle supplies
+    (Section~\ref{sec:open-problems}).
 
     The inter-generation splitting is localised: statically obstructed, living in a two-dimensional
     $J_\Pi$-odd lift sector, and vanishing on the symmetric finite front ($u_{\mathrm{fin}}=0$,
