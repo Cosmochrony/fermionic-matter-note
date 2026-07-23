@@ -7,7 +7,7 @@ authors:
     given-names: "Jérôme"
 repository-code: "https://github.com/Cosmochrony/fermionic-matter-note"
 url: "https://cosmochrony.org/science/fermionic-matter/"
-version: "1.30.1"
+version: "1.32.0"
 doi: "10.5281/zenodo.20562665"
 license: "CC-BY-4.0"
 preferred-citation:
