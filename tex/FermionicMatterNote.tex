@@ -124,9 +124,12 @@
     projected Dirac operator, via the spinorial lift of BI parity established in Q14: the
     chiral selection is forced.
     Hypercharge is not a free parameter: it is constrained by spectral anomaly cancellation.
-    Three generations arise from the spinorial multiplicity reading of the same
-    rank-three invariant $\sigma_c(n_3) = 3$ that yields the three spatial directions in the
-    geometric branch.
+    Three generations arise, conditionally on the supplied rank-three carrier, from the
+    spinorial multiplicity reading of the same invariant $\sigma_c(n_3) = 3$ that yields the
+    three spatial directions in the geometric branch; the threshold is a supplied selection
+    rule (O23 proves the three-dimensionality of the neutral sector of a supplied spinor
+    carrier, Theorem~3.1; the carrier selection and the identification of $\Sigma_c$ with
+    that dimension are open).
     What is NOT forced at the current stratum is the independent fermionic weak doublet: the
     tensor functors of $\Sbundle$ produce gauge-sector (adjoint and determinant) data typed by
     the Lorentz action, and the Lorentz commutant of the irreducible Weyl factor is scalar, so
@@ -182,7 +185,7 @@ interpretation of the admissible fibre after geometric complexification.
       \item Spectral entropy functional $\SPI[g,A]$ and the $a_4$ variation (Note~4~\cite{Beau2026sgnote}/Q12,
       Q13~\cite{Beau2026q13}).
       \item $H_{\mathrm{eff}} = \mathrm{Sym}^2(\Vr)$, three spatial directions from $\operatorname{Im}\mathbb{H}$,
-      $\sigma_c(n_3) = 3$ (Note~2, Q7~\cite{Beau2026q7}).
+      $\sigma_c(n_3) = 3$, a supplied selection rule (Note~2, Q7~\cite{Beau2026q7}).
     \end{itemize}
 
   \section{Logical Chain of the Sub-Programme}
@@ -210,7 +213,7 @@ interpretation of the admissible fibre after geometric complexification.
       \;,\quad
       \underbrace{\Epi \text{ left-admissible}}_{V-A}
       \;,\quad
-      \underbrace{\sigma_c(n_3)=3 \to \Cgen}_{\text{3 generations}}.
+      \underbrace{\sigma_c(n_3)=3 \to \Cgen}_{\text{3 generations (supplied rule)}}.
     \]
 
     Three distinct mechanisms contribute.
@@ -291,9 +294,11 @@ interpretation of the admissible fibre after geometric complexification.
       level that yields Yang--Mills dynamics in the bosonic variation.
       The hypercharge weights $Y_R$ are thereby not free parameters but spectral coherence data.
 
-      \textit{Theorem~C: Generation multiplicity} (structural; unconditional).
-      The saturation invariant $\sigma_c(n_3) = 3$ has two functorially distinct readings of the
-      same rank-three admissible invariant.
+      \textit{Theorem~C: Generation multiplicity} (structural; conditional on the supplied
+      rank-three carrier).
+      The saturation invariant $\sigma_c(n_3) = 3$, a supplied selection rule (O23 proves the
+      three-dimensionality of the neutral sector of a supplied spinor carrier, Theorem~3.1),
+      has two functorially distinct readings of the same rank-three admissible invariant.
       In the geometric branch (Note~2), it yields three effective spatial directions.
       In the spinorial branch, the spinorial multiplicity functor maps it to a gauge-singlet
       generation space:
@@ -338,12 +343,15 @@ interpretation of the admissible fibre after geometric complexification.
 
       \textit{Status of the spinorial BI lift.}
       The spinorial lift of BI parity to the spinor bundle $\Sbundle$ is established as a theorem
-      in Q14: the BI parity involution $c \leftrightarrow q-c$, proved at the scalar Weil level in
-      O18 and BornInfeld, lifts to the antilinear endomorphism $J_\Pi = HK$ satisfying
-      $J_\Pi^2 = -1$ and $J_\Pi \gamma_5 = -\gamma_5 J_\Pi$, dressing the parity by the weight
-      grading $H = 2J_3$.
-      Chirality and $V-A$ in Q14 are therefore unconditional, their only residual dependence being
-      the axiomatic chain A1--A4~\cite{Beau2026m} and the upstream BI parity datum (O30, U1).
+      in Q14: the conjugation identity $c \leftrightarrow q-c$, proved at the scalar Weil level
+      (O17; recalled in O18 Theorem~3.1), lifts to the antilinear endomorphism $J_\Pi = HK$
+      satisfying $J_\Pi^2 = -1$ and $J_\Pi \gamma_5 = -\gamma_5 J_\Pi$, dressing the parity by the
+      weight grading $H = 2J_3$.
+      The reading of the pair $\{c, q-c\}$ as a physical fibre of $\Pi$ is a structurally
+      motivated hypothesis: O18 establishes Born--Infeld parity as an equivariant symmetry and
+      states the fibre identification as an open problem.
+      Chirality and $V-A$ in Q14 rest on the axiomatic chain A1--A4~\cite{Beau2026m} and the
+      upstream parity datum (O30, U1), with that fibre reading as their hypothesis.
 
       \begin{table}[ht]
         \centering
@@ -639,12 +647,16 @@ interpretation of the admissible fibre after geometric complexification.
       its presentation-level treatment will appear in Presentation Note~8.
 
       \item \textbf{$\sigma_c(n_3) = 3$} (Note~1, O23):
-      the rank-three saturation invariant provides the spinorial multiplicity input for
-      Theorem~C.
+      the rank-three threshold is a supplied selection rule (O23 proves the
+      three-dimensionality of the neutral sector of a supplied spinor carrier, Theorem~3.1;
+      the carrier selection and the identification of $\Sigma_c$ with that dimension are open);
+      it provides the spinorial multiplicity input for Theorem~C.
 
-      \item \textbf{BI parity involution} (BornInfeld, O18):
-      the scalar BI parity $c \leftrightarrow q-c$ is the input from which the spinorial BI lift
-      is derived; its derivation at the scalar level is complete.
+      \item \textbf{Parity involution $c \leftrightarrow q-c$} (BornInfeld, O17--O18):
+      the scalar conjugation identity is proved (O17; recalled in O18 Theorem~3.1) and is the
+      input from which the spinorial lift is derived; its reading as the fibre structure of
+      $\Pi$ is a structurally motivated hypothesis (O18 states the fibre identification as an
+      open problem).
     \end{enumerate}
 
   \section{Outputs to Downstream Branches}
@@ -697,7 +709,8 @@ interpretation of the admissible fibre after geometric complexification.
 
         \item \textit{Generation multiplicity} (Theorem~C):
         $\Cgen \subset \ker(\mathrm{ad}_{\SU(2)} \oplus Y)$ is a gauge-singlet three-generation
-        space arising from the spinorial multiplicity reading of $\sigma_c(n_3) = 3$.
+        space arising from the spinorial multiplicity reading of $\sigma_c(n_3) = 3$, a
+        supplied selection rule (conditional on the supplied rank-three carrier).
         The spatial and generation readings of the rank-three invariant are distinct
         ($\mathbb{R}^3_{\mathrm{space}} \neq C^3_{\mathrm{gen}}$; Q14 §5).
       \end{enumerate}
@@ -913,7 +926,7 @@ interpretation of the admissible fibre after geometric complexification.
     The $V-A$ chiral structure and hypercharge rigidity arise from the projective endomorphism
     $\Epi$ (Theorem~B, unconditional).
     Three generations arise from the spinorial multiplicity reading of $\sigma_c(n_3) = 3$
-    (Theorem~C, unconditional).
+    (Theorem~C, conditional on the supplied rank-three selection rule of O23).
     The colour-coupled quark sector follows by tensoring with $V_{\mathrm{color}}$, unconditional
     at the pointwise level (O31).
     The matter-sector weak doublet stands as the explicitly architectural frontier of the

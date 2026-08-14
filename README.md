@@ -20,7 +20,10 @@ Then:
 - $\mathrm{Sym}^2(\mathcal{S}_\Pi) \Rightarrow \mathrm{ad}_\mathbb{C}(P_\Pi)$ -- the $\mathrm{SU}(2)_L$ sector.
 - $\wedge^2(\mathcal{S}_\Pi) = L_Y$ -- the $\mathrm{U}(1)_Y$ sector.
 - $E_\Pi$ left-admissible -- the $V-A$ chiral structure (established via the spinorial BI lift theorem of Q14).
-- $\sigma_c(n_3) = 3 \to C^3_{\mathrm{gen}}$ -- three generations as a gauge-singlet factor.
+- $\sigma_c(n_3) = 3 \to C^3_{\mathrm{gen}}$ -- three generations as a gauge-singlet factor,
+  conditional on the supplied rank-three selection rule of O23 (Theorem 3.1 proves the
+  three-dimensionality of the neutral sector of a supplied spinor carrier; carrier selection
+  and observable identification are open).
 
 ## Three Structural Results (Q14)
 
@@ -29,7 +32,7 @@ Then:
 | **Theorem A** (Spinorial electroweak bundle) | $\mathcal{S}_\Pi$; $\mathrm{Sym}^2(\mathcal{S}_\Pi) \simeq \mathrm{ad}_\mathbb{C}(P_\Pi)$ and $\wedge^2(\mathcal{S}_\Pi) = L_Y$ from tensor functors | structural, unconditional |
 | **Theorem B** ($V-A$) | $P_R E_\Pi P_R = 0$; $V-A$ chiral structure | structural, unconditional |
 | **Theorem B** (hypercharge) | $Y_R$ from anomaly-cancellation trace $\mathrm{Tr}_{\mathcal{S}_\Pi}(\gamma_5 Y A_\Pi(x)) = 0$ | structural, unconditional |
-| **Theorem C** (3 generations) | $C^3_{\mathrm{gen}} \subset \ker(\mathrm{ad}_{\mathrm{SU}(2)} \oplus Y)$; gauge-singlet generation space | structural, unconditional |
+| **Theorem C** (3 generations) | $C^3_{\mathrm{gen}} \subset \ker(\mathrm{ad}_{\mathrm{SU}(2)} \oplus Y)$; gauge-singlet generation space | structural, conditional on the supplied rank-three carrier (O23) |
 | **Dynamic generation lifting** (Q14 §6) | Static $J_\Pi$-protected degeneracy of $C^3_{\mathrm{gen}}$ is statically obstructed; admissible lifts form a 2D $J_\Pi$-odd sector; the oriented cascade generator carries a non-zero $J_3$ projection ($\alpha \neq 0$) | qualitative mechanism; amplitude deferred to cascade normalisation |
 | Colour sector | $\mathcal{S}_\Pi \otimes V_{\mathrm{color}}$ (quark bundle) | structural, unconditional at the pointwise level ($[H\text{-color}]_{\mathrm{pointwise}}$ proved in O31) |
 
