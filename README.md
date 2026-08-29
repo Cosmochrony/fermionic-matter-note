@@ -7,7 +7,7 @@ This note is the synthesis paper of the **fermionic matter sub-programme**. It s
 
 > The bosonic spectral stratification (gravity at $a_2$, Yang–Mills at $a_4$) derives the bosonic sector of the Standard Model from the admissible spectral functional. Do fermions, chirality, hypercharge, and three generations also arise as forced consequences of the admissible Weil fibre, or must they be introduced as additional postulates?
 
-The sub-programme answers: **stratified, and conditional**. On a supplied Heisenberg carrier, spinoriality and the $V-A$ chiral selection follow with no further hypothesis. The hypercharge assignment carries in addition a supplied three-dimensional colour module, and the generation factor a supplied rank-three carrier.
+The sub-programme answers: **stratified, and conditional**. On a supplied Heisenberg carrier, spinoriality and the $V-A$ chiral selection follow with no further hypothesis. The rigidity of the hypercharge weights carries in addition a supplied three-dimensional colour module; selecting the Standard Model pattern among them carries, beyond that module, the minimal integral normalisation of the determinant line $L_Y$, holds only up to an overall sign and rescaling, and rests on a connection Q14 leaves open. The generation factor carries a supplied rank-three carrier.
 
 ## Structural Chain
 
@@ -33,14 +33,15 @@ Then:
 |---|---|---|
 | **Theorem A** (Spinorial electroweak bundle) | $\mathcal{S}_\Pi$; $\mathrm{Sym}^2(\mathcal{S}_\Pi) \simeq \mathrm{ad}_\mathbb{C}(P_\Pi)$ and $\wedge^2(\mathcal{S}_\Pi) = L_Y$ from tensor functors | structural; no hypothesis beyond the supplied carrier |
 | **Theorem B** ($V-A$) | $P_R E_\Pi P_R = 0$; $V-A$ chiral structure | structural; no hypothesis beyond the supplied carrier |
-| **Theorem B** (hypercharge) | $Y_R$ constrained by the anomaly-cancellation trace $\mathrm{Tr}_{\mathcal{S}_\Pi}(\gamma_5 Y A_\Pi(x)) = 0$; the Standard Model pattern is selected at colour multiplicity three | structural; conditional on a supplied three-dimensional colour module |
+| **Theorem B** (weight rigidity) | $Y_R$ constrained by the anomaly-cancellation trace $\mathrm{Tr}_{\mathcal{S}_\Pi}(\gamma_5 Y A_\Pi(x)) = 0$ | structural; conditional on a supplied three-dimensional colour module |
+| **Theorem B** (Standard Model pattern) | that pattern selected among the allowed weights, up to an overall sign and rescaling; the cubic constraint vanishes on it at colour multiplicity three | structural; conditional on the same module **and** on the minimal integral normalisation of $L_Y$, whose connection to the pattern Q14 lists as an open direction |
 | **Theorem C** (3 generations) | $C^3_{\mathrm{gen}} \subset \ker(\mathrm{ad}_{\mathrm{SU}(2)} \oplus Y)$; gauge-singlet generation space | structural, conditional on the supplied rank-three carrier (O23) |
 | **Dynamic generation lifting** (Q14 §6) | Static $J_\Pi$-protected degeneracy of $C^3_{\mathrm{gen}}$ is statically obstructed; admissible lifts form a 2D $J_\Pi$-odd sector; the oriented cascade generator carries a non-zero $J_3$ projection ($\alpha \neq 0$) | qualitative mechanism; amplitude deferred to cascade normalisation |
 | Colour sector | $\mathcal{S}_\Pi \otimes V_{\mathrm{color}}$ (quark bundle) | structural; conditional on the same supplied colour module. O31 is a withdrawal notice: $[H\text{-color}]_{\mathrm{pointwise}}$, the uniqueness of $\mathrm{SU}(3)$ and every derivation of a gauge factor are withdrawn |
 
 ## Constituent Papers
 
-- **Q14** -- *Fermionic matter and chirality from projective Dirac admissibility*. The sole constituent paper of the sub-programme: spinor bundle from metaplectic lift + Lorentzian complexification, projected Dirac operator and the projective endomorphism $E_\Pi$, anomaly-cancellation trace constraining the hypercharge weights, three-generation factor from $\sigma_c(n_3)=3$.
+- **Q14** -- *Fermionic matter and chirality from projective Dirac admissibility*. The sole constituent paper of the sub-programme: spinor bundle from metaplectic lift + Lorentzian complexification, projected Dirac operator and the projective endomorphism $E_\Pi$, anomaly-cancellation trace constraining the hypercharge weights, Standard Model pattern selection under the minimal integral normalisation of $L_Y$, three-generation factor from $\sigma_c(n_3)=3$.
 
 ## Position in the Programme
 
@@ -53,7 +54,7 @@ The fermionic matter sub-programme sits at the **apex of Branch III**. It is the
 
 ## Scope Statement
 
-This sub-programme addresses the **identification** of the fermionic sector: spinor bundle, chirality, hypercharge quantum numbers, and generation factor. The spinor bundle and the chiral selection are settled on the supplied Heisenberg carrier; the hypercharge assignment and the generation factor remain conditional on a supplied colour module and a supplied rank-three carrier respectively. It does **not** derive the mass spectrum, the Yukawa couplings, or the CKM/PMNS mixing matrices.
+This sub-programme addresses the **identification** of the fermionic sector: spinor bundle, chirality, hypercharge quantum numbers, and generation factor. The spinor bundle and the chiral selection are settled on the supplied Heisenberg carrier; the hypercharge weight rigidity and the generation factor remain conditional on a supplied colour module and a supplied rank-three carrier respectively, and the Standard Model hypercharge pattern carries the further minimal-integral-normalisation premise. It does **not** derive the mass spectrum, the Yukawa couplings, or the CKM/PMNS mixing matrices.
 
 ## Open Deliverables
 
