@@ -47,9 +47,9 @@ Then:
 
 The fermionic matter sub-programme sits at the **apex of Branch III**. It is the first paper of the Q-series that depends simultaneously on all four upstream layers:
 
-- the admissible Weil fibre structure (Notes 1 and 5);
+- the admissible Weil fibre structure on the supplied carrier (Notes 1 and 5);
 - the closed Lorentzian geometry (Note 2);
-- the gauge bundle for a supplied compact structure group (Note 3), which identifies no gauge group;
+- the gauge bundle for a supplied compact structure group (Note 3), which singles out no particular group;
 - the conditional gauge-gravity system (Q13, summarised in Presentation Note 8).
 
 ## Scope Statement
@@ -59,7 +59,7 @@ This sub-programme addresses the **identification** of the fermionic sector: spi
 ## Open Deliverables
 
 - **Explicit $E_\Pi$, splitting amplitude and the Yukawa sector.** The structural form of $E_\Pi$ is fixed as the Schur complement of the eliminated spinorial block; the open part is its explicit Lorentzian block along the $J_\Pi$-odd modulus. The amplitude mechanism is the derived Born-Infeld saturation, and the split value $|u|$ is dictionary-bound through the chiral-frontier normalisation $\mathcal{N}_A$. Its first-principles front is upstream and structural: the ADE case selection and the level-to-generation map, the projective-resolution growth $\Lambda_{\mathrm{proj}}(n)$ and the cascade exponent $\beta$ (no structural bound on $\beta$ is available), and the transfer constant $N_{\mathrm{casc}}$. The integral normalisation of $\mathcal{L}_Y$ and generation mixing via the complex metaplectic phase remain open.
-- **An admissible colour sector.** No colour module is derived, so the quark bundle and the hypercharge selection both rest on a supplied one. O31 withdraws the co-admissibility of the individual capacity profiles, the uniqueness of $\mathrm{SU}(3)$, the arithmetic criterion for colour triplets, and every derivation of a gauge factor, with no weaker positive statement in their place; the gauge structure sub-programme identifies no gauge group either. The open problem is the construction of an admissible colour sector itself.
+- **An admissible colour sector.** No colour module is derived, so the quark bundle and the rigidity of the hypercharge weights both rest on a supplied one, and the Standard Model pattern rests on it too. O31 withdraws the co-admissibility of the individual capacity profiles, the uniqueness of $\mathrm{SU}(3)$, the arithmetic criterion for colour triplets, and every derivation of a gauge factor, with no weaker positive statement in their place; the gauge structure sub-programme singles out no particular group either, keeping a structural $\mathrm{U}(1)$ sector and an $\mathrm{SU}(2)$ sector conditional on the supplied spinor carrier, without assembling them into a group. The open problem is the construction of an admissible colour sector itself.
 - **Full matter content in Lorentzian signature.** $S^{\mathrm{matter}}_\Pi = (\mathcal{S}_\Pi \oplus (\mathcal{S}_\Pi \otimes V_{\mathrm{color}})) \otimes C^3_{\mathrm{gen}}$ with explicit gauge couplings and three-generation Yukawa structure.
 
 ## Build
@@ -68,4 +68,4 @@ This sub-programme addresses the **identification** of the fermionic sector: spi
 bash compile.sh
 ```
 
-This runs `pdflatex -> bibtex -> pdflatex -> pdflatex` on `tex/FermionicMatterNote.tex` and produces `out/FermionicMatterNote.pdf`.
+This runs `pdflatex -> bibtex -> pdflatex -> pdflatex -> pdflatex` on `tex/FermionicMatterNote.tex` and produces `out/FermionicMatterNote.pdf`. The fourth LaTeX pass settles the cross-references, so a build from a clean tree ends with no outstanding rerun warning.
