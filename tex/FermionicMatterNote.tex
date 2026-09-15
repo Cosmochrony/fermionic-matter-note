@@ -606,9 +606,17 @@ interpretation of the admissible fibre after geometric complexification.
       An operator-level lemma logically between the Schur reduction and the physical identification of the chiral
       generator.
       Writing the self-adjoint eliminated projector as a jet $1-P(s)=Q_0+sQ_1+s^2Q_2+O(s^3)$ along the
-      $J_\Pi$-odd modulus $s$, the projector constraints freeze the structural form the Lorentzian eliminated
-      block must take, reducing the split coefficient $u$ to the normalisation of the single carrier
-      $\partial_s\Delta_\chi(P)|_0$.
+      $J_\Pi$-odd modulus $s$, the projector constraints alone force $Q_1=[A,Q_0]$ to be a purely off-diagonal
+      Grassmann tangent for every smooth family; the parity grading of the jet holds under $J_\Pi$-equivariance, and
+      with a moving spinorial embedding and a $J_\Pi$-even Dirac operator the first-order $J_\Pi$-odd part of $\Epi^2$
+      is the anticommutator $\{E_0,E_1\}$.
+      Antiunitary parity makes every odd-order generation-mixing coefficient vanish in every covariant family, with or
+      without complex phases, even orders not being excluded, and an explicit covariant family realises
+      $E_0^2=\mathrm{diag}(1,\tfrac12,\tfrac12)$ with a non-zero split rate.
+      In the chiral frame the left-handed block of the $J_\Pi$-odd tangent is half the transported defect rate,
+      $[\Pi_{J_\Pi\text{-odd}}\dot Q(0)]_{LL}=\tfrac12\partial_s\Delta_\chi(P)|_0$, one block of the split-sourcing
+      tangent rather than a unique carrier; the selection of the family, the localisation of the odd tangent, and the
+      normalisation of $|u|$ remain open.
       The electric genus sign $\mu_\chi^2<0$ is imported from the saturation-margin note~\cite{Beau2026bim},
       while $|u|$, the Yukawa sector, and the mass spectrum are kept downstream.
 
@@ -1105,21 +1113,26 @@ interpretation of the admissible fibre after geometric complexification.
     chirality ($[\gamma_5,R_b]=0$), and its amplitude mechanism is the derived Born--Infeld
     saturation~\cite{Beau2026bim}.
     The remaining open components are the explicit Lorentzian $\Epi$, whose eliminated-block jet $1-P(s)$ is structurally
-    constrained and whose chiral generator is identified as the transported equivariance defect rate
-    $[\Pi_{J_\Pi\text{-odd}}\dot Q(0)]_{LL}=\tfrac12\partial_s\Delta_\chi(P)|_0$ in the companion note~\cite{Beau2026ebj}
-    (reducing the split value to the single normalisation target $\partial_s\Delta_\chi(P)|_0$); the split value, which is
+    constrained and whose $J_\Pi$-odd tangent has left-handed block equal to half the transported equivariance defect
+    rate, $[\Pi_{J_\Pi\text{-odd}}\dot Q(0)]_{LL}=\tfrac12\partial_s\Delta_\chi(P)|_0$, in the companion
+    note~\cite{Beau2026ebj} (one block of the split-sourcing tangent, not a unique generator); the split value, which is
     dictionary-bound and whose first-principles derivation is upstream and structural (the ADE case selection and
     level-to-generation map, the cascade exponent $\beta$, and the transfer constant $N_{\mathrm{casc}}$); and the
     derivation of the Yukawa sector and mass spectrum.
 
-    The local operator chain is closed in the eliminated-block and saturation companions~\cite{Beau2026ebj, Beau2026bim}:
-    the split carrier is the transported chiral defect rate, and the contact split factorises as
+    The local operator chain is constrained but not closed in the eliminated-block and saturation
+    companions~\cite{Beau2026ebj, Beau2026bim}: the split rate is sourced at first order by the odd tangent $[A_-,Q_0]$
+    together with the first-order motion of the spinorial embedding, and under the localisation hypothesis that this
+    source is carried by the block $\tfrac12\partial_s\Delta_\chi(P)|_0$ with the embedding frozen, the
+    saturation-margin note factorises the contact split conditionally as
     \[
       u_\partial = \sqrt{2}\,\sigma\,s_*\,\frac{T_{J_3}(\partial_s\Delta_\chi(P)|_0)}{\langle J_3, J_3\rangle},
     \]
-    where the Born--Infeld even-block factor $\sqrt{2}\,\sigma$ is structural, $s_*$ is the radial A4 contact, and $T_{J_3}$
+    where the even-block factor $\sqrt{2}\,\sigma$ is algebraic, $s_*$ is the radial A4 contact, and $T_{J_3}$
     is the oriented angular observable whose normalised evaluation is dictionary-bound through $\mathcal{N}_A$.
-    Thus the remaining magnitude problem is upstream, not local to the eliminated block.
+    The localisation hypothesis, the selection of the covariant family, and the normalisation of the defect rate are
+    open, so the remaining magnitude problem is upstream in its dictionary inputs and still local in the localisation of
+    the odd tangent.
 
     The mass-sector frontier now separates cleanly into three layers.
     The present stratum derives the diagonal generation split: the angular Weil--BFS coefficient is closed in the
