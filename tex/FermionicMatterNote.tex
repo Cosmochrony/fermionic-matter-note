@@ -44,6 +44,9 @@
 \newcommand{\Dpi}{D_{\Pi,g,A}}
 \newcommand{\Cgen}{C^3_{\mathrm{gen}}}
 \newcommand{\adC}{\mathrm{ad}_\mathbb{C}}
+\newcommand{\Ew}{E_{\mathrm{weak}}}
+\newcommand{\HSpin}{\ensuremath{[\mathrm{H\text{-}Spin}]}}
+\newcommand{\HWeak}{\ensuremath{[\mathrm{H\text{-}Weak}]}}
 
 \title{The Fermionic Matter Sub-Programme\\[0.4em]
 \large Presentation Note 6}
@@ -59,52 +62,43 @@
   \maketitle
 
   \begin{abstract}
-    The fermionic matter sub-programme of the Cosmochrony corpus addresses a single
-    central question: where do fermions, chirality, hypercharge, and three generations come
-    from?
-    The answer is stratified and conditional.
-    They need not be postulated as external fields: they arise as the spinorial face of the Weil
-    module $\Vr$ carried by the admissible fibre on a \emph{supplied} Heisenberg carrier, once its
-    metaplectic structure is complexified by the Lorentzian metric of the geometric branch.
+    The fermionic matter sub-programme of the Cosmochrony corpus asks where fermions, chirality, hypercharge,
+    and three generations could come from in the admissible Weil fibre.
+    The answer is layered, and each layer names what it needs.
+    On a \emph{supplied} Heisenberg carrier, given a real metaplectic model and a supplied doublet, the algebra
+    is proved and uses no metric: $\mathrm{mp}(2,\mathbb{R})_\mathbb{C} \simeq \mathfrak{sl}_2(\mathbb{C})$, the
+    symmetric square of the doublet is the adjoint, its exterior square the determinant line.
     The admissibility axioms do not select that carrier, and every result below inherits it.
-    The structural chain, read on it, is:
-    \[
-      \Pi \Rightarrow F_n \simeq \Vr \Rightarrow \Mp(2,\mathbb{R})
-      \Rightarrow \mathrm{mp}(2,\mathbb{R})_\mathbb{C} \simeq \mathfrak{sl}_2(\mathbb{C})
-      \rightsquigarrow \Spin(3,1) \simeq \SL(2,\mathbb{C})
-      \Rightarrow \Sbundle.
-    \]
-    Three modular structural results are established in Q14: (A)~the tensor functors of $\Sbundle$
-    produce the gauge-sector data of $\SU(2)_L \times \UU(1)_Y$, Lorentz-typed adjoint and
-    determinant data rather than an independent fermionic weak doublet carrier;
-    (B)~the projective endomorphism $\Epi$ of the projected Dirac operator enforces the $V-A$ chiral
-    structure, and its $\gamma_5$-weighted $a_4$ coefficient imposes anomaly-cancellation constraints
-    on the hypercharge weights; (C)~the saturation invariant $\sigma_c(n_3) = 3$ yields a
-    gauge-singlet three-generation factor $\Cgen$, conditionally on the supplied rank-three carrier.
-    Their hypotheses differ, and (B) is itself stratified.
-    The $V-A$ structure carries nothing beyond the supplied carrier.
-    The rigidity of the hypercharge weights carries a supplied three-dimensional colour module, the
-    anomaly sums being weighted by the representation dimension.
-    Selecting the Standard Model pattern carries, beyond that module, the minimal integral
-    normalisation of $L_Y = \wedge^2(\Sbundle)$, holds only up to an overall sign and rescaling, and
-    rests on a connection Q14 leaves open; the quark sector carries the module but not that
-    normalisation.
-    O31 is a withdrawal notice: no colour triplet is established as admissible, $\SU(3)$ is not
-    identified, and no gauge factor is derived.
-    The structural form of $\Epi$ is fixed as a Schur complement of the eliminated spinorial block
-    and the generation-split mechanism is Born--Infeld saturation, but the split value is
-    dictionary-bound, its first-principles front lying upstream in the ADE case selection and the
-    cascade exponent.
+    Two physical readings of this algebra are distinct hypotheses, supplied by no source and excluded by none.
+    \HSpin{} identifies the $\SL(2,\mathbb{C})$ of the doublet with the spin group of a four-dimensional
+    Lorentzian co-metric on the effective base; under it $\mathrm{Sym}^2(S_L)$ is the Lorentz sector,
+    $\wedge^2(S_L)$ a trivial line, and the projective endomorphism $\Epi$ of the projected Dirac operator is
+    left-admissible on an orientation-compatible branch, which is an input.
+    \HWeak{} supplies a distinct rank-two weak factor $\Ew$ with structure group $\UU(2)$: $\su(2)_L$ sits in
+    $\mathrm{Sym}^2(\Ew)$, the hypercharge line is $L_Y := \wedge^2(\Ew)$, and the $V-A$ structure and the
+    anomaly constraints on the hypercharge weights are its content.
+    Lorentz chirality and weak chiral selection are different statements; the second is not derived from the first.
+    The rigidity of the hypercharge weights carries, beyond the two hypotheses, a supplied colour module, and
+    selecting the Standard Model pattern carries in addition the minimal integral normalisation of $L_Y$.
+    The saturation invariant $\sigma_c(n_3) = 3$, a supplied rule, gives conditionally a gauge-singlet
+    three-generation factor $\Cgen$; the generation sector is a set of model operators on a distinct supplied
+    doublet, their reading as restrictions of $\Epi^2$ is not supplied, the level-to-generation map is not
+    established, and the split value is a matching value.
+    O31 is a withdrawal notice: no colour triplet is established as admissible and no gauge factor is derived.
     A dedicated no-go note closes the two deposited candidates for the independent fermionic weak
-    multiplicity $M_L \simeq \mathbb{C}^2$ through the no-sequential-re-entry theorem, leaving the
-    matter-sector weak doublet an explicit architectural extension rather than a derivation.
+    multiplicity $M_L \simeq \mathbb{C}^2$, leaving $\Ew$ an explicit architectural extension.
+    \emph{Interpretive outlook (a reading, not a result).}
+    Chirality is where the internal algebra of the admissible fibre must meet spacetime geometry and the weak
+    interaction at once; the two hypotheses locate that meeting point, and turn the question of why weak
+    interactions are left-handed into the question of how the metaplectic symmetry of the fibre is joined to Lorentz
+    frames and to a separate internal doublet.
   \end{abstract}
 
   \medskip
   \noindent\textbf{Keywords.}
-  fermionic matter; admissible spinor bundle; metaplectic lift; chirality; V-A structure;
-  hypercharge constraints; anomaly cancellation; three generations; projected Dirac operator;
-  Weil representation; non-injective projection; presentation note.
+  fermionic matter; admissible spinor bundle; metaplectic lift; Lorentzian spin structure; weak factor;
+  chirality; V-A structure; hypercharge constraints; anomaly cancellation; three generations;
+  projected Dirac operator; Weil representation; non-injective projection; presentation note.
 
   \newpage
   \tableofcontents
@@ -126,64 +120,83 @@
     Weil fibre, or must they be introduced as additional postulates?}
 
     \medskip
-    The answer established in Q14~\cite{Beau2026q14} is stratified, not uniform.
+    The answer given in Q14~\cite{Beau2026q14} is stratified, not uniform.
     It is stated throughout relative to a \emph{supplied} Heisenberg carrier and a fixed non-trivial
     central character: the identification $F_n \simeq \Vr$ is not selected by the admissibility
     axioms, which force irreducibility and non-commutation but neither make the commutator central
     nor single out a finite Heisenberg group, an explicit $\mathfrak{S}_3$ countermodel satisfying
     the extracted carrier contract~\cite{Beau2026m, Beau2026HeisenbergStructure}.
-    On that carrier, fermions arise as the spinorial face of the Weil module $\Vr$ after Lorentzian
-    complexification of its metaplectic lift: spinoriality follows.
-    Chirality and the $V-A$ structure arise from the projective endomorphism $\Epi$ of the
-    projected Dirac operator, via the spinorial lift of BI parity established in Q14: the
-    chiral selection follows, and carries no further hypothesis.
+    On that carrier the finite Weil module acts through $\SL(2,\mathbb{Z}/q\mathbb{Z})$, so a real metaplectic
+    model and a doublet carrying its Lie algebra are supplied model data.
+    Given them, the algebra is proved and needs no metric: $\mathrm{mp}(2,\mathbb{R})_\mathbb{C} \simeq
+    \mathfrak{sl}_2(\mathbb{C})$, the symmetric square of the doublet is the adjoint and its exterior square the
+    determinant line.
+    Two physical readings of this algebra are separate hypotheses, each a missing identification and neither
+    excluded by any result.
+    \HSpin{} (Hypothesis~2.2 of Q14) identifies the $\SL(2,\mathbb{C})$ acting on the doublet with the spin group of
+    a four-dimensional Lorentzian co-metric on the effective base, and no source supplies it: the geometric branch
+    supplies the co-metric only conditionally, and nothing relates the metaplectic action to its frames.
+    \HWeak{} (Hypothesis~2.3 of Q14) supplies a distinct rank-two weak factor $\Ew$ with structure group $\UU(2)$,
+    which Q14 does not construct: by Schur's lemma a weak action commuting with Lorentz transformations cannot live
+    on the doublet that carries the spin reading.
+    Under \HSpin{}, spinoriality is a statement about spacetime spinors, $\mathrm{Sym}^2(S_L)$ is the Lorentz sector,
+    and $\wedge^2(S_L)$ is a trivial line carrying no hypercharge.
+    Under \HWeak{}, the same tensor functors applied to $\Ew$ give the weak adjoint, whose compact real form is
+    $\su(2)_L$, and the determinant line $L_Y := \wedge^2(\Ew)$, which carries $\UU(1)_Y$ non-trivially only because
+    the structure group of $\Ew$ is $\UU(2)$.
+    Chirality splits in two.
+    Lorentz chirality is the statement that the projective endomorphism $\Epi$ of the projected Dirac operator is
+    left-admissible, $P_R \Epi P_R = 0$: under \HSpin{}, the Born--Infeld datum (H1)--(H2) of O30 and the
+    orientation-compatible branch, which is an input.
+    The weak chiral selection, the $V-A$ structure, is the representation content of \HWeak{}, and Q14 does not
+    derive it from left-admissibility.
     Hypercharge does not stand on the same footing, and it separates into two steps.
-    The anomaly-cancellation constraints are weighted by the representation dimension, so the
-    rigidity of the hypercharge weights carries a supplied three-dimensional colour module as a
+    The anomaly-cancellation constraints, which require both hypotheses, are weighted by the representation
+    dimension, so the rigidity of the hypercharge weights carries a supplied three-dimensional colour module as a
     hypothesis; Q14 neither analyses the constraint system at general multiplicity nor claims that
     the constraints force three.
     Selecting the Standard Model pattern from those constraints needs a further premise: that the
-    determinant line $L_Y = \wedge^2(\Sbundle)$ carries the minimal integral normalisation
+    determinant line $L_Y = \wedge^2(\Ew)$ carries the minimal integral normalisation
     compatible with the $\UU(1)_Y$ action on the projected spinorial sectors.
     Under that premise the pattern is selected only up to an overall sign and rescaling, the cubic
     constraint vanishing on it precisely at colour multiplicity three.
     Q14 records the explicit connection of that normalisation to the pattern as an open direction:
     the anomaly constraints restrict the allowed weights, while the determinant-line normalisation
     fixes their scale.
-    Three generations arise, conditionally on the supplied rank-three carrier, from the
-    spinorial multiplicity reading of the same invariant $\sigma_c(n_3) = 3$ that yields the
-    three spatial directions in the geometric branch; the threshold is a supplied selection
-    rule (O23 proves the three-dimensionality of the neutral sector of a supplied spinor
-    carrier, Theorem~3.1; the carrier selection and the identification of $\Sigma_c$ with
+    Three generations arise conditionally from the spinorial multiplicity reading of the invariant
+    $\sigma_c(n_3) = 3$, a supplied selection rule (O23 proves the three-dimensionality of the neutral sector of a
+    supplied spinor carrier, Theorem~3.1; the carrier selection and the identification of $\Sigma_c$ with
     that dimension are open).
-    What is NOT forced at the current stratum is the independent fermionic weak doublet: the
-    tensor functors of $\Sbundle$ produce gauge-sector (adjoint and determinant) data typed by
-    the Lorentz action, and the Lorentz commutant of the irreducible Weyl factor is scalar, so
-    no internal non-abelian factor acts on the same spinor factor.
+    The resulting factor $\Cgen$ is distinct from the Lorentz sector and from any spatial triplet: no source
+    identifies the invariant with spatial directions.
+    What is NOT supplied is the independent fermionic weak doublet: the tensor functors of the
+    spinor bundle give Lorentz-typed adjoint and determinant data, and the Lorentz commutant of the irreducible Weyl
+    factor is scalar, so no internal non-abelian factor acts on the same spinor factor.
     The two deposited candidates for the missing multiplicity carrier $M_L \simeq \mathbb{C}^2$
     --- the internal Hecke operator doublets and the erased history fibres --- are closed by
     exact obstructions in the companion no-go note~\cite{Beau2026nsr}, whose central result is
     the no-sequential-re-entry theorem: information erased by the projective channel cannot be
     recovered by any tower of subsequent projections.
-    The matter-sector weak doublet is therefore an explicitly open frontier, realisable only
-    through a parallel substrate channel with an oriented central/Weyl datum --- a stated
+    The matter-sector weak doublet, that is the factor $\Ew$ of \HWeak{}, is therefore an explicitly open frontier,
+    realisable only through a parallel substrate channel with an oriented central/Weyl datum --- a stated
     architectural extension, not a consequence of the deposited corpus.
 
     \medskip
     This sub-programme is the first paper of the Q-series that depends simultaneously on all
     four layers of the programme: the admissible Weil fibre structure on the supplied carrier
-    (Notes~1 and~5), the closed Lorentzian geometry (Note~2), the gauge bundle for a supplied
+    (Notes~1 and~5), the conditional Lorentzian geometry (Note~2), the gauge bundle for a supplied
     compact structure group (Note~3), and the conditional gauge--gravity
     system (Q13~\cite{Beau2026q13}, summarised in Presentation Note~8).
 
     \begin{remark}[Scope: identification only, not mass spectrum]
 This sub-programme addresses the \emph{identification} of the fermionic sector:
 spinor bundle, chirality, hypercharge quantum numbers, and generation factor.
-The spinor bundle and the chiral selection are settled on the supplied Heisenberg carrier.
+The algebra of the spinor doublet is proved on the supplied model data; its Lorentz reading rests on \HSpin{}
+and the weak chiral selection on \HWeak{}, neither of which is supplied.
 The generation factor remains conditional on a supplied rank-three carrier.
 The hypercharge quantum numbers split in two: the rigidity of the weights is conditional on a
 supplied three-dimensional colour module, while the identification of the Standard Model pattern
-among them carries, beyond that module, the minimal integral normalisation of $L_Y$, holds only up
+among them carries, beyond that module, the minimal integral normalisation of $L_Y = \wedge^2(\Ew)$, holds only up
 to an overall sign and rescaling, and rests on a connection Q14 leaves open.
 It does not derive the mass spectrum, the Yukawa couplings, or the CKM/PMNS mixing
 matrices.
@@ -195,8 +208,8 @@ are listed as open deliverables.
     \begin{remark}[Vocabulary note]
 Throughout this note, \emph{admissibility constraint} replaces the earlier
 ``relaxation'' vocabulary.
-The substrate $\chi$ is static; fermions are not excitations of $\chi$ but the spinorial
-interpretation of the admissible fibre after geometric complexification.
+The substrate $\chi$ is static; fermions are not excitations of $\chi$ but, under \HSpin{}, the spinorial
+interpretation of the admissible fibre.
     \end{remark}
 
   \section{Position in the Cosmochrony Programme}
@@ -213,8 +226,10 @@ interpretation of the admissible fibre after geometric complexification.
       $\Vr$, and the parity involution $c \leftrightarrow q-c$ (Notes~1 and~5).
       Stone--von Neumann is a conditional endpoint here, supplying uniqueness once that carrier is
       given~\cite{Beau2026m, Beau2026HeisenbergStructure}.
-      \item Effective Lorentzian metric $g^{\mu\nu} = 2\eta^{\mu\nu}$ and effective base manifold
-      $M_{\mathrm{eff}} = \mathbb{R}_\tau \times \Heis_3(\mathbb{R})$ (Note~2, Q5b--Q11).
+      \item A four-dimensional Lorentzian co-metric on the effective base $M_{\mathrm{eff}}$, supplied only
+      conditionally by the geometric branch (Note~2; under its hypotheses Q5b~\cite{Beau2026q5b} has rank three,
+      and Q11~\cite{Beau2026q11} leaves the temporal coefficient free and derives no coefficient value);
+      it enters the fermionic sector only through \HSpin{}.
       \item Admissible principal bundle $P_{G_\Pi}(M_{\mathrm{eff}}, G_\Pi)$ and gauge connection $A$
       for a supplied compact structure group $G_\Pi$ (Note~3, Q6a).
       The group is supplied, not identified: Note~3 singles out no particular group, and the
@@ -231,27 +246,36 @@ interpretation of the admissible fibre after geometric complexification.
 
     The sub-programme is organised around the following structural chain, whose first arrow is read
     on the supplied Heisenberg carrier of Section~\ref{sec:motivation} rather than derived from the
-    admissibility axioms.
+    admissibility axioms, and whose second arrow is a modelling step.
 
     \begin{equation}
       \label{eq:chain}
       \Pi \Rightarrow F_n \simeq \Vr
-      \;\Rightarrow\;
+      \;\overset{\text{model}}{\leadsto}\;
       \Mp(2,\mathbb{R})
       \;\Rightarrow\;
       \mathrm{mp}(2,\mathbb{R})_\mathbb{C} \simeq \mathfrak{sl}_2(\mathbb{C})
-      \;\rightsquigarrow\;
+      \;\overset{\HSpin}{\leadsto}\;
       \Spin(3,1) \simeq \SL(2,\mathbb{C})
       \;\Rightarrow\;
       \Sbundle
     \end{equation}
+    The arrow marked \HSpin{} is not an implication: it is Hypothesis~2.2 of Q14, supplied by no source.
+    Given \HSpin{} and the distinct weak factor of \HWeak{} (Hypothesis~2.3 of Q14), the readings of the tensor
+    sectors, of chirality and of generation multiplicity are:
     \[
-      \;\Rightarrow\;
-      \underbrace{\mathrm{Sym}^2(\Sbundle) \Rightarrow \adC(P_\Pi)}_{\SU(2)_L}
+      \underbrace{\mathrm{Sym}^2(S_L) \simeq \mathrm{ad}(P_\Pi),\ \wedge^2(S_L)\ \text{trivial}}
+        _{\HSpin\text{: Lorentz sector}}
       \;,\quad
-      \underbrace{\wedge^2(\Sbundle) = L_Y}_{\UU(1)_Y}
+      \underbrace{\mathrm{Sym}^2(\Ew) \Rightarrow \adC(\su(2)_L)}_{\HWeak\text{: }\SU(2)_L}
       \;,\quad
-      \underbrace{\Epi \text{ left-admissible}}_{V-A}
+      \underbrace{\wedge^2(\Ew) = L_Y}_{\HWeak\text{: }\UU(1)_Y}
+      \;,
+    \]
+    \[
+      \underbrace{\Epi \text{ left-admissible}}_{\text{Lorentz chirality, }\HSpin}
+      \;,\quad
+      \underbrace{\text{left-handed doublet assignment}}_{V-A,\ \HWeak}
       \;,\quad
       \underbrace{\sigma_c(n_3)=3 \to \Cgen}_{\text{3 generations (supplied rule)}}.
     \]
@@ -259,45 +283,59 @@ interpretation of the admissible fibre after geometric complexification.
     Three distinct mechanisms contribute.
 
     \begin{enumerate}
-      \item \textit{Lorentzian complexification fixes the spin group, on the supplied carrier.}
-      The Weil module $\Vr$ of that carrier has a canonical symplectic structure; its automorphisms
-      lift to $\Mp(2,\mathbb{R})$.
-      The effective metric $g^{\mu\nu} = 2\eta^{\mu\nu}$ (Lorentzian) forces the Lie algebra
-      complexification $\mathrm{mp}(2,\mathbb{R})_\mathbb{C} \simeq \mathfrak{sl}_2(\mathbb{C})$,
-      whose Lorentzian integration is $\Spin(3,1) \simeq \SL(2,\mathbb{C})$.
-      The spinor bundle $\Sbundle$ is the associated fundamental bundle.
+      \item \textit{The complexified metaplectic algebra is $\mathfrak{sl}_2(\mathbb{C})$; its spin reading is
+      \HSpin{}.}
+      The Weil module $\Vr$ of the supplied carrier has a canonical symplectic structure, and its centre-preserving
+      automorphisms act through the finite group $\SL(2,\mathbb{Z}/q\mathbb{Z})$, which has no Lie algebra.
+      A real metaplectic model $\Mp(2,\mathbb{R})$ and the action of its Lie algebra on a two-dimensional doublet
+      are therefore supplied model data.
+      Given them, the complexification $\mathrm{mp}(2,\mathbb{R})_\mathbb{C} \simeq \mathfrak{sl}_2(\mathbb{C})$ is a
+      statement about Lie algebras: it is algebraic and independent of any metric, and its simply connected
+      integration is $\SL(2,\mathbb{C}) \simeq \Spin(3,1)$.
+      An abstract isomorphism does not make this group the spin group of the effective spacetime.
+      That requires a Lorentzian co-metric on the effective base and an identification of the $\SL(2,\mathbb{C})$
+      acting on the doublet with the group covering the Lorentz frames of that co-metric, which is \HSpin{}.
+      The spinor bundle $\Sbundle = S_L \oplus S_R$ is the associated bundle under \HSpin{}.
 
-      \item \textit{Tensor functors of $\Sbundle$ reproduce the electroweak gauge-sector data.}
-      $\mathrm{Sym}^2(\mathbb{C}^2) \simeq \mathfrak{sl}_2(\mathbb{C})$: the symmetric sector gives
-      the complex adjoint, from which the compact real form selects the $\SU(2)_L$ gauge sector.
-      $\wedge^2(\mathbb{C}^2) \simeq \det(\mathbb{C}^2)$: the determinant line $L_Y$ supports the
-      $\UU(1)_Y$ factor.
-      No independent electroweak matter bundle is introduced --- and, by the calibration
-      of~\cite{Beau2026nsr}, none is produced: the adjoint and the line are Lorentz-typed images
-      of the same spinor factor, whereas a fermionic weak doublet requires a multiplicity factor
-      $M_L \simeq \mathbb{C}^2$ commuting with the Lorentz action, which these functors do not
-      supply.
+      \item \textit{The tensor functors are algebra on the supplied doublet; their readings are two distinct
+      hypotheses.}
+      $\mathrm{Sym}^2(\mathbb{C}^2) \simeq \mathfrak{sl}_2(\mathbb{C})$ is the complex adjoint and
+      $\wedge^2(\mathbb{C}^2) \simeq \det(\mathbb{C}^2)$ the determinant line, trivial on $\SL(2,\mathbb{C})$.
+      On the spinor factor under \HSpin{}, $\mathrm{Sym}^2(S_L)$ is the Lorentz sector and $\wedge^2(S_L)$ a trivial
+      line that carries no hypercharge: neither is electroweak data.
+      The electroweak reading applies the same functors to a distinct rank-two factor $\Ew$ with structure group
+      $\UU(2)$ (\HWeak{}): $\mathrm{Sym}^2(\Ew)$ contains the complex weak adjoint, from which the compact real form
+      selects $\su(2)_L$, and $L_Y := \wedge^2(\Ew)$ supports $\UU(1)_Y$, non-trivially only because the structure
+      group is $\UU(2)$.
+      By the calibration of~\cite{Beau2026nsr}, no such factor is produced by the functors on $\Sbundle$: a fermionic
+      weak doublet requires a multiplicity factor $M_L \simeq \mathbb{C}^2$ commuting with the Lorentz action,
+      the Lorentz commutant of the irreducible Weyl factor being scalar.
+      $\Ew$ is that factor, posited by \HWeak{} and not constructed.
 
-      \item \textit{The projective endomorphism $\Epi$ enforces chirality, and constrains the
-      hypercharge weights.}
-      The projected Dirac operator satisfies the Lichnerowicz-type identity
+      \item \textit{The projective endomorphism $\Epi$ gives Lorentz chirality; the weak chiral selection and the
+      hypercharge constraints need \HWeak{} as well.}
+      The projected Dirac operator, under \HSpin{}, satisfies the Lichnerowicz-type identity
       \[
         D^2_{\Pi,g,A}
         = -(\nabla^{S,A})^2 + \frac{R}{4} + \frac{1}{2}\gamma^\mu\gamma^\nu F^a_{\mu\nu} T^a_R
         + \Epi.
       \]
-      By the spinorial lift of BI parity, established in Q14~\cite{Beau2026q14}, $\Epi$ is left-admissible
-      ($P_R \Epi P_R = 0$), giving the $V-A$ structure.
-      That half carries no hypothesis beyond the supplied carrier.
-      $\UU(1)_Y$ invariance of $\SPI[g,A,D_{\Pi,g,A}]$ imposes the anomaly-cancellation
-      trace constraint $\mathrm{Tr}_{\Sbundle}(\gamma_5 Y A_\Pi(x)) = 0$ on the hypercharge weights.
-      That constraint follows from symbol compatibility and left-admissibility, and carries no
-      colour hypothesis.
+      Under \HSpin{} and the Born--Infeld datum (H1)--(H2) of O30, Q14~\cite{Beau2026q14} derives a unique
+      antilinear lift of the parity that reverses chirality, and $\Epi$ is left-admissible
+      ($P_R \Epi P_R = 0$) on the orientation-compatible branch, which is an input.
+      This is a statement about the projective residue and the Lorentz chirality $\gamma_5$.
+      The $V-A$ structure is a different statement: the weak gauge action is carried by the left-handed factor
+      alone, which is the representation content of \HWeak{}, and Q14 does not derive it from left-admissibility
+      (Remark~3.9 of Q14).
+      Under \HSpin{}, \HWeak{} and symbol compatibility, $\UU(1)_Y$ invariance of $\SPI[g,A,D_{\Pi,g,A}]$ imposes the
+      anomaly-cancellation trace constraint $\mathrm{Tr}_{\Sbundle}(\gamma_5 Y A_\Pi(x)) = 0$ on the hypercharge
+      weights.
+      That constraint carries no colour hypothesis.
       The supplied three-dimensional colour module enters at the next level, that of the rigidity of
       the weights: the anomaly sums are weighted by the representation dimension, so the colour
       multiplicity enters them.
       Selecting the Standard Model pattern from those constraints is a further step, under the
-      additional premise that $L_Y$ carries the minimal integral normalisation compatible with the
+      additional premise that $L_Y = \wedge^2(\Ew)$ carries the minimal integral normalisation compatible with the
       $\UU(1)_Y$ action, and then only up to an overall sign and rescaling; the cubic constraint
       vanishes on that pattern precisely at colour multiplicity three.
     \end{enumerate}
@@ -311,35 +349,43 @@ interpretation of the admissible fibre after geometric complexification.
       \label{sec:q14}
 
       \textbf{Q14}~\cite{Beau2026q14} is the sole constituent paper.
-      It is organised around three independent but mutually compatible structural results.
+      It is organised around three independent but mutually compatible results, whose hypotheses differ.
 
-      \textit{Theorem~A: Spinorial electroweak bundle} (structural; relative to the supplied
-      Heisenberg carrier).
-      On that carrier, the Weil module $\Vr$ induces, via the metaplectic lift and the Lorentzian
-      complexification forced by $g^{\mu\nu} = 2\eta^{\mu\nu}$, an admissible spinor bundle
-      $\Sbundle$.
-      Its tensor sectors satisfy:
+      \textit{Theorem~A: Spinorial electroweak bundle} (algebra proved on supplied model data; two conditional
+      readings).
+      (a)~On the supplied Heisenberg carrier, given a real metaplectic model and a supplied doublet $V$, the
+      complexified metaplectic algebra is $\mathfrak{sl}_2(\mathbb{C})$, with
       \[
-        \mathrm{Sym}^2(\Sbundle) \simeq \adC(P_\Pi), \qquad \wedge^2(\Sbundle) = L_Y.
+        \mathrm{Sym}^2(V) \simeq \mathfrak{sl}_2(\mathbb{C}), \qquad \wedge^2(V) \simeq \mathbb{C}_{\det},
       \]
-      After selection of the compact real form, these define the $\SU(2)_L \times \UU(1)_Y$
-      gauge-sector bundle data without any input beyond that carrier.
-      This is Q14's own construction from the tensor sectors of $\Sbundle$; it does not import a
+      the adjoint and the trivial line; this is algebraic, proved without either hypothesis, and independent of any
+      metric.
+      (b)~Under \HSpin{}, $\Sbundle = S_L \oplus S_R$ is a Dirac spinor bundle of the effective Lorentzian co-metric,
+      $\mathrm{Sym}^2(S_L) \simeq \adC(P_\Pi)$ is its Lorentz sector, and $\wedge^2(S_L)$ is trivial.
+      (c)~Under \HWeak{}, the same identities applied to $\Ew$ give the complex weak adjoint, with compact real form
+      $\su(2)_L$, and $L_Y = \wedge^2(\Ew)$ carrying $\UU(1)_Y$:
+      \[
+        \mathrm{Sym}^2(\Ew) \Rightarrow \adC(\su(2)_L), \qquad \wedge^2(\Ew) = L_Y.
+      \]
+      This is Q14's own application of the tensor sectors to the weak factor; it does not import a
       gauge-group identification from the gauge structure sub-programme, which supplies none.
-      Calibration: these are adjoint and determinant data, typed by the Lorentz action on the
-      same spinor factor.
-      They do not constitute the independent fermionic weak doublet $M_L \simeq \mathbb{C}^2$,
-      whose two deposited candidates are excluded by the exact obstructions
-      of~\cite{Beau2026nsr}.
+      Calibration: on the spinor factor these are Lorentz-typed adjoint and determinant data, and $\Ew$ is not
+      constructed.
+      It is the independent fermionic weak doublet $M_L \simeq \mathbb{C}^2$, whose two deposited candidates are
+      excluded by the exact obstructions of~\cite{Beau2026nsr}.
 
-      \textit{Theorem~B: Chiral selection and hypercharge constraints}
-      (structural; the two halves carry different hypotheses).
-      The projected Dirac operator $\Dpi$ has the Lichnerowicz-type square above.
-      By the spinorial lift of BI parity, established in Q14 (the antilinear $J_\Pi = HK$ maps
-      right-chiral modes to non-admissible directions), $\Epi$ is left-admissible: $P_R \Epi P_R = 0$.
-      This is the $V-A$ structure, and it carries no hypothesis beyond the supplied carrier, the
-      axiomatic chain A1--A4 and the upstream BI parity datum.
-      $\UU(1)_Y$ invariance of the projected spectral functional then imposes, at the $a_4$ level:
+      \textit{Theorem~B: Chiral selection and hypercharge constraints} (conditional; the parts carry different
+      hypotheses).
+      Under \HSpin{}, the projected Dirac operator $\Dpi$ has the Lichnerowicz-type square above.
+      Under \HSpin{} and the Born--Infeld datum (H1)--(H2) of O30, the antilinear $J_\Pi = HK$ is, up to a phase, the
+      unique covariant antilinear lift of the parity and reverses chirality.
+      On the orientation-compatible branch, which is an input, $\Epi$ is left-admissible: $P_R \Epi P_R = 0$.
+      This is Lorentz chirality, a statement about the projective residue and $\gamma_5$.
+      The weak chiral selection, the $V-A$ structure, is the representation content of \HWeak{}, with fermions in
+      $P_L \Sbundle \otimes \Ew$ and right-handed components in weak singlets.
+      Q14 does not derive it from left-admissibility, which is compatible with it but does not select it.
+      Under \HSpin{}, \HWeak{} and symbol compatibility, $\UU(1)_Y$ invariance of the projected spectral functional
+      then imposes, at the $a_4$ level:
       \[
         \mathrm{Tr}_{\Sbundle}(\gamma_5 Y A_\Pi(x)) = 0 \quad \forall x \in M_{\mathrm{eff}},
       \]
@@ -353,7 +399,7 @@ interpretation of the admissible fibre after geometric complexification.
       Q14 does not analyse the constraint system at general multiplicity and does not claim that the
       constraints force three.
       Second, selecting the \emph{Standard Model pattern} from those constraints is a separate
-      proposition with an additional premise: that the determinant line $L_Y = \wedge^2(\Sbundle)$
+      proposition with an additional premise: that the determinant line $L_Y = \wedge^2(\Ew)$
       carries the minimal integral normalisation compatible with the $\UU(1)_Y$ action on the
       projected spinorial sectors.
       Under that premise the pattern is selected only up to an overall sign and rescaling, and the
@@ -362,41 +408,48 @@ interpretation of the admissible fibre after geometric complexification.
       normalisation and the Standard Model pattern among its open directions, the anomaly
       constraints restricting the allowed weights while the normalisation fixes their scale.
 
-      \textit{Theorem~C: Generation multiplicity} (structural; conditional on the supplied
-      rank-three carrier).
+      \textit{Theorem~C: Generation multiplicity} (conditional on the supplied rank-three selection rule, and, through
+      the bundle it multiplies, on \HSpin{} and \HWeak{}).
       The saturation invariant $\sigma_c(n_3) = 3$, a supplied selection rule (O23 proves the
       three-dimensionality of the neutral sector of a supplied spinor carrier, Theorem~3.1),
-      has two functorially distinct readings of the same rank-three admissible invariant.
-      In the geometric branch (Note~2), it yields three effective spatial directions.
-      In the spinorial branch, the spinorial multiplicity functor maps it to a gauge-singlet
+      admits a spinorial multiplicity reading, which maps it to a gauge-singlet
       generation space:
       \[
         \Cgen \subset \ker(\mathrm{ad}_{\SU(2)} \oplus Y).
       \]
-      The identity $\mathbb{R}^3_{\mathrm{space}} \neq C^3_{\mathrm{gen}}$ is established
-      explicitly (Q14 §5): the spatial and generation spaces are distinct functorial images of the
-      same admissible invariant.
+      The generation space is identified neither with the weak adjoint $\mathrm{Sym}^2(\Ew)$ nor with the Lorentz
+      sector $\mathrm{Sym}^2(S_L)$.
+      The equality of dimensions $\dim\mathbb{R}^3_{\mathrm{space}} = \dim\Cgen = 3$ does not identify the two spaces
+      (Q14 \S5, Remark~5.3): no source supplies a geometric image of the rank-three sector, and the generation factor
+      is a multiplicity space carrying no tangent structure.
       Three generations follow as a gauge-singlet factor, on that supplied rank-three carrier.
-      A qualitative mechanism for their splitting is identified in Q14 \S6 (summarised below); the
+      A qualitative mechanism for their splitting is identified in Q14 \S6 (summarised below) on model operators; the
       explicit $\Epi$ and the amplitude of the splitting remain open.
 
-      \textit{Dynamic generation lifting} (localisation and A4 matching).
-      The internal structure of $\Cgen$ is probed by the spectrum of $\Epi^2$ (Q14 \S6).
-      A static $J_\Pi$-real, weight-preserving restriction of $\Epi^2$ has a degenerate outer pair:
+      \textit{Dynamic generation lifting} (model operators; localisation and A4 matching).
+      The internal structure of $\Cgen$ is probed in Q14 \S6 by model operators standing for $\Epi^2$ on
+      $\Cgen = \mathrm{Sym}^2(V_{\mathrm{gen}})$, where $V_{\mathrm{gen}}$ is a supplied doublet distinct from the
+      doublet soldered by \HSpin{} and carries its own copy of the Born--Infeld datum.
+      Reading these operators as restrictions of $\Epi^2$ is an identification that is not supplied.
+      A static $J_\Pi$-real, weight-preserving model operator has a degenerate outer pair:
       the two light generations cannot be split statically (static obstruction).
       The admissible lifts removing this degeneracy form a two-dimensional $J_\Pi$-odd sector, the
       real-split direction being the weight generator $J_3$ and the mixing direction a doublet
       rotation.
       The generation split is not a finite-front observable in the symmetric sense: the raw finite front
       remains $J_\Pi$-equivariant and gives $u_{\mathrm{fin}}=0$~\cite{Beau2026prs}.
-      After Lorentzian complexification, however, the chiral projector makes it meaningful to read a
-      $J_\Pi$-odd frontier cocycle, and the residual automorphism is the central Weil lift
-      $R_b=W(-I)=\mathrm{FT}^2$, which commutes with $\gamma_5$: it is blind to chirality and does not
-      obstruct the $V-A$ selection~\cite{Beau2026q11of}.
+      The residual automorphism of the oriented-frontier diagnostic is the central Weil lift
+      $R_b=W(-I)=\mathrm{FT}^2$.
+      Reading $R_b$ as the central element of the spin group, scalar on the Weyl factors and hence commuting with
+      $\gamma_5$, would require a group-level map from the finite Weil group to the $\SL(2,\mathbb{C})$ of \HSpin{},
+      which is not supplied; whether the chirality grading removes the residual obstruction without a spacetime
+      parity is open~\cite{Beau2026q14}.
       The remaining amplitude is fixed at A4 by matching the discrete chiral-frontier normalisation
       $\mathcal N_A$~\cite{Beau2026aar} with the Lorentzian Born--Infeld curvature
       $\mu_\chi^2=\partial_s^2\mathcal B(0)$~\cite{Beau2026prs}, neither ingredient reducing to the other.
-      Generation mixing further requires the complex metaplectic phase.
+      Generation mixing is not reached by the metaplectic step model: a complex metaplectic phase is ruled out there
+      as a source of mixing, and mixing would need a generator outside the image of $\mathfrak{sl}_2(\mathbb{C})$,
+      which is not supplied (Q14, Remark~6.4).
 
       \textit{Colour sector} (conditional on a supplied colour module).
       The colour-coupled quark sector $\Sbundle \otimes V_{\mathrm{color}}$ is obtained by
@@ -417,21 +470,25 @@ interpretation of the admissible fibre after geometric complexification.
       The quark bundle is therefore a conditional output of the sub-programme.
 
       \textit{Status of the spinorial BI lift.}
-      The spinorial lift of BI parity to the spinor bundle $\Sbundle$ is established as a theorem
-      in Q14: the conjugation identity $c \leftrightarrow q-c$, proved at the scalar Weil level
+      Under \HSpin{} and the Born--Infeld datum (H1)--(H2) of O30, Q14 derives the spinorial lift of BI parity to the
+      spinor bundle $\Sbundle$: the conjugation identity $c \leftrightarrow q-c$, proved at the scalar Weil level
       (O17; recalled in O18 Theorem~3.1), lifts to the antilinear endomorphism $J_\Pi = HK$
       satisfying $J_\Pi^2 = -1$ and $J_\Pi \gamma_5 = -\gamma_5 J_\Pi$, dressing the parity by the
       weight grading $H = 2J_3$.
+      The relation $(HK)^2 = -1$ holds without any metric; the covariance, the uniqueness up to a phase and the
+      chirality reversal use \HSpin{}.
       The reading of the pair $\{c, q-c\}$ as a physical fibre of $\Pi$ is a structurally
       motivated hypothesis: O18 establishes Born--Infeld parity as a covariance of the response family and
       states the fibre identification as an open problem.
-      Chirality and $V-A$ in Q14 rest on the axiomatic chain A1--A4~\cite{Beau2026m} and the
-      upstream parity datum (O30, U1), with that fibre reading as their hypothesis.
+      Lorentz chirality, that is left-admissibility, rests on the supplied Heisenberg carrier, the axiomatic chain
+      A1--A4~\cite{Beau2026m}, \HSpin{}, the Born--Infeld datum (H1)--(H2) of O30 with that fibre reading, and the
+      orientation-compatible branch, which is an input.
+      The $V-A$ structure rests on \HWeak{} and is not derived from left-admissibility.
 
-      \begin{table}[ht]
+      \begin{table}[!ht]
         \centering
         \caption{Summary of Q14 results by theorem.
-        Status: P = proved; S = structural.
+        Status: P = proved on the supplied model data; C = conditional on the hypotheses named in the last column.
         Every row is stated relative to the supplied Heisenberg carrier, which the whole
         construction inherits; the last column names any further hypothesis.}
         \label{tab:results}
@@ -440,13 +497,16 @@ interpretation of the admissible fibre after geometric complexification.
           \toprule
           Result & Central output & Status and further hypothesis \\
           \midrule
-          Theorem~A & Spinor bundle $\Sbundle$; EW gauge-sector data from tensor functors & S; none \\
-          Calibration~\cite{Beau2026nsr} & no fermionic weak doublet $M_L$ from these functors & P (no-go) \\
-          Theorem~B ($V-A$) & $P_R \Epi P_R = 0$; $V-A$ structure & S; none \\
-          Theorem~B (weight rigidity) & $Y_R$ constrained by the anomaly-cancellation trace & S; supplied colour module of dimension three \\
-          Theorem~B (SM pattern) & that pattern selected among the allowed weights, up to overall sign and rescaling & S; the same module, \emph{and} the minimal integral normalisation of $L_Y$, whose connection to the pattern Q14 leaves open \\
-          Theorem~C & $\Cgen$; three generations as gauge-singlet factor & S; supplied rank-three carrier (O23) \\
-          Colour sector & $\Sbundle \otimes V_{\mathrm{color}}$; quark bundle & S; supplied colour module of dimension three \\
+          Theorem~A(a) & $\mathrm{Sym}^2 = \mathfrak{sl}_2(\mathbb{C})$ adjoint, $\wedge^2$ = determinant line, on the supplied doublet & P; supplied real metaplectic model and doublet \\
+          Theorem~A(b) & Lorentz reading: $\Sbundle$ a spinor bundle, $\mathrm{Sym}^2(S_L) \simeq \adC(P_\Pi)$, $\wedge^2(S_L)$ trivial & C; \HSpin{} \\
+          Theorem~A(c) & $\su(2)_L \subset \mathrm{Sym}^2(\Ew)$, $L_Y = \wedge^2(\Ew)$ carrying $\UU(1)_Y$ & C; \HWeak{}, $\Ew$ not constructed \\
+          Calibration~\cite{Beau2026nsr} & no fermionic weak doublet $M_L$ from these functors on $\Sbundle$ & P (no-go) \\
+          Theorem~B (Lorentz chirality) & $P_R \Epi P_R = 0$ & C; \HSpin{}, the BI datum (H1)--(H2) of O30, orientation-compatible branch (an input) \\
+          Theorem~B ($V-A$) & weak chiral selection, left-handed doublet assignment & C; \HWeak{}, not derived from left-admissibility \\
+          Theorem~B (weight rigidity) & $Y_R$ constrained by the anomaly-cancellation trace & C; \HSpin{}, \HWeak{}, supplied colour module of dimension three \\
+          Theorem~B (SM pattern) & that pattern selected among the allowed weights, up to overall sign and rescaling & C; the same, \emph{and} the minimal integral normalisation of $L_Y = \wedge^2(\Ew)$, whose connection to the pattern Q14 leaves open \\
+          Theorem~C & $\Cgen$; three generations as gauge-singlet factor & C; supplied rank-three carrier (O23); \HSpin{}, \HWeak{} through the bundle it multiplies \\
+          Colour sector & $\Sbundle \otimes V_{\mathrm{color}}$; quark bundle & C; supplied colour module of dimension three; \HSpin{}, \HWeak{} \\
           \bottomrule
         \end{tabular}
       \end{table}
@@ -475,22 +535,26 @@ interpretation of the admissible fibre after geometric complexification.
       which neither the capacity nor the $\mathrm{Sym}^2$ data supply, leaving $\varepsilon$ gated by the ADE
       datum~\cite{Beau2026aog}.
 
-    \subsection{Q11 Oriented Frontier: recursive diagnostic and resolution of the operator
-    obstruction~\cite{Beau2026q11of}}
+    \subsection{Q11 Oriented Frontier: recursive diagnostic of the angular generation
+    split~\cite{Beau2026q11of}}
       The symmetric-shell observable vanishes ($\Theta_{\mathrm{raw}}=0$) because the involution
       $g\mapsto g^{-1}$ pairs opposite central phases; this note defines the honest replacement, a frontier
       transfer observable on the directed edges $g\to gs$ whose central increment is the Heisenberg cocycle
       $a(g)\,s_b$, the discrete counterpart of $\tfrac12[X,Y]$ and hence of the dynamical $J_3$.
-      Its main result resolves the operator obstruction: the residual reflection
-      $R_b=\varphi\circ J_\Pi^{-1}=W(-I)=\mathrm{FT}^2$ is the central Weil lift, and $[\gamma_5,R_b]=0$, so
-      $R_b$ is blind to chirality and the $V-A$ selector removes the $\varphi$-paired obstruction without a
-      spacetime parity.
-      What remains is the amplitude normalisation $\mathcal N_A$, not the operator question.
+      Its operator-level statement is that the residual reflection
+      $R_b=\varphi\circ J_\Pi^{-1}=W(-I)=\mathrm{FT}^2$ is the central Weil lift.
+      Whether $R_b$ is central in the spin group, hence scalar on the Weyl factors and commuting with $\gamma_5$,
+      depends on a group-level map from the finite Weil group to the $\SL(2,\mathbb{C})$ of \HSpin{}, which is not
+      supplied, and whether the chirality grading removes the $\varphi$-paired obstruction without a spacetime parity
+      is open~\cite{Beau2026q14}.
+      The amplitude normalisation $\mathcal N_A$ is a separate question.
       The chiral weight $\gamma_5$ entering this signal is identified in CHO-Note~\cite{Beau2026cho} as the Weyl
       representation type $\mathbf{2}$ versus $\bar{\mathbf{2}}$, not a function of the cascade generator $T(e)$
       (arrow inversion and $\varphi$ both send $T\mapsto -T$, fixing equal parities, while the admissible weight is
       arrow-even and $\varphi$-odd); in the inherited Heisenberg central-phase lift the outgoing-frontier overlap is
       maximal, $\rho_\chi=1$, so $\mathcal N_A=\theta_{\max}\neq0$ in that lift.
+      In the model of Q14, the generation carrier $V_{\mathrm{gen}}$ is a doublet distinct from the soldered Weyl
+      doublet, so the reading of that weight on the generation frontier is an identification not supplied by Q14.
 
     \subsection{Projective Residue as a Schur Complement: localisation and finite/Lorentzian
     separation~\cite{Beau2026prs}}
@@ -503,8 +567,8 @@ interpretation of the admissible fibre after geometric complexification.
       split cannot originate in the finite cascade and is a Lorentzian datum, its magnitude reduced to the
       Born--Infeld saturation curvature $\mu_\chi^2=\partial_s^2\mathcal B(0)$.
       The Schur transversality on which the A4 matching was conditional is closed in the present Lorentzian spin
-      stratum~\cite{Beau2026prs}: the projected commutator $[\partial_s P|_0,J_\Pi]\big|_{\mathrm{span}(e_+,e_-)}$
-      has the exact metaplectic opening $\alpha(t,s)=ts\,r/\sinh r\not\equiv0$ with $\mu(t,s)\equiv0$, and its
+      stratum, that is under \HSpin{}~\cite{Beau2026prs}: the projected commutator
+      $[\partial_s P|_0,J_\Pi]\big|_{\mathrm{span}(e_+,e_-)}$ has the exact metaplectic opening $\alpha(t,s)=ts\,r/\sinh r\not\equiv0$ with $\mu(t,s)\equiv0$, and its
       timelike Clifford symbol is not in the zero-mode locus, so the Schur-transverse branch is selected.
       The determinantal Born--Infeld margin $\mathcal B(s)$, the antisymmetric structure of the chiral modulus, and the
       reduction of $\mu_\chi^2$ to the Lorentzian genus of the chiral polarisation are developed in the companion
@@ -516,6 +580,8 @@ interpretation of the admissible fibre after geometric complexification.
       The sixth-order interior lock is doubly conditional --- on a non-derived complex phase and on a non-prescribed
       cascade ordering --- and not concluded; the split value $|u|$ remains dictionary-bound through the chiral-frontier
       normalisation $\mathcal N_A$.
+      These statements are made on $\Epi^2|_{\Cgen}$; the operators of Q14 \S6 on $\Cgen$ are model operators, and
+      reading them as restrictions of $\Epi^2$ is an identification that is not supplied.
 
     \subsection{Arithmetic orthogonality of the ADE gate: the conditional status of
       $\varepsilon$~\cite{Beau2026aog}}
@@ -551,6 +617,9 @@ interpretation of the admissible fibre after geometric complexification.
       $\mathbb{Q}(\sqrt{5})$~\cite{Beau2026cho}.
       Hence $\varepsilon=1/10$ is conditional on the gate rather than an independent dictionary parameter, and the
       first-principles front for the value is the gate itself: upstream and structural.
+      It is a matching value, fixed by imposing the external ADE ratio on the exit deficits of model operators on
+      $V_{\mathrm{gen}}$, and the level-to-generation map needed to read the three levels as three generations is not
+      established (Q14 \S6).
       The diagonal mass-split parameter $u$ is identified with the angular datum $\varepsilon$ only through the
       downstream dictionary gate $R_\Pi=R_{\mathrm{ADE}}=3/2$~\cite{Beau2026pyo}.
       The carrier-preserving recursion fixes the vertical parity type but does not generate the horizontal
@@ -631,29 +700,35 @@ interpretation of the admissible fibre after geometric complexification.
       overall sign fixed by the admissibility role of $\mathcal B$ (axiom A4 selects saturated minima), not by a
       Maxwell weak-field match.
       The chiral curvature reduces to $\mu_\chi^2=\partial_s^2\mathcal B(0)=\tfrac12\,P_{\chi,\mu\nu}
-      P_\chi^{\mu\nu}$, the Lorentzian genus of the chiral polarisation in $g^{\mu\nu}=2\eta^{\mu\nu}$; on the
-      Schur-transverse electric branch $\mu_\chi^2<0$, so the split opens spontaneously, $u\neq0$.
+      P_\chi^{\mu\nu}$, the Lorentzian genus of the chiral polarisation in the co-metric
+      $g^{\mu\nu}=2\eta^{\mu\nu}$ of that note, whose coefficient value the geometric branch does not derive;
+      on the Schur-transverse electric branch $\mu_\chi^2<0$, so the split opens spontaneously, $u\neq0$.
       The magnitude $|u|$ remains dictionary-bound.
 
-    \subsection{Projected Yukawa line and generation-level assignment~\cite{Beau2026pyl}}
+    \subsection{Conditional weak determinant line and generation-level assignment~\cite{Beau2026pyl}}
       The first stage of the mass-sector frontier.
-      On the rank-two admissible spinor bundle $\Sbundle$ produced by the Lorentzian complexification of the Weil
-      carrier~\cite{Beau2026q14}, the determinant line $L_Y:=\wedge^2(\Sbundle)$ is the unique functorial line
-      invisible to the adjoint sector $\mathrm{Sym}^2(\Sbundle)$ and is the carrier of the abelian electroweak
-      weight, so the projected Yukawa sector is the determinant-line sector; the generation levels are read from
-      $\Epi^2|_{\Cgen}=\mathrm{diag}(1,\tfrac12+u,\tfrac12-u)$.
+      Under \HWeak{}, on the rank-two weak factor $\Ew$ with structure group $\UU(2)$, the determinant line
+      $L_Y:=\wedge^2(\Ew)$ is the unique functorial line invisible to the weak adjoint $\mathrm{Sym}^2(\Ew)$, and it
+      carries $\UU(1)_Y$ non-trivially only because the structure group is $\UU(2)$; on the spinor factor the same
+      functor gives a trivial line, so the coupling line is conditional on \HWeak{}.
+      The generation levels are read from the model operator
+      $\Epi^2|_{\Cgen}=\mathrm{diag}(1,\tfrac12+u,\tfrac12-u)$ on the distinct generation doublet $V_{\mathrm{gen}}$;
+      reading it as a restriction of $\Epi^2$ is not supplied, and the level-to-generation map is not established.
       The mass matrix is a distinct object: the line fixes a coupling line and the levels, and the mass comes
       after.
 
     \subsection{Projected Yukawa operator and chiral polar factor~\cite{Beau2026pyo}}
       The second stage, a sharp partial no-go.
+      The results are stated on the generation factor $\Cgen$, with the spinor and weak factors of \HSpin{} and
+      \HWeak{} as spectators, and on the same model operator for the levels, whose reading as a restriction of
+      $\Epi^2$ is not supplied.
       The Schur-residue sector fixes the positive hermitian square $H_\Pi:=Y_\Pi^\dagger Y_\Pi$ with
       $\mathrm{Spec}(H_\Pi)|_{\Cgen}=\lambda_Y^2\{1,\tfrac12+u,\tfrac12-u\}$, so $\Epi^2$ determines the squared
       Yukawa levels, not the morphism: by polar decomposition $Y_\Pi=U_\Pi\,H_\Pi^{1/2}$ the unitary chiral factor
       $U_\Pi$ (chiral orientation and complex mixing phase) and the overall norm $\lambda_Y$ are both invisible to
       $\Epi^2$.
       On the derived real cascade $[U_\Pi]=[I]$ ($v=0$, no mixing); a non-trivial class needs a genuinely complex
-      metaplectic phase.
+      metaplectic phase, which the metaplectic step model of Q14 does not reach.
       Hence the absolute masses, the generation mixing, and the CP structure remain downstream.
 
     \subsection{Charged-lepton Koide relation as a unit-dispersion constraint~\cite{Beau2026kud}}
@@ -721,11 +796,15 @@ interpretation of the admissible fibre after geometric complexification.
       contract~\cite{Beau2026m, Beau2026HeisenbergStructure}.
       It is the condition that the whole chain inherits.
 
-      \item \textbf{Lorentzian metric $g^{\mu\nu} = 2\eta^{\mu\nu}$} (Note~2, Q5b--Q11):
-      the Lorentzian signature forces the complexification
-      $\mathrm{mp}(2,\mathbb{R})_\mathbb{C} \simeq \mathfrak{sl}_2(\mathbb{C})$.
-      Without the Lorentzian metric, the spin group would remain $\mathrm{Sp}(2,\mathbb{R})$
-      and no Dirac spinors would arise.
+      \item \textbf{Conditional Lorentzian co-metric} (Note~2, Q5b, Q11):
+      reading the $\SL(2,\mathbb{C})$ of the complexified metaplectic algebra as a spin group needs a
+      four-dimensional Lorentzian co-metric on the effective base.
+      The geometric branch supplies it only conditionally: under its hypotheses the co-metric of
+      Q5b~\cite{Beau2026q5b} has rank three, and Q11~\cite{Beau2026q11} leaves the temporal coefficient free and
+      derives no coefficient value, so only a signature is available.
+      The complexification itself is algebraic and uses no metric; the co-metric enters only through
+      \HSpin{} (Hypothesis~2.2 of Q14), together with an identification of the spin structure with the metaplectic
+      action that no source supplies.
 
       \item \textbf{Gauge bundle for a supplied compact structure group $G_\Pi$} (Note~3, Q6a):
       the admissible principal bundle and gauge connection $A$ enter the spin--gauge
@@ -735,15 +814,15 @@ interpretation of the admissible fibre after geometric complexification.
       out none --- it keeps a structural $\UU(1)$ sector and an $\SU(2)$ sector conditional on the
       supplied spinor carrier, without assembling them --- and the derivation of
       $\SU(3) \times \SU(2) \times \UU(1)$ as a composite is withdrawn~\cite{Beau2026a35}.
-      The electroweak gauge-sector data used here are Q14's own tensor-functor construction from
-      $\Sbundle$, not an import.
+      The electroweak data used here are Q14's own application of the tensor functors to the weak factor of
+      \HWeak{}, not an import.
 
       \item \textbf{Supplied three-dimensional colour module $V_{\mathrm{color}}$}:
       carried as a hypothesis for the quark bundle and for the hypercharge weight rigidity of
       Theorem~B, since no admissible colour sector is derived~\cite{Beau2026a35}.
       The $V-A$ structure, the leptonic carrier and the generation factor do not use it.
 
-      \item \textbf{Minimal integral normalisation of the determinant line $L_Y$}:
+      \item \textbf{Minimal integral normalisation of the determinant line $L_Y = \wedge^2(\Ew)$}:
       an additional premise, used only for the selection of the Standard Model hypercharge pattern
       among the weights the anomaly constraints allow, and then only up to an overall sign and
       rescaling.
@@ -766,17 +845,35 @@ interpretation of the admissible fibre after geometric complexification.
 
       \item \textbf{Parity involution $c \leftrightarrow q-c$} (BornInfeld, O17--O18):
       the scalar conjugation identity is proved (O17; recalled in O18 Theorem~3.1) and is the
-      input from which the spinorial lift is derived; its reading as the fibre structure of
+      input from which the spinorial lift is derived under \HSpin{} and the Born--Infeld datum (H1)--(H2) of O30;
+      its reading as the fibre structure of
       $\Pi$ is a structurally motivated hypothesis (O18 states the fibre identification as an
       open problem).
+
+      \item \textbf{Lorentzian spin solder \HSpin{}} (not supplied; Hypothesis~2.2 of Q14):
+      a Lorentzian co-metric of dimension four on the effective base, and a principal $\Spin(3,1)$-bundle covering its
+      oriented, time-oriented orthonormal frames with structure group identified with the $\SL(2,\mathbb{C})$
+      acting on the admissible doublet.
+      Every Lorentz-covariant statement of the note uses it: the spinor bundle, the projected Dirac operator,
+      $\gamma_5$, the uniqueness and chirality reversal of the spinorial lift, and left-admissibility.
+      It is a missing identification, not a refutation.
+
+      \item \textbf{Distinct weak factor \HWeak{}} (not supplied; Hypothesis~2.3 of Q14):
+      a Hermitian rank-two bundle $\Ew$ with structure group $\UU(2)$ and a connection, distinct from the factor
+      soldered by \HSpin{}, with fermion fields in $P_L \Sbundle \otimes \Ew \otimes L_Y^{k}$ and
+      $P_R \Sbundle \otimes L_Y^{m}$.
+      The $\SU(2)_L \times \UU(1)_Y$ data, the $V-A$ structure and the anomaly constraints on the hypercharge weights
+      use it.
+      Q14 does not construct $\Ew$, and the two deposited candidates for it are excluded by~\cite{Beau2026nsr}.
     \end{enumerate}
 
   \section{Outputs to Downstream Branches}
     \label{sec:outputs}
 
-    \begin{table}[ht]
+    \begin{table}[!ht]
       \centering
       \caption{Principal outputs and downstream consumers.
+      Status: P = proved on the supplied model data; C = conditional on the hypotheses named in the last column.
       Every row is stated relative to the supplied Heisenberg carrier; the last column names any
       further hypothesis.}
       \label{tab:outputs}
@@ -785,15 +882,17 @@ interpretation of the admissible fibre after geometric complexification.
         \toprule
         Output & Consumer & Status and further hypothesis \\
         \midrule
-        Admissible spinor bundle $\Sbundle$ & Phenomenology, Q-series & S; none \\
-        $\SU(2)_L \times \UU(1)_Y$ gauge-sector data & SM phenomenology & S; none \\
+        $\mathfrak{sl}_2(\mathbb{C})$ tensor algebra on the supplied doublet & Q-series & P; supplied real metaplectic model and doublet \\
+        Admissible spinor bundle $\Sbundle$, Lorentz sector $\mathrm{Sym}^2(S_L)$ & Phenomenology, Q-series & C; \HSpin{} \\
+        $\su(2)_L \subset \mathrm{Sym}^2(\Ew)$, $L_Y = \wedge^2(\Ew)$ & SM phenomenology & C; \HWeak{}, $\Ew$ not constructed \\
         Fermionic weak doublet $M_L$ & --- (open frontier) & no-go~\cite{Beau2026nsr} \\
-        $V-A$ chiral structure & Weak interaction pheno & S; none \\
-        Hypercharge weight rigidity from the anomaly trace & SM charge assignment & S; supplied colour module of dimension three \\
-        Standard Model hypercharge pattern & SM charge assignment & S; the same module, \emph{and} the minimal integral normalisation of $L_Y$; up to sign and rescaling \\
-        Three-generation factor $\Cgen$ & Mass/mixing notes & S; supplied rank-three carrier (O23) \\
-        Quark bundle $\Sbundle \otimes V_{\mathrm{color}}$ & QCD sector & S; supplied colour module of dimension three \\
-        $\Epi$ as projective endomorphism & Yukawa sector (open) & S (open) \\
+        Lorentz chirality, $P_R \Epi P_R = 0$ & Chiral structure of $\Epi$ & C; \HSpin{}, BI datum (H1)--(H2) of O30, orientation-compatible branch (an input) \\
+        $V-A$ chiral structure & Weak interaction pheno & C; \HWeak{}, not derived from left-admissibility \\
+        Hypercharge weight rigidity from the anomaly trace & SM charge assignment & C; \HSpin{}, \HWeak{}, supplied colour module of dimension three \\
+        Standard Model hypercharge pattern & SM charge assignment & C; the same, \emph{and} the minimal integral normalisation of $L_Y = \wedge^2(\Ew)$; up to sign and rescaling \\
+        Three-generation factor $\Cgen$ & Mass/mixing notes & C; supplied rank-three carrier (O23); \HSpin{}, \HWeak{} through the bundle it multiplies \\
+        Quark bundle $\Sbundle \otimes V_{\mathrm{color}}$ & QCD sector & C; supplied colour module of dimension three \\
+        $\Epi$ as projective endomorphism & Yukawa sector (open) & C; \HSpin{} (open) \\
         \bottomrule
       \end{tabular}
     \end{table}
@@ -809,23 +908,25 @@ interpretation of the admissible fibre after geometric complexification.
       Each item names any further hypothesis it carries.
 
       \begin{enumerate}
-        \item \textit{Admissible spinor bundle} (Theorem~A; no further hypothesis):
-        $\Sbundle$ is induced from $\Vr$ via the metaplectic lift and Lorentzian
-        complexification.
-        The construction is algebraic and functorial; it depends on the Lorentzian closure
-        of Q5b--Q11 but not on the spinorial BI lift.
+        \item \textit{Algebra and spinor bundle} (Theorem~A(a),(b)):
+        (a) on the supplied model data, the complexified metaplectic algebra is
+        $\mathfrak{sl}_2(\mathbb{C})$, the symmetric square of the doublet is the adjoint and its exterior square the
+        determinant line; this is proved, algebraic and independent of any metric.
+        (b) The spinor bundle $\Sbundle = S_L \oplus S_R$, with the Lorentz sector
+        $\mathrm{Sym}^2(S_L) \simeq \adC(P_\Pi)$ and the trivial line $\wedge^2(S_L)$, is conditional on \HSpin{}.
+        It does not use the spinorial BI lift.
 
-        \item \textit{$\SU(2)_L$ gauge sector from $\mathrm{Sym}^2(\Sbundle)$} (Theorem~A; no
-        further hypothesis):
-        the symmetric tensor sector gives the complex adjoint
-        $\adC(P_\Pi) \simeq \mathfrak{sl}_2(\mathbb{C})$; after compact real-form selection,
+        \item \textit{$\SU(2)_L$ gauge sector from $\mathrm{Sym}^2(\Ew)$} (Theorem~A(c); conditional on \HWeak{}):
+        the symmetric tensor sector of the weak factor gives the complex weak adjoint
+        $\mathrm{Sym}^2(\Ew) \supset \adC(\su(2)_L)$; after compact real-form selection,
         the $\SU(2)_L$ gauge sector is identified.
-        This identifies gauge-sector data only; the fermionic weak multiplicity is a distinct
-        object, not produced here~\cite{Beau2026nsr}.
+        This identifies gauge-sector data only; $\Ew$ is not constructed, and the fermionic weak multiplicity is a
+        distinct object, not produced by the functors on $\Sbundle$~\cite{Beau2026nsr}.
 
-        \item \textit{$\UU(1)_Y$ from $\wedge^2(\Sbundle)$} (Theorem~A; no further hypothesis):
-        the determinant line $L_Y = \wedge^2(\Sbundle)$ is the geometric support of the
-        hypercharge factor.
+        \item \textit{$\UU(1)_Y$ from $\wedge^2(\Ew)$} (Theorem~A(c); conditional on \HWeak{}):
+        the determinant line $L_Y = \wedge^2(\Ew)$ is the geometric support of the
+        hypercharge factor, carrying $\UU(1)_Y$ non-trivially only because the structure group of $\Ew$ is $\UU(2)$.
+        On the spinor factor the exterior square is trivial and carries no hypercharge.
         This is the existence of the geometric support only.
         It must not be conflated with the two conditional statements it carries downstream
         (Section~\ref{sec:further-structural}): the rigidity of the weights, and the selection of the
@@ -835,9 +936,11 @@ interpretation of the admissible fibre after geometric complexification.
         \item \textit{Generation multiplicity} (Theorem~C; conditional):
         $\Cgen \subset \ker(\mathrm{ad}_{\SU(2)} \oplus Y)$ is a gauge-singlet three-generation
         space arising from the spinorial multiplicity reading of $\sigma_c(n_3) = 3$, a
-        supplied selection rule (conditional on the supplied rank-three carrier).
-        The spatial and generation readings of the rank-three invariant are distinct
-        ($\mathbb{R}^3_{\mathrm{space}} \neq C^3_{\mathrm{gen}}$; Q14 §5).
+        supplied selection rule (conditional on the supplied rank-three carrier, and through the bundle it multiplies
+        on \HSpin{} and \HWeak{}).
+        The spatial and generation readings of the rank-three invariant are not identified
+        ($\mathbb{R}^3_{\mathrm{space}} \neq C^3_{\mathrm{gen}}$; Q14 \S5): no source supplies a geometric image of the
+        rank-three sector.
       \end{enumerate}
 
     \subsection{Further structural results}
@@ -847,27 +950,33 @@ interpretation of the admissible fibre after geometric complexification.
       named in the item.
 
       \begin{enumerate}
-        \item \textit{Left-admissibility of $\Epi$} (Theorem~B; no further hypothesis):
-        $P_R \Epi P_R = 0$ follows from the spinorial BI lift (Q14), now established.
+        \item \textit{Left-admissibility of $\Epi$} (Theorem~B; conditional on \HSpin{}, the Born--Infeld datum
+        (H1)--(H2) of O30, and the orientation-compatible branch, which is an input):
+        on that branch $P_R \Epi P_R = 0$, a statement about the projective residue and the Lorentz chirality, derived
+        from the spinorial BI lift (Q14, Theorem~3.7 and Proposition~3.8).
 
-        \item \textit{$V-A$ chiral structure} (Theorem~B; no further hypothesis):
-        the condition $P_R \Epi P_R = 0$ selects the left-chiral admissible projection
-        $P_L \Sbundle$, giving the $V-A$ coupling of weak interactions.
-        This half of Theorem~B does not use the colour module.
+        \item \textit{$V-A$ chiral structure} (Theorem~B; conditional on \HWeak{}):
+        the weak chiral selection, with the weak gauge action carried by the left-handed factor alone and
+        fermions in $P_L \Sbundle \otimes \Ew$, is the representation content of \HWeak{}.
+        Left-admissibility is compatible with it but does not select it, and Q14 does not derive the $V-A$ structure
+        from $P_R \Epi P_R = 0$ (Remark~3.9).
+        This part of Theorem~B does not use the colour module.
 
-        \item \textit{Hypercharge weight rigidity} (Theorem~B; conditional on a supplied
+        \item \textit{Hypercharge weight rigidity} (Theorem~B; conditional on \HSpin{}, \HWeak{} and a supplied
         three-dimensional colour module):
-        the anomaly-cancellation trace condition
-        $\mathrm{Tr}_{\Sbundle}(\gamma_5 Y A_\Pi(x)) = 0$ constrains $Y_R$.
+        the trace condition of anomaly cancellation constrains $Y_R$:
+        \[
+          \mathrm{Tr}_{\Sbundle}(\gamma_5 Y A_\Pi(x)) = 0.
+        \]
         The constraints are weighted by the representation dimension, so the colour multiplicity
         enters the sums.
         The constraint system at general multiplicity is not analysed, and the constraints are not
         claimed to force three.
 
-        \item \textit{Standard Model hypercharge pattern} (Theorem~B; conditional on that same
-        module \emph{and} on the minimal integral normalisation of $L_Y$):
+        \item \textit{Standard Model hypercharge pattern} (Theorem~B; conditional on the same
+        hypotheses and module \emph{and} on the minimal integral normalisation of $L_Y$):
         selecting the Standard Model pattern among the allowed weights is a separate proposition,
-        holding under the further premise that the determinant line $L_Y = \wedge^2(\Sbundle)$
+        holding under the further premise that the determinant line $L_Y = \wedge^2(\Ew)$
         carries the minimal integral normalisation compatible with the $\UU(1)_Y$ action, and then
         only up to an overall sign and rescaling.
         On that pattern the cubic constraint vanishes precisely at colour multiplicity three.
@@ -875,14 +984,15 @@ interpretation of the admissible fibre after geometric complexification.
         determinant-line normalisation and the Standard Model pattern among its open directions.
         The anomaly constraints restrict the allowed weights; the normalisation fixes their scale.
 
-        \item \textit{Quark bundle} (§6; conditional on the same supplied colour module):
+        \item \textit{Quark bundle} (Q14 \S7; conditional on the same supplied colour module):
         $\Sbundle \otimes V_{\mathrm{color}}$ is structural once $V_{\mathrm{color}}$ is supplied.
-        The spinorial BI lift is established (Q14), but no admissible colour sector is derived:
+        The spinorial BI lift is derived under \HSpin{} (Q14), but no admissible colour sector is derived:
         O31~\cite{Beau2026a35} withdraws $[\mathrm{H\text{-}color}]_{\mathrm{pointwise}}$ together
         with every derivation of a gauge factor.
 
         \item \textit{A4 Schur-transversality closure}~\cite{Beau2026prs}:
-        the conditional residual of the A4 matching is closed in the present Lorentzian spin stratum --- the
+        the conditional residual of the A4 matching is closed in the present Lorentzian spin stratum, that is under
+        \HSpin{} --- the
         projected commutator $[\partial_s P|_0,J_\Pi]\big|_{\mathrm{span}(e_+,e_-)}$ has the exact metaplectic
         opening $\alpha(t,s)=ts\,r/\sinh r\not\equiv0$, $\mu(t,s)\equiv0$, and its timelike Clifford symbol is not
         in the zero-mode locus, so the Schur-transverse branch is selected and the split is determined via the
@@ -933,8 +1043,8 @@ interpretation of the admissible fibre after geometric complexification.
 
         \item \textit{The fermionic weak multiplicity $M_L$ and the parallel-channel frontier.}
         The independent weak doublet carrier $M_L \simeq \mathbb{C}^2$ commuting with the
-        Lorentz action is not derived by the corpus, and its two deposited candidates are now
-        excluded exactly~\cite{Beau2026nsr}: the internal Hecke operator doublets have no
+        Lorentz action, that is the weak factor $\Ew$ of \HWeak{}, is not derived by the corpus, and its two
+        deposited candidates are excluded exactly~\cite{Beau2026nsr}: the internal Hecke operator doublets have no
         fermionic lift (the Weil carrier commutant is spanned by the parity projectors), and
         the erased history fibres are structurally abelian, their alternating line reaching the
         protected odd operator sector only through a re-entry that the no-sequential-re-entry
@@ -962,19 +1072,34 @@ interpretation of the admissible fibre after geometric complexification.
         misalignment~\cite{Hobart2026OnticTypes}, the Dirac/Majorana reading, and the structural test relating
         mixing magnitude to the number of identity-stabilising projection channels --- is carried by the
         companion note~\cite{Beau2026npi}.
+
+        \item \textit{The Lorentzian spin solder.}
+        Constructing the principal $\Spin(3,1)$-bundle of \HSpin{} from the metaplectic action, with a four-dimensional
+        Lorentzian co-metric on the effective base, is open: the geometric branch supplies the co-metric only
+        conditionally, and no source relates the metaplectic action to its frames.
+        The same hypothesis would be needed to read the central Weil lift $R_b = W(-I)$ as the central element of the
+        spin group, which requires a group-level map from the finite Weil group to the $\SL(2,\mathbb{C})$ of
+        \HSpin{}; no such map is supplied, and whether the chirality grading removes the residual obstruction without a
+        spacetime parity is open.
+        Equally open is whether the admissible fibre supplies either of the two factors of \HSpin{} and \HWeak{}.
+
+        \item \textit{The generation carrier and the level assignment.}
+        The operators of Q14 \S6 are model operators on $\Cgen = \mathrm{Sym}^2(V_{\mathrm{gen}})$, with
+        $V_{\mathrm{gen}}$ a supplied doublet distinct from the soldered one.
+        Reading them as restrictions of $\Epi^2$ is an identification that is not supplied, and the level-to-generation
+        map is not established; the split value $\varepsilon=1/10$ is a matching value.
       \end{enumerate}
 
   \section{Open Deliverables}
     \label{sec:open}
 
-    The derivation of the spinorial BI lift, formerly the first open deliverable, is now
-    established as a theorem in Q14~\cite{Beau2026q14}: the antilinear lift $J_\Pi = HK$ dresses
-    the BI parity by the weight grading.
-    This removes the lift as a technical condition on Theorems~B and~C.
-    It does not make them unconditional: Theorem~C still carries the supplied rank-three carrier,
-    the hypercharge weight rigidity of Theorem~B still carries the supplied colour module, and the
-    selection of the Standard Model pattern carries in addition the minimal integral normalisation
-    of $L_Y$, whose connection to that pattern Q14 keeps among its own open directions.
+    Under \HSpin{} and the Born--Infeld datum (H1)--(H2) of O30, the spinorial BI lift is derived in
+    Q14~\cite{Beau2026q14}: the antilinear lift $J_\Pi = HK$ dresses the BI parity by the weight grading.
+    This does not make Theorems~B and~C unconditional.
+    Theorem~B carries \HSpin{} for Lorentz chirality and \HWeak{} for the $V-A$ structure and the anomaly
+    constraints; Theorem~C still carries the supplied rank-three carrier, the hypercharge weight rigidity of Theorem~B
+    still carries the supplied colour module, and the selection of the Standard Model pattern carries in addition the
+    minimal integral normalisation of $L_Y$, whose connection to that pattern Q14 keeps among its own open directions.
     Two open deliverables remain.
 
     \textbf{Open deliverable 1: Explicit $\Epi$ and the Yukawa sector.}
@@ -988,9 +1113,11 @@ interpretation of the admissible fibre after geometric complexification.
     block~\cite{Beau2026prs};
     the open part is its explicit Lorentzian block $1-P(s)$ along the $J_\Pi$-odd modulus.
     The symmetric finite front is $J_\Pi$-equivariant and gives $u_{\mathrm{fin}}=0$, but the discrete
-    chiral-frontier normalisation $\mathcal N_A$ survives the operator obstruction, since the residual
-    reflection $R_b=\mathrm{FT}^2$ is blind to chirality ($[\gamma_5,R_b]=0$)~\cite{Beau2026q11of}, and is fixed
-    maximally, $\mathcal N_A=\theta_{\max}$, in the inherited central-phase lift~\cite{Beau2026cho}.
+    chiral-frontier normalisation $\mathcal N_A$ is fixed maximally, $\mathcal N_A=\theta_{\max}$, in the
+    inherited central-phase lift~\cite{Beau2026cho}.
+    The residual reflection $R_b=\mathrm{FT}^2$ commutes with $\gamma_5$ only if it is central in the spin group, which
+    needs a group-level map from the finite Weil group to the $\SL(2,\mathbb{C})$ of \HSpin{} that is not
+    supplied~\cite{Beau2026q14, Beau2026q11of}.
     The split amplitude is therefore fixed at A4 by matching this discrete normalisation with the
     Lorentzian Born--Infeld curvature $\mu_\chi^2=\partial_s^2\mathcal B(0)$, neither ingredient reducing
     to the other:
@@ -998,7 +1125,7 @@ interpretation of the admissible fibre after geometric complexification.
       |u| = \mathrm{A4Match}\!\left(\mathcal N_A,\,\mu_\chi^2\right).
     \]
     The operator side of this matching is no longer conditional: by~\cite{Beau2026prs} the Schur transversality is
-    closed in the present Lorentzian spin stratum, the projected commutator
+    closed in the present Lorentzian spin stratum, that is under \HSpin{}, the projected commutator
     $[\partial_s P|_0,J_\Pi]\big|_{\mathrm{span}(e_+,e_-)}$ having the exact metaplectic opening
     $\alpha(t,s)=ts\,r/\sinh r\not\equiv0$ with timelike Clifford symbol off the zero-mode locus.
     In the Schur-transverse branch the A4 chiral polarisation is electric, hence
@@ -1023,7 +1150,8 @@ interpretation of the admissible fibre after geometric complexification.
     Deriving the projective-resolution growth $\Lambda_{\mathrm{proj}}(n)$ from first principles is
     the central open problem of that front~\cite{Beau2026a4}.
     What remains quantitative is therefore these upstream dictionary inputs, the integral normalisation of
-    $\mathcal{L}_Y$, and generation mixing via the complex metaplectic phase.
+    $\mathcal{L}_Y$, and generation mixing, which a complex metaplectic phase does not supply within the metaplectic
+    step model~\cite{Beau2026q14}.
 
     \paragraph{Charged-lepton unit-dispersion target.}
     The phenomenological target for the open charged-lepton masses is stated most sharply not as a mass ratio but
@@ -1038,14 +1166,18 @@ interpretation of the admissible fibre after geometric complexification.
     KUD records this target invariant, the open maximum-entropy test, and the scoped linear self-adjoint
     determinant no-go described above~\cite{Beau2026kud}.
 
-    The Yukawa sector now splits into two sub-fronts.
-    The Yukawa line is closed: the determinant line $L_Y = \wedge^2(\Sbundle)$ is the unique functorial line of the
-    carrier, invisible to the $\SU(2)_L$ adjoint sector and carrying the abelian weight, and the generation-level
-    assignment is fixed by the spectral levels of
-    $\Epi^2|_{\Cgen} = \mathrm{diag}(1, \tfrac12 + u, \tfrac12 - u)$, the central direction being lightest and the largest
-    exit deficit heaviest~\cite{Beau2026pyl}.
-    The Yukawa operator $Y_\Pi: \mathcal{S}_{L,\Pi} \otimes L_Y \to \mathcal{S}_{R,\Pi}$ in turn splits.
-    Its hermitian square is closed: the Schur-residue sector fixes the squared observable
+    The Yukawa sector splits into two sub-fronts.
+    The coupling line is conditional on \HWeak{}: the determinant line $L_Y = \wedge^2(\Ew)$ is the unique functorial
+    line of the weak factor, invisible to the $\SU(2)_L$ adjoint sector and carrying the abelian weight because the
+    structure group of $\Ew$ is $\UU(2)$, and the generation-level assignment is read on the levels of the model
+    operator $\Epi^2|_{\Cgen} = \mathrm{diag}(1, \tfrac12 + u, \tfrac12 - u)$, the central direction being lightest
+    and the largest exit deficit heaviest~\cite{Beau2026pyl}.
+    That ordering is a statement about levels: reading it as an ordering of the three generations needs the
+    level-to-generation map, which is not established.
+    The Yukawa operator $Y_\Pi$ is a morphism between the left-handed sector
+    $P_L \Sbundle \otimes \Ew \otimes L_Y^{k}$ and the right-handed sector $P_R \Sbundle \otimes L_Y^{m}$ of \HWeak{};
+    how the weak doublet index is absorbed is not constructed here.
+    Its hermitian square is closed on the generation factor: the Schur-residue sector fixes the squared observable
     $H_\Pi := Y_\Pi^\dagger Y_\Pi$, with $\mathrm{Spec}(H_\Pi)|_{\Cgen} = \lambda_Y^2\,\{1, \tfrac12 + u, \tfrac12 - u\}$,
     so $\Epi^2|_{\Cgen}$ determines the squared Yukawa levels, not the morphism~\cite{Beau2026pyo}.
     What stays open is the chiral polar factor $U_\Pi$ in $Y_\Pi = U_\Pi H_\Pi^{1/2}$ --- a unitary chiral map on the
@@ -1059,8 +1191,8 @@ interpretation of the admissible fibre after geometric complexification.
     and one CP phase, and its non-triviality $[U_\Pi] \neq [I]$ is controlled by the transverse part of the complex
     metaplectic generator~\cite{Beau2026pyo}.
     On the derived real cascade that transverse channel is absent ($v = 0$), so $[U_\Pi] = [I]$ and no physical mixing
-    is produced at this stratum; a non-trivial class requires a genuine complex metaplectic phase, not derived here and
-    observable only relative to a second fermionic sector.
+    is produced at this stratum; a non-trivial class requires a genuine complex metaplectic phase, not derived here,
+    which the metaplectic step model of Q14 does not reach, and observable only relative to a second fermionic sector.
     The present Yukawa-polar analysis closes the current stratum negatively for mixing: the corpus derives the diagonal
     generation split, but the polar class collapses to $[U_\Pi] = [I]$ because the non-central metaplectic coefficients
     are real and the only inherited complex phase is central~\cite{Beau2026pyo}.
@@ -1070,32 +1202,40 @@ interpretation of the admissible fibre after geometric complexification.
     $S^\mathrm{matter}_\Pi = (\Sbundle \oplus (\Sbundle \otimes V_{\mathrm{color}})) \otimes \Cgen$
     in full Lorentzian signature, with explicit gauge couplings and three-generation Yukawa
     structure, is the downstream target.
-    It requires the resolution of Deliverable~1 above, and, for its coloured summand, an admissible
-    colour sector, which is not available: the module $V_{\mathrm{color}}$ is supplied.
+    It requires the resolution of Deliverable~1 above, the hypotheses \HSpin{} and \HWeak{}, and, for its coloured
+    summand, an admissible colour sector, which is not available: the module $V_{\mathrm{color}}$ is supplied.
 
     \newpage
   \section{Conclusion}
     \label{sec:conclusion}
 
-    The fermionic matter sub-programme shows that fermions, chirality and three generations need
-    not be added to the Cosmochrony framework as external fields, once a Heisenberg carrier is
-    supplied.
-    On that carrier they are the spinorial face of the Weil module $\Vr$, revealed through the
-    Lorentzian complexification of its metaplectic structure.
+    The fermionic matter sub-programme states what the fermionic sector requires when fermions are sought in the
+    admissible Weil fibre rather than added to the Cosmochrony framework as external fields.
+    On a supplied Heisenberg carrier, given a real metaplectic model and a supplied doublet, the algebra is proved
+    and uses no metric: the complexified metaplectic algebra is $\mathfrak{sl}_2(\mathbb{C})$, the symmetric square of
+    the doublet is the adjoint and its exterior square the determinant line.
     The carrier is supplied rather than selected by the admissibility axioms, and everything below
     inherits that condition.
+    Two physical readings of the algebra are distinct hypotheses, each a missing identification and neither excluded
+    by any result: \HSpin{}, which identifies the $\SL(2,\mathbb{C})$ of the doublet with the spin group of a
+    four-dimensional Lorentzian co-metric on the effective base, and \HWeak{}, which supplies a distinct rank-two weak
+    factor $\Ew$ with structure group $\UU(2)$.
 
-    The electroweak gauge-sector data of $\SU(2)_L \times \UU(1)_Y$ arise from the tensor
-    functors of the admissible spinor bundle $\Sbundle$ (Theorem~A, no further hypothesis); the
-    independent fermionic weak doublet is a distinct object, not produced by those functors
-    and now excluded at the operator and history strata by the companion no-go
-    note~\cite{Beau2026nsr}.
-    The $V-A$ chiral structure arises from the projective endomorphism
-    $\Epi$ (Theorem~B, no further hypothesis).
-    The anomaly-cancellation trace constrains the hypercharge weights with no colour hypothesis;
-    their rigidity is what carries a supplied three-dimensional colour module.
+    Under \HSpin{}, $\Sbundle = S_L \oplus S_R$ is a spinor bundle of the effective co-metric, $\mathrm{Sym}^2(S_L)$ is
+    the Lorentz sector and $\wedge^2(S_L)$ a trivial line (Theorem~A).
+    Under \HWeak{}, the electroweak data of $\SU(2)_L \times \UU(1)_Y$ arise from the same tensor functors applied to
+    $\Ew$: $\su(2)_L \subset \mathrm{Sym}^2(\Ew)$ and $L_Y = \wedge^2(\Ew)$.
+    The independent fermionic weak doublet is the object $\Ew$ itself, not produced by the functors on $\Sbundle$ and
+    not constructed, its two deposited candidates being excluded at the operator and history strata by the companion
+    no-go note~\cite{Beau2026nsr}.
+    Lorentz chirality, the left-admissibility of the projective endomorphism $\Epi$, holds on an orientation-compatible
+    branch, which is an input, under \HSpin{} and the Born--Infeld datum of O30 (Theorem~B).
+    The $V-A$ structure is a different statement, the representation content of \HWeak{}, and it is not derived from
+    left-admissibility.
+    Under both hypotheses, the anomaly-cancellation trace constrains the hypercharge weights with no colour
+    hypothesis; their rigidity is what carries a supplied three-dimensional colour module.
     Selecting the Standard Model pattern among them takes a further premise, the minimal integral
-    normalisation of the determinant line $L_Y$, holds only up to an overall sign and rescaling, and
+    normalisation of the determinant line $L_Y = \wedge^2(\Ew)$, holds only up to an overall sign and rescaling, and
     is where the cubic constraint vanishes at colour multiplicity three; Q14 leaves the explicit
     connection between that normalisation and the pattern open.
     Three generations arise from the spinorial multiplicity reading of $\sigma_c(n_3) = 3$
@@ -1112,9 +1252,11 @@ interpretation of the admissible fibre after geometric complexification.
     The inter-generation splitting is localised: statically obstructed, living in a two-dimensional
     $J_\Pi$-odd lift sector, and vanishing on the symmetric finite front ($u_{\mathrm{fin}}=0$,
     $J_\Pi$-equivariant).
-    Its operator obstruction is resolved, the residual reflection $R_b=\mathrm{FT}^2$ being blind to
-    chirality ($[\gamma_5,R_b]=0$), and its amplitude mechanism is the derived Born--Infeld
-    saturation~\cite{Beau2026bim}.
+    The residual reflection $R_b=\mathrm{FT}^2$ commutes with $\gamma_5$ only given a group-level map from the finite
+    Weil group to the $\SL(2,\mathbb{C})$ of \HSpin{}, which is not supplied, and its amplitude mechanism is the
+    derived Born--Infeld saturation~\cite{Beau2026bim}.
+    The generation sector is described by model operators on a distinct supplied doublet, the identification of which
+    with restrictions of $\Epi^2$ is not supplied, and the level-to-generation map is not established.
     The remaining open components are the explicit Lorentzian $\Epi$, whose eliminated-block jet $1-P(s)$ is structurally
     constrained and whose $J_\Pi$-odd tangent has left-handed block equal to half the transported equivariance defect
     rate, $[\Pi_{J_\Pi\text{-odd}}\dot Q(0)]_{LL}=\tfrac12\partial_s\Delta_\chi(P)|_0$, in the companion
@@ -1154,6 +1296,19 @@ interpretation of the admissible fibre after geometric complexification.
     The neutrino sector provides a particularly sharp interpretive test case: if particle identity is projective
     rather than primitive, then PMNS-like misalignment is the generic neutral case, while CKM near-alignment is
     the structure requiring explanation (Section~\ref{sec:open-problems}).
+
+    \paragraph{Interpretive outlook.}
+    The following is a reading of the results, not a result.
+    The Standard Model does not treat spin and weak isospin as one structure: a left-handed electron is a Lorentz
+    spinor and, separately, a member of a weak doublet.
+    The sub-programme reaches the same separation from the other side.
+    A supplied doublet on the admissible fibre carries one copy of the algebra, and that algebra is exactly the algebra
+    of both spin and weak isospin, but one copy cannot carry both roles.
+    Where the fermionic sector meets spacetime and where it meets the weak interaction are therefore two distinct
+    questions, and the question of why weak interactions are left-handed becomes the question of how the two factors
+    are joined.
+    The remaining problems are specific: the two hypotheses on how the fibre is soldered, and the rigidity problems
+    for $\Epi$ and $L_Y$.
 
     \bibliographystyle{plain}
     \bibliography{cosmochrony-bibliography,external-refs}
