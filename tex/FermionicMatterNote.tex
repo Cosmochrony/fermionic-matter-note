@@ -20,6 +20,8 @@
   unicode=true,
   pdftitle={The Fermionic Matter Sub-Programme: Presentation Note 6},
   pdfauthor={Jérôme Beau},
+  pdfsubject={Layered conditional status of fermions, chirality, hypercharge and generations in the Cosmochrony corpus},
+  pdfkeywords={Cosmochrony; fermionic matter; Lorentzian spin structure; weak factor; hypercharge; generations},
   colorlinks=true,
   linkcolor=black,
   citecolor=black,
@@ -53,6 +55,20 @@
 \newcommand{\Ypi}{Y_\Pi}
 \newcommand{\Ygen}{{Y^{\mathrm{gen}}_\Pi}}
 \newcommand{\LYuk}{\mathcal{L}_{\mathrm{Yuk}}}
+\newcommand{\HGrad}{\ensuremath{[\mathrm{H\text{-}Grad}]}}
+\newcommand{\AClause}{%
+  The anti-Hermitian part $A_\Pi$ of the $J_\Pi$-odd part of the $\mathfrak{sl}_2$ lift of the step generator to
+  $\Cgen$ vanishes identically for all complex coefficients, because with the antilinear $J_\Pi$ of Q14 the
+  $J_\Pi$-odd part of the lift is its Hermitian part; this is a statement about $A_\Pi$ as defined
+  in~\cite{Beau2026pyo}.
+  The $J_\Pi$-even anti-Hermitian part of the lift of $pE+qF+rH$ has a non-zero internal entry
+  $\tfrac{\sqrt2}{2}(q-\bar p)$, non-zero for real $p\neq q$, so the image of $\mathfrak{sl}_2$ does reach the
+  internal block between $e_0$ and $e_\pm$ through that part, while the external block $R_{\mathrm{mix}}$ is not
+  reached by the image of $\mathfrak{sl}_2$ (Q14, Remark~6.4; Q14 excludes the internal block by hypothesis only,
+  Proposition~6.3(i)--(ii)).
+  No physical exclusion of the internal block is claimed: whether $A_\Pi$, rather than the $J_\Pi$-even part, is the
+  right object is a modelling choice of~\cite{Beau2026pyo} that no source justifies.%
+}
 
 \title{The Fermionic Matter Sub-Programme\\[0.4em]
 \large Presentation Note 6}
@@ -79,12 +95,14 @@
     [H-Spin] identifies the $\SL(2,\mathbb{C})$ of the doublet with the spin group of a four-dimensional
     Lorentzian co-metric on the effective base; under it $\mathrm{Sym}^2(S_L)$ is the Lorentz sector,
     $\wedge^2(S_L)$ a trivial line, and the projective endomorphism $\Epi$ of the projected Dirac operator is
-    left-admissible on an orientation-compatible branch, which is an input.
+    left-admissible on an orientation-compatible branch, which is an input, given the Born--Infeld datum (H1)--(H2)
+    of O30.
     [H-Weak] supplies a distinct rank-two weak factor $\Ew$ with structure group $\UU(2)$: $\su(2)_L$ sits in
     $\mathrm{Sym}^2(\Ew)$, the hypercharge line is $L_Y := \wedge^2(\Ew)$, and the $V-A$ structure is its content.
     The anomaly constraints on the hypercharge weights need both hypotheses.
     Lorentz chirality and weak chiral selection are different statements; the second is not derived from the first.
-    The rigidity of the hypercharge weights carries, beyond the two hypotheses, a supplied colour module, and
+    The rigidity of the hypercharge weights carries, beyond the two hypotheses, a supplied colour module and the
+    admissible matter decomposition, and
     selecting the Standard Model pattern carries in addition the minimal integral normalisation of $L_Y$.
     The saturation invariant $\sigma_c(n_3) = 3$, a supplied rule, gives conditionally a gauge-singlet
     three-generation factor $\Cgen$; the generation sector is a set of model operators on a distinct supplied
@@ -144,7 +162,9 @@
     excluded by any result.
     \HSpin{} (Hypothesis~2.2 of Q14) identifies the $\SL(2,\mathbb{C})$ acting on the doublet with the spin group of
     a four-dimensional Lorentzian co-metric on the effective base, and no source supplies it: the geometric branch
-    supplies the co-metric only conditionally, and nothing relates the metaplectic action to its frames.
+    supplies only a rank-three degenerate co-metric, under its hypotheses, and nothing relates the metaplectic
+    action to its
+    frames.
     \HWeak{} (Hypothesis~2.3 of Q14) supplies a distinct rank-two weak factor $\Ew$ with structure group $\UU(2)$,
     which Q14 does not construct: by Schur's lemma a weak action commuting with Lorentz transformations cannot live
     on the doublet that carries the spin reading.
@@ -237,9 +257,10 @@ interpretation of the admissible fibre.
       $\Vr$, and the parity involution $c \leftrightarrow q-c$ (Notes~1 and~5).
       Stone--von Neumann is a conditional endpoint here, supplying uniqueness once that carrier is
       given~\cite{Beau2026m, Beau2026HeisenbergStructure}.
-      \item A four-dimensional Lorentzian co-metric on the effective base $M_{\mathrm{eff}}$, supplied only
-      conditionally by the geometric branch (Note~2; under its hypotheses Q5b~\cite{Beau2026q5b} has rank three,
-      and, for a supplied full-rank extension, Q11~\cite{Beau2026q11} leaves the temporal coefficient free and derives
+      \item A four-dimensional Lorentzian co-metric on the effective base $M_{\mathrm{eff}}$, of which the geometric
+      branch supplies only a rank-three degenerate part (Note~2; under its hypotheses Q5b~\cite{Beau2026q5b}), the
+      full-rank extension being supplied, and, for it, Q11~\cite{Beau2026q11} leaves the temporal coefficient free
+      and derives
       no coefficient value);
       it enters the fermionic sector only through \HSpin{}.
       \item Admissible principal bundle $P_{G_\Pi}(M_{\mathrm{eff}}, G_\Pi)$ and gauge connection $A$
@@ -416,7 +437,8 @@ interpretation of the admissible fibre.
       The hypercharge half carries further hypotheses, in two steps.
       First, the constraints are weighted by the representation dimension, so the colour
       multiplicity enters the sums: the rigidity of the weights $Y_R$ holds on a supplied
-      three-dimensional colour module.
+      three-dimensional colour module, with the premise that the projected spinorial sectors are those of the
+      admissible matter decomposition (Q14, Proposition~4.4).
       Q14 does not analyse the constraint system at general multiplicity and does not claim that the
       constraints force three.
       Second, selecting the \emph{Standard Model pattern} from those constraints is a separate
@@ -458,8 +480,9 @@ interpretation of the admissible fibre.
       \HRes{} is not supplied.
       A static $J_\Pi$-real, weight-preserving model operator has a degenerate outer pair:
       the two light generations cannot be split statically (static obstruction).
-      The admissible lifts removing this degeneracy form a two-dimensional $J_\Pi$-odd sector, the
-      real-split direction being the weight generator $J_3$ and the mixing direction a doublet
+      The lifts that remove this degeneracy, required to be real in the weight basis, to annihilate $e_0$ and to
+      preserve the outer doublet (Q14, Proposition~6.3(i)--(ii)), and to be $J_\Pi$-odd, form a two-dimensional
+      sector, the real-split direction being the weight generator $J_3$ and the mixing direction a doublet
       rotation.
       The generation split is not a finite-front observable in the symmetric sense: the raw finite front
       remains $J_\Pi$-equivariant and gives $u_{\mathrm{fin}}=0$~\cite{Beau2026prs}.
@@ -469,18 +492,14 @@ interpretation of the admissible fibre.
       $\gamma_5$, would require a group-level map from the finite Weil group to the $\SL(2,\mathbb{C})$ of \HSpin{},
       which is not supplied; whether the chirality grading removes the residual obstruction without a spacetime
       parity is open~\cite{Beau2026q14}.
-      The remaining amplitude is fixed at A4 by matching the discrete chiral-frontier normalisation
-      $\mathcal N_A$~\cite{Beau2026aar} with the Lorentzian Born--Infeld curvature
-      $\mu_\chi^2=\partial_s^2\mathcal B(0)$~\cite{Beau2026prs}, neither ingredient reducing to the other.
+      The remaining amplitude is matched at A4 between the discrete chiral-frontier normalisation
+      $\mathcal N_A$~\cite{Beau2026aar} and the Lorentzian Born--Infeld curvature
+      $\mu_\chi^2=\partial_s^2\mathcal B(0)$~\cite{Beau2026bim}, neither ingredient reducing to the other.
       Within the metaplectic step model of Q14, a complex metaplectic phase is excluded as a source of
-      $R_{\mathrm{mix}}$, which connects the outer weights; $R_{\mathrm{mix}}$ would need a generator outside the
-      image of $\mathfrak{sl}_2(\mathbb{C})$, which is not supplied (Q14, Remark~6.4, whose argument concerns
-      $R_{\mathrm{mix}}$ only, and Proposition~6.3(i), which assumes that the lifts annihilate $e_0$).
-      In the $\mathfrak{sl}_2$ step model the $J_\Pi$-odd anti-Hermitian part of the lift of the step generator to
-      $\Cgen$
-      vanishes, and sourcing either transverse block, the internal block between $e_0$ and $e_\pm$ or
-      $R_{\mathrm{mix}}$, needs a generator outside
-      that image~\cite{Beau2026pyo}.
+      $R_{\mathrm{mix}}$, which connects the outer weights: $R_{\mathrm{mix}}$ is not reached by the image of
+      $\mathfrak{sl}_2(\mathbb{C})$ and would need a generator outside it, which is not supplied (Q14, Remark~6.4,
+      whose argument concerns $R_{\mathrm{mix}}$ only).
+      \AClause{}
 
       \textit{Colour sector} (conditional on a supplied colour module).
       The colour-coupled quark sector $\Sbundle \otimes V_{\mathrm{color}}$ is obtained by
@@ -488,8 +507,9 @@ interpretation of the admissible fibre.
       three, carried as a hypothesis rather than derived.
       No admissible colour sector is available to supply one.
       O31~\cite{Beau2026a35} is a withdrawal notice, and among the results it withdraws are the
-      co-admissibility of the individual capacity profiles $\sigma_{c_1}$, $\sigma_{c_2}$,
-      $\sigma_{c_3}$ --- the content of $[\mathrm{H\text{-}color}]_{\mathrm{pointwise}}$ --- the
+      co-admissibility of the individual profiles $\sigma_{c_1}$, $\sigma_{c_2}$,
+      $\sigma_{c_3}$ --- which Q14 identifies with the content of $[\mathrm{H\text{-}color}]_{\mathrm{pointwise}}$
+      --- the
       uniqueness of $\SU(3)$ among connected compact subgroups acting irreducibly on
       $\mathbb{C}^3$, the arithmetic criterion $q \equiv 1 \pmod 3$ for the existence of colour
       triplets, and every derivation of a gauge factor.
@@ -525,7 +545,8 @@ interpretation of the admissible fibre.
         construction inherits; the last column names any further hypothesis.}
         \label{tab:results}
         \renewcommand{\arraystretch}{1.2}
-        \begin{tabular}{@{}>{\raggedright\arraybackslash}p{3.2cm} >{\raggedright\arraybackslash}p{6.0cm} >{\raggedright\arraybackslash}p{4.6cm}@{}}
+        \begin{tabular}{@{}>{\raggedright\arraybackslash}p{3.2cm}
+         >{\raggedright\arraybackslash}p{6.0cm} >{\raggedright\arraybackslash}p{4.6cm}@{}}
           \toprule
           Result & Central output & Status and further hypothesis \\
           \midrule
@@ -552,7 +573,7 @@ interpretation of the admissible fibre.
             & C; \HWeak{}, not derived from left-admissibility \\
           Theorem~B (weight rigidity)
             & $Y_R$ constrained by the anomaly-cancellation trace
-            & C; \HSpin{}, \HWeak{}, supplied colour module of dimension three \\
+            & C; \HSpin{}, \HWeak{}, supplied colour module of dimension three, admissible matter decomposition \\
           Theorem~B (SM pattern)
             & that pattern selected among the allowed weights, up to overall sign, rescaling and the exchange of
               $u_R$ and $d_R$
@@ -580,7 +601,7 @@ interpretation of the admissible fibre.
       A direct evaluation on symmetric BFS shells returns $\Theta_{\mathrm{raw}}=0$ identically: the
       symmetric capacity data fix the radial sector but cannot select an oriented angular branch, so the
       orientation prescription is an irreducible input prior to the normalisation $\mathcal N_A$.
-      A subsequent capacity audit on the real Weil--BFS pipeline closes the angular onset coefficient: the directed
+      The capacity audit on the real Weil--BFS pipeline closes the angular onset coefficient: the directed
       outgoing-frontier mean $\langle|\Delta A_c|\rangle_{\partial^+}$ is a $q$-independent exact rational sequence
       (identical across $q\in\{61,101,151,211,307\}$, by integer arithmetic, no fit) with saturation onset exactly
       $\tfrac13$, so the maximal-locking angular bound is $\theta_{\max}=2\pi/(3q)$.
@@ -606,7 +627,7 @@ interpretation of the admissible fibre.
       supplied, and whether the chirality grading removes the $\varphi$-paired obstruction without a spacetime parity
       is open~\cite{Beau2026q14}.
       The amplitude normalisation $\mathcal N_A$ is a separate question.
-      The chiral weight $\gamma_5$ entering this signal is identified in CHO-Note~\cite{Beau2026cho} as the Weyl
+      The chiral weight $\sigma_L$ entering this signal is identified in CHO-Note~\cite{Beau2026cho} as the Weyl
       representation type $\mathbf{2}$ versus $\bar{\mathbf{2}}$, not a function of the cascade generator $T(e)$
       (arrow inversion and $\varphi$ both send $T\mapsto -T$, fixing equal parities, while the admissible weight is
       arrow-even and $\varphi$-odd); in the inherited Heisenberg central-phase lift the outgoing-frontier overlap is
@@ -623,14 +644,17 @@ interpretation of the admissible fibre.
       $\Delta_\chi(P)=\pi_{LL}-\tau\,\overline{\pi_{RR}}\,\tau^{-1}$.
       The finite locking is $J_\Pi$-equivariant, so $u_{\mathrm{fin}}=0$ (finite/Lorentzian separation): the
       split cannot originate in the finite cascade and is a Lorentzian datum, whose existence and stability are
-      decided by the Born--Infeld saturation curvature $\mu_\chi^2=\partial_s^2\mathcal B(0)$, its magnitude $|u|$
+      decided by the Born--Infeld saturation curvature $\mu_\chi^2=\partial_s^2\mathcal B(0)$~\cite{Beau2026bim},
+      its magnitude $|u|$
       being fixed through the chiral-frontier normalisation.
-      The Schur transversality on which the A4 matching depends is established in~\cite{Beau2026prs} on two premises
+      The Schur transversality on which the A4 matching depends is established in~\cite{Beau2026prs}, in the \HSpin{}
+      stratum (the timelike Clifford symbol, $\gamma_5$ and $\Epi$ exist under \HSpin{}), on two premises
       of that note: the symbol compatibility of the projected Dirac operator, and the identification of the
       central commutator $Z=[X,Y]$ with the timelike direction after the co-metric completion
       $g^{\mu\nu}=2\eta^{\mu\nu}$, a coefficient value that the geometric branch does not derive.
       That note states the normal form of $\Epi^2|_{\Cgen}$ without listing among its premises the identification of
-      the model operator with it; this note tags that identification \HRes{}.
+      the model operator with it; the tag \HRes{}, used in~\cite{Beau2026pyl, Beau2026pyo}, names that identification
+      and is not a premise of that note.
       Under those two premises the projected commutator $[\partial_s P|_0,J_\Pi]\big|_{\mathrm{span}(e_+,e_-)}$ has
       the exact
       metaplectic opening $\alpha(t,s)=ts\,r/\sinh r\not\equiv0$ with $\mu(t,s)\equiv0$, and its timelike Clifford
@@ -700,7 +724,8 @@ interpretation of the admissible fibre.
       every depth read off the growth law
       $N(\lambda;n)\sim F_{\mathrm{KM}}(\lambda)\,n$~\cite{Beau2026a5} --- crossing depth, saturation rank, or any
       intermediate fraction --- is a function of the same Kesten--McKay coefficients $c_g(p)$, so it inherits the
-      band-edge divergence and the symmetry pin $c_2=\tfrac12$ and cannot be both cascade-stable and monotone in
+      band-edge divergence and the symmetry pin $c_2=\tfrac12$ and cannot be both cascade-stable and correctly
+      ordered in
       those coefficients, for the inter-block and the inter-level partition alike~\cite{Beau2026pyo}.
       The remaining positive route, a decaying capacity-controlled per-level profile $\sigma_{\lambda_g}(n)$
       transported onto the cascade, is also ruled out as a static route: quantising the per-level
@@ -708,7 +733,8 @@ interpretation of the admissible fibre.
       $c_g(p)$, but the Weil--Schur transport is scale-free, so the required stabilisation window is reached only
       by re-inserting the Laplacian valency $|S|$, the count normalisation, returning to the law
       $n_g=\Delta I_g/c_g(p)$ of the linear-growth route~\cite{Beau2026pyo}.
-      The static admissibility spectrum therefore fixes the generation structure and the order-one level split,
+      The static admissibility spectrum therefore carries the conditional three-generation factor and the order-one
+      level split,
       but not the charged-fermion hierarchy.
       The remaining dynamical route --- reading the depths off the relaxation trajectory rather than the static
       spectrum --- is also tested at first order and reproduces the same obstruction~\cite{Beau2026pyo}:
@@ -717,7 +743,8 @@ interpretation of the admissible fibre.
       hierarchy scale only through the cascade amplification itself or an unpinned ceiling-to-floor ratio, both
       free normalisations.
       The hierarchy is thus carried by no forced static or first-order dynamical quantity of the cascade, which
-      fixes generation structure, order-one splitting, and a band-edge-independent order-one depth gap, but not
+      carries the conditional three-generation factor, an order-one splitting, and a band-edge-independent order-one
+      depth gap, but not
       the charged-fermion hierarchy at this stratum.
 
     \subsection{Chiral orientation of the directed frontier: $\sigma_L$ as a representation
@@ -787,7 +814,8 @@ interpretation of the admissible fibre.
       carries $\UU(1)_Y$ non-trivially only because the structure group is $\UU(2)$; on the spinor factor the same
       functor gives a trivial line, so the coupling line is conditional on \HWeak{}.
       On the generation factor $\Cgen$, the model operator $\mathrm{diag}(1,\tfrac12+u,\tfrac12-u)$ has exit deficits
-      $\{0,\tfrac12-u,\tfrac12+u\}$ that order three levels, with a scale-independent ratio.
+      $\{0,\tfrac12-u,\tfrac12+u\}$ that order three levels for $0<u<\tfrac12$ (degenerate at $u=0$), with a
+      scale-independent ratio.
       Reading it as the restriction of $\Epi^2$ is \HRes{}, which is not supplied, and the level-to-generation map is
       not established.
       The mass matrix is a distinct object: no mass value is claimed.
@@ -803,20 +831,17 @@ interpretation of the admissible fibre.
       By polar decomposition $\Ygen=U_\Pi\,H_\Pi^{1/2}$, which is linear algebra and uses no premise, the unitary
       chiral factor $U_\Pi$ (chiral orientation and complex mixing phase) and the overall norm $\lambda_Y$ are both
       invisible to $\Epi^2$.
-      In the $\mathfrak{sl}_2$ step model the $J_\Pi$-odd anti-Hermitian part of the lift vanishes, so that this part
-      sources no mixing; sourcing either transverse block, between $e_0$ and $e_\pm$ or between $e_+$ and $e_-$,
-      needs a generator outside that image~\cite{Beau2026pyo}.
-      Q14 excludes a complex metaplectic phase as a source of $R_{\mathrm{mix}}$ within its model, an argument that
-      concerns $R_{\mathrm{mix}}$ only.
+      \AClause{}
       The orientation-compatible branch of Q14, an input, enters that note only in the reading of the diagonal split
       as a Lorentz-chirality imbalance.
       Hence the absolute masses, the generation mixing, and the CP structure remain downstream.
 
       The statements of the companion concern the generation block.
-      They transfer to the full coupling $\Ypi$ only under the premise \HFac{} of that note, which requires, as two
-      separate conditions, that a non-zero invariant coupling between the left and right sectors exist and that the
-      space of such couplings be one-dimensional, so that the generation block carries the polar data of the full
-      operator; supplying one of them does not prove the other, and no source supplies either.
+      They transfer to the full coupling $\Ypi$ only under the premise \HFac{} of that note: (F1) a weak linking
+      carrier $K$, supplied by no source, for which the space $I_K$ of Lorentz-invariant sesquilinear couplings that
+      are $\UU(2)$-invariant is non-zero; (F2) $\dim I_K\leq1$, so that the coupling factorises through $\Cgen$.
+      (F1) and (F2) are independent.
+      The Lorentz part is not an obstruction: the sesquilinear pairing contains the Lorentz scalar once.
 
     \subsection{Charged-lepton Koide relation as a unit-dispersion constraint~\cite{Beau2026kud}}
       This source note fixes the phenomenological target of the charged-lepton mass sector, downstream of the
@@ -834,7 +859,7 @@ interpretation of the admissible fibre.
       This bounds the static LEVELS, not the physical mass, which carries in addition the cascade depth
       amplification $A(n_g)=\exp(\beta^\ast n_g)$; the physical dispersion is set by the depths.
       So unit dispersion is reached by no presently \emph{constructed} cascade mechanism --- the obstruction being
-      the not-yet-built saturation arena on the resolved observable types (an A4 singlet--doublet coincidence),
+      the unbuilt saturation arena on the resolved observable types (an A4 singlet--doublet coincidence),
       rather than the level-ladder cap.
       There is no general no-go for the equipartition mechanism, but KUD proves a scoped one for a concrete
       determinant realisation.
@@ -889,9 +914,10 @@ interpretation of the admissible fibre.
       \item \textbf{Conditional Lorentzian co-metric} (Note~2, Q5b, Q11):
       reading the $\SL(2,\mathbb{C})$ of the complexified metaplectic algebra as a spin group needs a
       four-dimensional Lorentzian co-metric on the effective base.
-      The geometric branch supplies it only conditionally: under its hypotheses the co-metric of
-      Q5b~\cite{Beau2026q5b} has rank three, and, for a supplied full-rank extension,
-      Q11~\cite{Beau2026q11} leaves the temporal coefficient free and derives no coefficient value, so only a
+      The geometric branch supplies only a rank-three degenerate co-metric under its hypotheses
+      (Q5b~\cite{Beau2026q5b}),
+      the full-rank extension being supplied, and, for it, Q11~\cite{Beau2026q11} leaves the temporal coefficient
+      free and derives no coefficient value, so only a
       signature is available.
       The complexification itself is algebraic and uses no metric; the co-metric enters only through
       \HSpin{} (Hypothesis~2.2 of Q14), together with an identification of the spin structure with the metaplectic
@@ -973,7 +999,8 @@ interpretation of the admissible fibre.
       further hypothesis.}
       \label{tab:outputs}
       \renewcommand{\arraystretch}{1.3}
-      \begin{tabular}{@{}>{\raggedright\arraybackslash}p{4.6cm}>{\raggedright\arraybackslash}p{3.6cm}>{\raggedright\arraybackslash}p{4.6cm}@{}}
+      \begin{tabular}{@{}>{\raggedright\arraybackslash}p{4.6cm}
+         >{\raggedright\arraybackslash}p{3.6cm}>{\raggedright\arraybackslash}p{4.6cm}@{}}
         \toprule
         Output & Consumer & Status and further hypothesis \\
         \midrule
@@ -1066,8 +1093,8 @@ interpretation of the admissible fibre.
         \item \textit{Left-admissibility of $\Epi$} (Theorem~B; conditional on \HSpin{}, the Born--Infeld datum
         (H1)--(H2) of O30, and the orientation-compatible branch, which is an input):
         on that branch $P_R \Epi P_R = 0$, a statement about the projective residue and the Lorentz chirality, which
-        holds by the definition of the orientation-compatible branch, an input (Q14, Proposition~3.8); the spinorial
-        BI lift of Theorem~3.7 shows that a non-zero such $\Epi$ is not $J_\Pi$-invariant.
+        holds by the definition of the orientation-compatible branch, an input; for $\Epi\neq0$ with $\Epi\preceq0$ it
+        is not $J_\Pi$-invariant (Q14, Proposition~3.8, which assumes Theorem~3.7).
 
         \item \textit{$V-A$ chiral structure} (Theorem~B; conditional on \HWeak{}):
         the weak chiral selection, with the weak gauge action carried by the left-handed factor alone and
@@ -1076,8 +1103,9 @@ interpretation of the admissible fibre.
         from $P_R \Epi P_R = 0$ (Remark~3.9).
         This part of Theorem~B does not use the colour module.
 
-        \item \textit{Hypercharge weight rigidity} (Theorem~B; conditional on \HSpin{}, \HWeak{} and a supplied
-        three-dimensional colour module):
+        \item \textit{Hypercharge weight rigidity} (Theorem~B; conditional on \HSpin{}, \HWeak{}, a supplied
+        three-dimensional colour module, and the premise that the projected spinorial sectors are those of the
+        admissible matter decomposition, Q14 Proposition~4.4):
         the trace condition of anomaly cancellation constrains $Y_R$:
         \[
           \mathrm{Tr}_{\Sbundle}(\gamma_5 Y A_\Pi(x)) = 0.
@@ -1102,13 +1130,15 @@ interpretation of the admissible fibre.
 
         \item \textit{Quark bundle} (Q14 \S7; conditional on the same supplied colour module):
         $\Sbundle \otimes V_{\mathrm{color}}$ is structural once $V_{\mathrm{color}}$ is supplied.
-        The spinorial BI lift is derived under \HSpin{} (Q14), but no admissible colour sector is derived:
-        O31~\cite{Beau2026a35} withdraws $[\mathrm{H\text{-}color}]_{\mathrm{pointwise}}$ together
-        with every derivation of a gauge factor.
+        The spinorial BI lift is derived under \HSpin{} and the Born--Infeld datum (H1)--(H2) of O30 (Q14), but no
+        admissible colour sector is derived:
+        O31~\cite{Beau2026a35} withdraws the co-admissibility of the individual profiles, which Q14 identifies with
+        $[\mathrm{H\text{-}color}]_{\mathrm{pointwise}}$, together with every derivation of a gauge factor.
 
         \item \textit{A4 Schur transversality}~\cite{Beau2026prs}:
-        the conditional residual of the A4 matching is established on the two premises of that note: symbol
-        compatibility, and the identification of $Z=[X,Y]$ with the timelike direction after the co-metric completion
+        the conditional residual of the A4 matching is established, in the \HSpin{} stratum, on the two premises of
+        that note: symbol compatibility, and the identification of $Z=[X,Y]$ with the timelike direction after the
+        co-metric completion
         $g^{\mu\nu}=2\eta^{\mu\nu}$.
         Its normal form on $\Cgen$ is read here as a model operator, and reading it as $\Epi^2|_{\Cgen}$ is \HRes{}.
         Under those premises the projected commutator $[\partial_s P|_0,J_\Pi]\big|_{\mathrm{span}(e_+,e_-)}$ has
@@ -1126,7 +1156,7 @@ interpretation of the admissible fibre.
         $\Epi$ is identified as the zero-order endomorphism of the projected Dirac square, the
         ``internal spectral residue of non-injective projection.''
         Its structural form is fixed as the Schur complement of the eliminated spinorial block,
-        $\Epi=-M^{\dagger}M$ with $M=(1-P)D\,\Pi_S^{*}$~\cite{Beau2026prs}; what is not yet constructed is
+        $\Epi=-M^{\dagger}M$ with $M=(1-P)D\,\Pi_S^{*}$~\cite{Beau2026prs}; what is not constructed is
         its explicit
         Lorentzian block $1-P(s)$ along the $J_\Pi$-odd modulus.
         The inter-generation splitting is localised, on the model operator read as $\Epi^2|_{\Cgen}$ under \HRes{},
@@ -1196,8 +1226,8 @@ interpretation of the admissible fibre.
 
         \item \textit{The Lorentzian spin solder.}
         Constructing the principal $\Spin(3,1)$-bundle of \HSpin{} from the metaplectic action, with a four-dimensional
-        Lorentzian co-metric on the effective base, is open: the geometric branch supplies the co-metric only
-        conditionally, and no source relates the metaplectic action to its frames.
+        Lorentzian co-metric on the effective base, is open: the geometric branch supplies only a rank-three degenerate
+        co-metric, under its hypotheses, and no source relates the metaplectic action to its frames.
         The same hypothesis would be needed to read the central Weil lift $R_b = W(-I)$ as the central element of the
         spin group, which requires a group-level map from the finite Weil group to the $\SL(2,\mathbb{C})$ of
         \HSpin{}; no such map is supplied, and whether the chirality grading removes the residual obstruction without a
@@ -1241,14 +1271,15 @@ interpretation of the admissible fibre.
     Reading it as central in the spin group, hence commuting with $\gamma_5$, needs a group-level map from the finite
     Weil group to the $\SL(2,\mathbb{C})$ of \HSpin{} that is not supplied, and Q14 states no commutation without
     it~\cite{Beau2026q14}; Q11OF takes $R_b$ to be central in the spin group~\cite{Beau2026q11of}.
-    The split amplitude is therefore fixed at A4 by matching this discrete normalisation with the
+    The split amplitude is therefore matched at A4 between this discrete normalisation and the
     Lorentzian Born--Infeld curvature $\mu_\chi^2=\partial_s^2\mathcal B(0)$, neither ingredient reducing
     to the other:
     \[
       |u| = \mathrm{A4Match}\!\left(\mathcal N_A,\,\mu_\chi^2\right).
     \]
-    The operator side of this matching rests on the Schur transversality of~\cite{Beau2026prs}, established on the
-    two premises of that note, symbol compatibility and the identification of $Z=[X,Y]$ with the timelike direction
+    The operator side of this matching rests on the Schur transversality of~\cite{Beau2026prs}, established in the
+    \HSpin{} stratum on the two premises of that note, symbol compatibility and the identification of $Z=[X,Y]$
+    with the timelike direction
     after the co-metric completion $g^{\mu\nu}=2\eta^{\mu\nu}$; its normal form on $\Cgen$ is read here under \HRes{}.
     Under those premises the projected commutator $[\partial_s P|_0,J_\Pi]\big|_{\mathrm{span}(e_+,e_-)}$ has the exact
     metaplectic opening $\alpha(t,s)=ts\,r/\sinh r\not\equiv0$ with timelike Clifford symbol off the zero-mode locus.
@@ -1277,9 +1308,9 @@ interpretation of the admissible fibre.
     the central open problem of that front~\cite{Beau2026a4}.
     What remains quantitative is therefore these upstream dictionary inputs, the integral normalisation of
     $\LYuk$, and generation mixing, for which Q14 excludes a complex metaplectic phase as a source of
-    $R_{\mathrm{mix}}$ within its step model; in the $\mathfrak{sl}_2$ step model the $J_\Pi$-odd anti-Hermitian part
-    of the lift vanishes, and sourcing either transverse block needs a generator outside that
-    image~\cite{Beau2026q14, Beau2026pyo}.
+    $R_{\mathrm{mix}}$ within its step model, where $R_{\mathrm{mix}}$ is not reached by the image of
+    $\mathfrak{sl}_2(\mathbb{C})$~\cite{Beau2026q14}; the internal block is treated in~\cite{Beau2026pyo}, where
+    the $J_\Pi$-odd anti-Hermitian part $A_\Pi$ of the lift vanishes, a statement about $A_\Pi$ as defined.
 
     \paragraph{Charged-lepton unit-dispersion target.}
     The phenomenological target for the open charged-lepton masses is stated most sharply not as a mass ratio but
@@ -1304,9 +1335,10 @@ interpretation of the admissible fibre.
     $\{0, \tfrac12 - u, \tfrac12 + u\}$ are smallest on the central direction $e_0$ and largest on $e_-$.
     That ordering is a statement about levels, attached to $\Epi$ only through \HRes{}; reading it as an ordering of
     the three generations needs the level-to-generation map, which is not established.
-    The Yukawa operator $\Ypi$ is a morphism between the left-handed sector
+    The Yukawa coupling $\Ypi$ is, schematically, a coupling between the left-handed sector
     $P_L \Sbundle \otimes \Ew \otimes L_Y^{k}$ and the right-handed sector $P_R \Sbundle \otimes L_Y^{m}$ of \HWeak{};
-    how the weak doublet index is absorbed is not constructed here.
+    as a sesquilinear Lorentz-invariant form it needs the weak linking carrier $K$ of \HFac{}, and how the weak
+    doublet index is absorbed is not constructed here.
     On the generation block $\Ygen$, under \HRes{} and \HSq{}, the squared observable $H_\Pi := \Ygen^\dagger\Ygen$ has
     $\mathrm{Spec}(H_\Pi)|_{\Cgen} = \lambda_Y^2\,\{1, \tfrac12 + u, \tfrac12 - u\}$, so $\Epi^2|_{\Cgen}$ determines
     the squared Yukawa levels, not the morphism~\cite{Beau2026pyo}.
@@ -1316,16 +1348,17 @@ interpretation of the admissible fibre.
     the generation mixing.
     $\Epi^2$ is blind to $U_\Pi$: under \HRes{} and \HSq{} it fixes $H_\Pi = \Ygen^\dagger\Ygen$ but fixes $\Ygen$
     only if $U_\Pi$ is fixed.
-    The polar factor is not canonical but a rephasing class, $U_\Pi \sim V_R\,U_\Pi\,V_L^{-1}$ under the unitaries
-    commuting with the Cartan generator $J_3$ of each generation carrier, which are the diagonal rephasings; its
+    Under \HGrad{} of~\cite{Beau2026pyo}, which gives each generation carrier its own Cartan generator $J_3$ and is
+    supplied by no source, the polar factor is not canonical but a rephasing class,
+    $U_\Pi \sim V_R\,U_\Pi\,V_L^{-1}$ under the unitaries commuting with $J_3$ on each carrier, which are the diagonal
+    rephasings; its
     rephasing-invariant content is therefore CKM/PMNS-type data, three mixing angles and one CP phase.
     A non-trivial class $[U_\Pi] \neq [I]$ needs a transverse source, a block between $e_0$ and $e_\pm$ or between
     $e_+$ and $e_-$~\cite{Beau2026pyo}, and is observable only relative to a second fermionic sector.
-    In the $\mathfrak{sl}_2$ step model the $J_\Pi$-odd anti-Hermitian part of the lift vanishes, and sourcing either
-    transverse block needs a generator outside that image; no source supplies one.
-    Q14 excludes a complex metaplectic phase as a source of $R_{\mathrm{mix}}$ within its model (Remark~6.4), an
-    argument that concerns $R_{\mathrm{mix}}$ only.
-    These statements concern the generation block; they transfer to the full coupling only under \HFac{}.
+    \AClause{}
+    These statements concern the generation block; they transfer to the full coupling only under \HFac{} of
+    \cite{Beau2026pyo}, that is (F1) a weak linking carrier $K$ with a non-zero space of invariant couplings, supplied
+    by no source, and (F2) $\dim I_K\leq1$, two independent conditions.
 
     \textbf{Open deliverable 2: Full matter content in Lorentzian signature.}
     The complete fermionic content
@@ -1421,10 +1454,12 @@ interpretation of the admissible fibre.
 
     The mass-sector frontier separates into three layers.
     On model operators, the angular Weil--BFS coefficient is closed in the standard campaign
-    ($\theta_{\max}=2\pi/(3q)$)~\cite{Beau2026aar}, and, on the premises of~\cite{Beau2026prs} and under \HRes{}, the
+    ($\theta_{\max}=2\pi/(3q)$)~\cite{Beau2026aar}, and, on the premises of~\cite{Beau2026prs}, in the \HSpin{}
+    stratum, and under \HRes{}, the
     Schur transport with the electric genus of~\cite{Beau2026bim} gives $u\neq0$.
-    Polar mixing is not sourced by the $\mathfrak{sl}_2$ step model: the $J_\Pi$-odd anti-Hermitian part of its lift
-    vanishes, and either transverse block needs a generator outside that image~\cite{Beau2026pyo}.
+    The external block $R_{\mathrm{mix}}$ is not reached by the image of $\mathfrak{sl}_2(\mathbb{C})$ (Q14,
+    Remark~6.4), and $A_\Pi$, the anti-Hermitian part of the $J_\Pi$-odd part of its lift, vanishes as defined
+    in~\cite{Beau2026pyo}, which claims no physical exclusion of the internal block.
     Finally, the dictionary value $\varepsilon=1/10$ is not a capacity fit and is not fixed by
     $\mathrm{Sym}^2(\mathbb{C}^2)$ alone; after the capacity and $\mathrm{Sym}^2$ normalisations are separated, the
     remaining datum is the ADE / type-rigidity ratio $R=3/2$ --- equivalently the prime $5$, or the
