@@ -8,6 +8,7 @@
 \usepackage{doi}
 \usepackage{geometry}
 \usepackage{booktabs}
+\usepackage{longtable}
 \usepackage{array}
 \usepackage{enumitem}
 \usepackage{amsfonts}
@@ -21,7 +22,9 @@
   pdftitle={The Fermionic Matter Sub-Programme: Presentation Note 6},
   pdfauthor={Jérôme Beau},
   pdfsubject={Layered conditional status of fermions, chirality, hypercharge and generations in the Cosmochrony corpus},
-  pdfkeywords={Cosmochrony; fermionic matter; Lorentzian spin structure; weak factor; hypercharge; generations},
+  pdfkeywords={fermionic matter; admissible spinor bundle; metaplectic lift; Lorentzian spin structure; weak factor;
+    chirality; V-A structure; hypercharge constraints; anomaly cancellation; three generations;
+    projected Dirac operator; Weil representation; non-injective projection; presentation note},
   colorlinks=true,
   linkcolor=black,
   citecolor=black,
@@ -56,10 +59,13 @@
 \newcommand{\Ygen}{{Y^{\mathrm{gen}}_\Pi}}
 \newcommand{\LYuk}{\mathcal{L}_{\mathrm{Yuk}}}
 \newcommand{\HGrad}{\ensuremath{[\mathrm{H\text{-}Grad}]}}
+\newcommand{\JBI}{{J^{\mathrm{spin}}_\Pi}}
 \newcommand{\AClause}{%
   The anti-Hermitian part $A_\Pi$ of the $J_\Pi$-odd part of the $\mathfrak{sl}_2$ lift of the step generator to
-  $\Cgen$ vanishes identically for all complex coefficients, because with the antilinear $J_\Pi$ of Q14 the
-  $J_\Pi$-odd part of the lift is its Hermitian part; this is a statement about $A_\Pi$ as defined
+  $\Cgen$ vanishes identically for all complex coefficients, because, for the internal antilinear parity $J_\Pi$
+  of the generation copy (Q14, Section~6; not the spinor-level
+  lift of Q14, Theorem~3.7), the $J_\Pi$-odd part of the lift is its Hermitian part; this is a statement about
+  $A_\Pi$ as defined
   in~\cite{Beau2026pyo}; this generator is not the anomaly density $A_\Pi(x)$ of Q14.
   The $J_\Pi$-even anti-Hermitian part of the lift of $pE+qF+rH$ has a non-zero internal entry
   $\tfrac{\sqrt2}{2}(q-\bar p)$, non-zero for real $p\neq q$, so the image of $\mathfrak{sl}_2$ does reach the
@@ -111,10 +117,10 @@
     O31 is a withdrawal notice: the co-admissibility of the colour profiles, the uniqueness of $\SU(3)$, the
     arithmetic criterion for colour triplets and every gauge-factor derivation are withdrawn, so no admissible colour
     sector in that sense is established.
-    A dedicated no-go note excludes the two deposited candidates for an independent fermionic weak
+    A dedicated no-go note (NSR) excludes the two deposited candidates for an independent fermionic weak
     multiplicity $M_L \simeq \mathbb{C}^2$.
-    The finite-stratum obstructions of that note are unconditional; its Lorentz-lock input is imported from Q14,
-    where the spinor reading of the carrier is under [H-Spin].
+    NSR's finite-stratum obstructions are unconditional (not conditional on [H-Spin]); its Lorentz-lock input is
+    imported from Q14, where the spinor reading of the carrier is under [H-Spin].
     This note reads $\Ew$ as the role such a multiplicity would play, so that
     $\Ew$ remains an explicit architectural extension.
     \emph{Interpretive outlook (a reading, not a result).}
@@ -207,12 +213,12 @@
     spinor bundle give Lorentz-typed adjoint and determinant data, and under \HSpin{} the Lorentz commutant of the
     irreducible Weyl factor is scalar, so no internal non-abelian factor acts on the same spinor factor.
     The two deposited candidates for the missing multiplicity carrier $M_L \simeq \mathbb{C}^2$
-    --- the internal Hecke operator doublets and the erased history fibres --- are closed by
-    exact obstructions in the companion no-go note~\cite{Beau2026nsr}, whose central result is
+    --- the internal Hecke operator doublets and the erased history fibres --- are excluded by
+    exact obstructions in the companion no-go note (NSR)~\cite{Beau2026nsr}, whose central result is
     the no-sequential-re-entry theorem: information erased by the projective channel cannot be
     recovered by any tower of subsequent projections.
-    The finite-stratum obstructions of that note are unconditional; its Lorentz-lock input is imported from Q14,
-    where the spinor reading of the carrier is under \HSpin{}.
+    NSR's finite-stratum obstructions are unconditional (not conditional on \HSpin{}); its Lorentz-lock input is
+    imported from Q14, where the spinor reading of the carrier is under \HSpin{}.
     The matter-sector weak doublet, the role that this note reads the factor $\Ew$ of \HWeak{} as playing (a reading
     of this note, stated by neither Q14 nor the no-go note), is therefore an explicitly open frontier,
     realisable through an architectural extension, such as a parallel substrate channel with an oriented
@@ -419,20 +425,22 @@ interpretation of the admissible fibre.
       In the reading of this note, $\Ew$ is the role of the independent fermionic weak doublet
       $M_L \simeq \mathbb{C}^2$, whose two deposited candidates are excluded by the exact obstructions
       of~\cite{Beau2026nsr}.
-      Those finite-stratum obstructions are unconditional; the Lorentz-lock input of that note is imported from Q14,
-      where the spinor reading of the carrier is under \HSpin{}.
+      NSR's finite-stratum obstructions are unconditional (not conditional on \HSpin{}); its Lorentz-lock input is
+      imported from Q14, where the spinor reading of the carrier is under \HSpin{}.
 
       \textit{Theorem~B: Chiral selection and hypercharge constraints} (conditional; the parts carry different
       hypotheses).
       Under \HSpin{}, the projected Dirac operator $\Dpi$ has the Lichnerowicz-type square above.
-      Under \HSpin{} and the Born--Infeld datum (H1)--(H2) of O30, the antilinear $J_\Pi = HK$ is, up to a phase, the
+      Under \HSpin{} and the Born--Infeld datum (H1)--(H2) of O30, the spinorial BI lift $\JBI$, whose internal
+      part is $HK$, is, up to a phase, the
       unique covariant antilinear lift of the parity and reverses chirality.
       On the orientation-compatible branch, which is an input, $\Epi$ is left-admissible: $P_R \Epi P_R = 0$.
       This is Lorentz chirality, a statement about the projective residue and $\gamma_5$.
       The weak chiral selection, the $V-A$ structure, is the representation content of \HWeak{},
       with fermions (the sectors need \HSpin{} as well,
-      for $P_L$ and $P_R$) in $P_L \Sbundle \otimes \Ew$ and right-handed components that carry no factor $\Ew$, their
-      weak character being that of $L_Y^m$ alone.
+      for $P_L$ and $P_R$) in $P_L \Sbundle \otimes \Ew$ and right-handed components $P_R\Sbundle\otimes L_Y^m$
+      that carry no factor $\Ew$, a $\UU(2)$-character
+      (a weak singlet carrying the hypercharge twist $L_Y^m$).
       Q14 does not derive it from left-admissibility, which is compatible with it but does not select it.
       Under \HSpin{}, \HWeak{} and symbol compatibility, $\UU(1)_Y$ invariance of the projected spectral functional
       then imposes, at the $a_4$ level:
@@ -533,8 +541,8 @@ interpretation of the admissible fibre.
       \textit{Status of the spinorial BI lift.}
       Under \HSpin{} and the Born--Infeld datum (H1)--(H2) of O30, Q14 derives the spinorial lift of BI parity to the
       spinor bundle $\Sbundle$: the conjugation identity $c \leftrightarrow q-c$, proved at the scalar Weil level
-      (O17; recalled in O18 Theorem~3.1), lifts to the antilinear endomorphism $J_\Pi = HK$
-      satisfying $J_\Pi^2 = -1$ and $J_\Pi \gamma_5 = -\gamma_5 J_\Pi$, dressing the parity by the
+      (O17; recalled in O18 Theorem~3.1), lifts to the antilinear spinorial BI lift $\JBI$, whose internal part is $HK$,
+      satisfying $\JBI^2 = -1$ and $\JBI \gamma_5 = -\gamma_5 \JBI$, dressing the parity by the
       weight grading $H = 2J_3$.
       The relation $(HK)^2 = -1$ holds without any metric; the covariance, the uniqueness up to a phase and the
       chirality reversal use \HSpin{}.
@@ -546,18 +554,16 @@ interpretation of the admissible fibre.
       orientation-compatible branch, which is an input.
       The $V-A$ structure rests on \HWeak{} and is not derived from left-admissibility.
 
-      \begin{table}[!ht]
-        \centering
-        \caption{Summary of Q14 results by theorem.
+        \renewcommand{\arraystretch}{1.2}
+        \begin{longtable}[c]{@{}>{\raggedright\arraybackslash}p{3.2cm}
+         >{\raggedright\arraybackslash}p{6.0cm} >{\raggedright\arraybackslash}p{4.6cm}@{}}
+          \caption{Summary of Q14 results by theorem.
         Status: P = proved on the supplied model data; C = conditional on the hypotheses named in the last column;
         no-go = ruled out by an exact obstruction proved in the cited note, for the candidates it names;
         an open item is a missing element, not a refutation.
         Every row is stated relative to the supplied Heisenberg carrier, which the whole
         construction inherits; the last column names any further hypothesis.}
-        \label{tab:results}
-        \renewcommand{\arraystretch}{1.2}
-        \begin{tabular}{@{}>{\raggedright\arraybackslash}p{3.2cm}
-         >{\raggedright\arraybackslash}p{6.0cm} >{\raggedright\arraybackslash}p{4.6cm}@{}}
+        \label{tab:results}\\
           \toprule
           Result & Central output & Status and further hypothesis \\
           \midrule
@@ -574,7 +580,8 @@ interpretation of the admissible fibre.
             & C; \HWeak{}, $\Ew$ not constructed \\
           Calibration~\cite{Beau2026nsr}
             & no fermionic weak doublet $M_L$ from these functors on $\Sbundle$
-            & C; finite-stratum obstructions unconditional, Lorentz-lock input (scalar commutant of the irreducible Weyl
+            & C; finite-stratum obstructions not conditional on \HSpin{}, Lorentz-lock input (scalar commutant of
+              the irreducible Weyl
               factor, Q14 \S2) under \HSpin{}; the no-go proofs of the cited note concern the two deposited
               candidates (Table~\ref{tab:outputs}) \\
           Theorem~B (Lorentz chirality)
@@ -598,8 +605,7 @@ interpretation of the admissible fibre.
             & $\Sbundle \otimes V_{\mathrm{color}}$; quark bundle
             & C; supplied colour module of dimension three; \HSpin{}, \HWeak{} \\
           \bottomrule
-        \end{tabular}
-      \end{table}
+        \end{longtable}
 
     \subsection{Angular Amplitude Reduction: the $J_3$ split as oriented symplectic
     area~\cite{Beau2026aar}}
@@ -793,7 +799,8 @@ interpretation of the admissible fibre.
       Writing the self-adjoint eliminated projector as a jet $1-P(s)=Q_0+sQ_1+s^2Q_2+O(s^3)$ along the
       $J_\Pi$-odd modulus $s$, the projector constraints alone force $Q_1=[A,Q_0]$ to be a purely off-diagonal
       Grassmann tangent for every smooth family; the parity grading of the jet holds under $J_\Pi$-equivariance, and
-      with a covariant moving spinorial embedding and a $J_\Pi$-even Dirac operator the first-order $J_\Pi$-odd part
+      with a covariant moving spinorial embedding and a Dirac operator invariant under the spinor-level BI parity
+      of~\cite{Beau2026ebj} the first-order $J_\Pi$-odd part
       of $\Epi^2$ is the anticommutator $\{E_0,E_1\}$.
       Antiunitary parity makes every odd-order generation-mixing coefficient vanish in every covariant family, with or
       without complex phases, even orders not being excluded, and an explicit covariant family realises
@@ -1000,26 +1007,24 @@ interpretation of the admissible fibre.
       use it.
       Q14 does not construct $\Ew$, and the two deposited candidates for the multiplicity factor $M_L$, which this
       note reads $\Ew$ as replacing, are excluded by~\cite{Beau2026nsr}.
-      Its finite-stratum obstructions are unconditional; its Lorentz-lock input is imported from Q14, where the spinor
-      reading of the carrier is under \HSpin{}.
+      NSR's finite-stratum obstructions are unconditional (not conditional on \HSpin{}); its Lorentz-lock input is
+      imported from Q14, where the spinor reading of the carrier is under \HSpin{}.
     \end{enumerate}
 
   \section{Outputs to Downstream Branches}
     \label{sec:outputs}
 
-    \begin{table}[!ht]
-      \centering
-      \caption{Principal outputs and downstream consumers.
+      \renewcommand{\arraystretch}{1.3}
+      \begin{longtable}[c]{@{}>{\raggedright\arraybackslash}p{4.6cm}
+         >{\raggedright\arraybackslash}p{3.6cm}>{\raggedright\arraybackslash}p{4.6cm}@{}}
+        \caption{Principal outputs and downstream consumers.
       Status: P = proved on the supplied model data; C = conditional on the hypotheses named in the last column;
       no-go = ruled out by an exact obstruction proved in the cited note, for the candidates it names;
         an open item is a missing element, not a refutation.
       Every row is stated relative to the supplied Heisenberg carrier; the last column names any
       further hypothesis.}
-      \label{tab:outputs}
-      \renewcommand{\arraystretch}{1.3}
-      \begin{tabular}{@{}>{\raggedright\arraybackslash}p{4.6cm}
-         >{\raggedright\arraybackslash}p{3.6cm}>{\raggedright\arraybackslash}p{4.6cm}@{}}
-        \toprule
+      \label{tab:outputs}\\
+          \toprule
         Output & Consumer & Status and further hypothesis \\
         \midrule
         $\mathfrak{sl}_2(\mathbb{C})$ tensor algebra on the supplied doublet
@@ -1034,7 +1039,7 @@ interpretation of the admissible fibre.
         Fermionic weak doublet $M_L$
           & --- (open frontier)
           & exact obstruction (no-go) for the two deposited candidates~\cite{Beau2026nsr}; finite-stratum obstructions
-            unconditional, Lorentz-lock input imported from Q14 under \HSpin{} \\
+            not conditional on \HSpin{}, Lorentz-lock input imported from Q14 under \HSpin{} \\
         Lorentz chirality, $P_R \Epi P_R = 0$
           & Chiral structure of $\Epi$
           & C; \HSpin{}, BI datum (H1)--(H2) of O30; definition of the orientation-compatible branch (an input) \\
@@ -1053,8 +1058,7 @@ interpretation of the admissible fibre.
         \HSpin{}, \HWeak{} \\
         $\Epi$ as projective endomorphism & Yukawa sector (open) & C; \HSpin{} (open) \\
         \bottomrule
-      \end{tabular}
-    \end{table}
+      \end{longtable}
 
   \section{Status of Results}
     \label{sec:status}
@@ -1113,7 +1117,7 @@ interpretation of the admissible fibre.
         (H1)--(H2) of O30, and the orientation-compatible branch, which is an input):
         on that branch $P_R \Epi P_R = 0$, a statement about the projective residue and the Lorentz chirality, which
         holds by the definition of the orientation-compatible branch, an input; for $\Epi\neq0$ with $\Epi\preceq0$ it
-        is not $J_\Pi$-invariant (Q14, Proposition~3.8, which assumes Theorem~3.7).
+        is not $\JBI$-invariant (Q14, Proposition~3.8, which assumes Theorem~3.7).
 
         \item \textit{$V-A$ chiral structure} (Theorem~B; conditional on \HWeak{}):
         the weak chiral selection, with the weak gauge action carried by the left-handed factor alone and
@@ -1266,7 +1270,8 @@ interpretation of the admissible fibre.
     \label{sec:open}
 
     Under \HSpin{} and the Born--Infeld datum (H1)--(H2) of O30, the spinorial BI lift is derived in
-    Q14~\cite{Beau2026q14}: the antilinear lift $J_\Pi = HK$ dresses the BI parity by the weight grading.
+    Q14~\cite{Beau2026q14}: the spinorial BI lift $\JBI$ dresses the BI parity by the weight grading ($HK$ on its
+    internal part).
     This does not make Theorems~B and~C unconditional.
     Theorem~B carries \HSpin{} for Lorentz chirality and \HWeak{} for the $V-A$ structure and the anomaly
     constraints; Theorem~C carries the supplied rank-three carrier, the hypercharge weight rigidity of Theorem~B
