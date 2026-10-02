@@ -60,20 +60,29 @@
 \newcommand{\LYuk}{\mathcal{L}_{\mathrm{Yuk}}}
 \newcommand{\HGrad}{\ensuremath{[\mathrm{H\text{-}Grad}]}}
 \newcommand{\JBI}{{J^{\mathrm{spin}}_\Pi}}
+\newcommand{\AOdd}{A_\Pi^{\mathrm{odd}}}
 \newcommand{\AClause}{%
-  The anti-Hermitian part $A_\Pi$ of the $J_\Pi$-odd part of the $\mathfrak{sl}_2$ lift of the step generator to
-  $\Cgen$ vanishes identically for all complex coefficients, because, for the internal antilinear parity $J_\Pi$
-  of the generation copy (Q14, Section~6; not the spinor-level
-  lift of Q14, Theorem~3.7), the $J_\Pi$-odd part of the lift is its Hermitian part; this is a statement about
-  $A_\Pi$ as defined
-  in~\cite{Beau2026pyo}; this generator is not the anomaly density $A_\Pi(x)$ of Q14.
-  The $J_\Pi$-even anti-Hermitian part of the lift of $pE+qF+rH$ has a non-zero internal entry
-  $\tfrac{\sqrt2}{2}(q-\bar p)$, non-zero for real $p\neq q$, so the image of $\mathfrak{sl}_2$ does reach the
-  internal block between $e_0$ and $e_\pm$ through that part, while the external block $R_{\mathrm{mix}}$ is not
-  reached by the image of $\mathfrak{sl}_2$ (Q14, Remark~6.4; Q14 excludes the internal block by hypothesis only,
-  Proposition~6.3(i)--(ii)).
-  No physical exclusion of the internal block is claimed: whether $A_\Pi$, rather than the $J_\Pi$-even part, is the
-  right object is a modelling choice of~\cite{Beau2026pyo} that no source justifies.%
+  The projection $\AOdd$, the anti-Hermitian part of the $J_\Pi$-odd part of the $\mathfrak{sl}_2$ lift of the step
+  generator to $\Cgen$, vanishes identically for all complex coefficients, because, for the internal antilinear
+  parity $J_\Pi$ of the generation copy (Q14, Section~6; not the spinor-level lift of Q14, Theorem~3.7), the
+  $J_\Pi$-odd part of the lift is its Hermitian part; this is a statement about $\AOdd$ as defined
+  in~\cite{Beau2026pyo}, a generator that is not the anomaly density $A_\Pi(x)$ of Q14.
+  It does not determine the polar factor: the polar generator of a family of morphisms $Y(\gamma)=U(\gamma)P(\gamma)$
+  between fixed orthonormal frames, with $P>0$ and a real parameter, is $\Omega=U^\dagger\,dU/d\gamma$, defined by the
+  Sylvester equation $\Omega P+P\Omega=U^\dagger\,dY-dY^\dagger U$, which is not a projection of the lift.
+  At the identity, for $dY$ the lift $L(M)$ of $M\in\mathfrak{sl}_2(\mathbb{C})$, $\Omega(0)$ is the anti-Hermitian part
+  of $L(M)$, which is $J_\Pi$-even and generally non-zero; its internal entry for $pE+qF+rH$ is
+  $\tfrac{\sqrt2}{2}(q-\bar p)$, non-zero for real $p\neq q$.
+  An exact real counterexample ($g=e^{tE}e^{sF}$ with $t=2$, $s=1$) has a finite polar factor of $\mathrm{Sym}^2 g$
+  with a non-zero external entry, $1/17$, so a vanishing infinitesimal generator does not exclude a non-zero
+  external entry of the finite polar factor; with real data the Jarlskog invariant is zero, so non-zero mixing
+  moduli do not establish CP violation.
+  The external block $R_{\mathrm{mix}}$ of the Hermitian square is not reached by the image of $\mathfrak{sl}_2$ (Q14,
+  Remark~6.4; Q14 excludes the internal block by hypothesis only, Proposition~6.3(i)--(ii)), a different object.
+  Whether a physical family of Yukawa morphisms exists, and which polar class it has, is open: the corpus supplies
+  no such family (a metaplectic step is not a Yukawa morphism, and its square is not the prescribed $H_\Pi$).
+  No physical exclusion of mixing is claimed; that $\AOdd$ is the right object is a modelling choice
+  of~\cite{Beau2026pyo} that no source justifies, and it is not the polar generator.%
 }
 
 \title{The Fermionic Matter Sub-Programme\\[0.4em]
@@ -457,7 +466,7 @@ interpretation of the admissible fibre.
         \mathrm{Tr}_{\Sbundle}(\gamma_5 Y A_\Pi(x)) = 0 \quad \forall x \in M_{\mathrm{eff}},
       \]
       where $A_\Pi(x)$ is the $\gamma_5$-weighted $a_4$ Seeley--DeWitt density of $D^2_{\Pi,g,A}$, not the
-      anti-Hermitian generator $A_\Pi$ of~\cite{Beau2026pyo}.
+      projection $\AOdd$ of~\cite{Beau2026pyo}.
       This constraint is not postulated: it is the chiral consistency condition of the same $a_4$
       level that yields Yang--Mills dynamics in the bosonic variation.
       The constraints are those of the gauge-curvature part of $a_4$ only: Q14 does not analyse the
@@ -1344,8 +1353,8 @@ interpretation of the admissible fibre.
     $\LYuk$, and generation mixing, for which Q14 excludes a complex metaplectic phase as a source of
     $R_{\mathrm{mix}}$ within its step model, where $R_{\mathrm{mix}}$ is not reached by the image of
     $\mathfrak{sl}_2(\mathbb{C})$~\cite{Beau2026q14}; the internal block is treated in~\cite{Beau2026pyo}, where
-    the $J_\Pi$-odd anti-Hermitian part $A_\Pi$ of the lift vanishes, a statement about $A_\Pi$ as defined
-    (a generator, not the anomaly density of Q14).
+    the projection $\AOdd$ of the lift vanishes, a statement about $\AOdd$ as defined, which is neither the anomaly density of Q14
+    nor the polar generator (non-zero); whether a physical morphism family exists is open.
 
     \paragraph{Charged-lepton unit-dispersion target.}
     The phenomenological target for the open charged-lepton masses is stated most sharply not as a mass ratio but
@@ -1389,8 +1398,9 @@ interpretation of the admissible fibre.
     $U_\Pi \sim V_R\,U_\Pi\,V_L^{-1}$ under the unitaries commuting with $J_3$ on each carrier, which are the diagonal
     rephasings; its
     rephasing-invariant content is therefore CKM/PMNS-type data, three mixing angles and one CP phase.
-    A non-trivial class $[U_\Pi] \neq [I]$ needs a transverse source, a block between $e_0$ and $e_\pm$ or between
-    $e_+$ and $e_-$~\cite{Beau2026pyo}, and is observable only relative to a second fermionic sector.
+    At first order a non-trivial class $[U_\Pi] \neq [I]$ needs a transverse source, a block between $e_0$ and
+    $e_\pm$ or between $e_+$ and $e_-$~\cite{Beau2026pyo}; a vanishing tangent does not exclude exit from $[I]$ at
+    higher order or at finite parameter, and the class is observable only relative to a second fermionic sector.
     \AClause{}
     These statements concern the generation block; they transfer to the full coupling only under \HFac{} of
     \cite{Beau2026pyo}, that is (F1) a weak linking carrier $K$ with a non-zero space of invariant couplings, supplied
@@ -1494,9 +1504,9 @@ interpretation of the admissible fibre.
     stratum, and under \HRes{}, the
     Schur transport with the electric genus of~\cite{Beau2026bim} gives $u\neq0$.
     The external block $R_{\mathrm{mix}}$ is not reached by the image of $\mathfrak{sl}_2(\mathbb{C})$ (Q14,
-    Remark~6.4), and $A_\Pi$, the anti-Hermitian part of the $J_\Pi$-odd part of its lift, vanishes as defined
-    in~\cite{Beau2026pyo} (a generator, not the anomaly density of Q14), which claims no physical exclusion of the
-    internal block.
+    Remark~6.4), and $\AOdd$, the anti-Hermitian part of the $J_\Pi$-odd part of its lift, vanishes as defined
+    in~\cite{Beau2026pyo}; this projection is not the polar generator of a morphism family (which is non-zero, with an
+    exact real counterexample), and no physical exclusion of the internal block or of mixing is claimed.
     Finally, the dictionary value $\varepsilon=1/10$ is not a capacity fit and is not fixed by
     $\mathrm{Sym}^2(\mathbb{C}^2)$ alone; after the capacity and $\mathrm{Sym}^2$ normalisations are separated, the
     remaining datum is the ADE / type-rigidity ratio $R=3/2$ --- equivalently the prime $5$, or the
