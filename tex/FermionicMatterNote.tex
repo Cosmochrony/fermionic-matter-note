@@ -60,7 +60,7 @@
   The anti-Hermitian part $A_\Pi$ of the $J_\Pi$-odd part of the $\mathfrak{sl}_2$ lift of the step generator to
   $\Cgen$ vanishes identically for all complex coefficients, because with the antilinear $J_\Pi$ of Q14 the
   $J_\Pi$-odd part of the lift is its Hermitian part; this is a statement about $A_\Pi$ as defined
-  in~\cite{Beau2026pyo}.
+  in~\cite{Beau2026pyo}; this generator is not the anomaly density $A_\Pi(x)$ of Q14.
   The $J_\Pi$-even anti-Hermitian part of the lift of $pE+qF+rH$ has a non-zero internal entry
   $\tfrac{\sqrt2}{2}(q-\bar p)$, non-zero for real $p\neq q$, so the image of $\mathfrak{sl}_2$ does reach the
   internal block between $e_0$ and $e_\pm$ through that part, while the external block $R_{\mathrm{mix}}$ is not
@@ -95,8 +95,8 @@
     [H-Spin] identifies the $\SL(2,\mathbb{C})$ of the doublet with the spin group of a four-dimensional
     Lorentzian co-metric on the effective base; under it $\mathrm{Sym}^2(S_L)$ is the Lorentz sector,
     $\wedge^2(S_L)$ a trivial line, and the projective endomorphism $\Epi$ of the projected Dirac operator is
-    left-admissible on an orientation-compatible branch, which is an input, given the Born--Infeld datum (H1)--(H2)
-    of O30.
+    left-admissible; left-admissibility is the definition of the orientation-compatible branch, an input, given the
+    Born--Infeld datum (H1)--(H2) of O30.
     [H-Weak] supplies a distinct rank-two weak factor $\Ew$ with structure group $\UU(2)$: $\su(2)_L$ sits in
     $\mathrm{Sym}^2(\Ew)$, the hypercharge line is $L_Y := \wedge^2(\Ew)$, and the $V-A$ structure is its content.
     The anomaly constraints on the hypercharge weights need both hypotheses.
@@ -112,7 +112,10 @@
     arithmetic criterion for colour triplets and every gauge-factor derivation are withdrawn, so no admissible colour
     sector in that sense is established.
     A dedicated no-go note excludes the two deposited candidates for an independent fermionic weak
-    multiplicity $M_L \simeq \mathbb{C}^2$; this note reads $\Ew$ as the role such a multiplicity would play, so that
+    multiplicity $M_L \simeq \mathbb{C}^2$.
+    The finite-stratum obstructions of that note are unconditional; its Lorentz-lock input is imported from Q14,
+    where the spinor reading of the carrier is under [H-Spin].
+    This note reads $\Ew$ as the role such a multiplicity would play, so that
     $\Ew$ remains an explicit architectural extension.
     \emph{Interpretive outlook (a reading, not a result).}
     Chirality is where the internal algebra of the admissible fibre must meet spacetime geometry and the weak
@@ -208,10 +211,13 @@
     exact obstructions in the companion no-go note~\cite{Beau2026nsr}, whose central result is
     the no-sequential-re-entry theorem: information erased by the projective channel cannot be
     recovered by any tower of subsequent projections.
+    The finite-stratum obstructions of that note are unconditional; its Lorentz-lock input is imported from Q14,
+    where the spinor reading of the carrier is under \HSpin{}.
     The matter-sector weak doublet, the role that this note reads the factor $\Ew$ of \HWeak{} as playing (a reading
     of this note, stated by neither Q14 nor the no-go note), is therefore an explicitly open frontier,
-    realisable only through a parallel substrate channel with an oriented central/Weyl datum --- a stated
-    architectural extension, not a consequence of the deposited corpus.
+    realisable through an architectural extension, such as a parallel substrate channel with an oriented
+    central/Weyl datum or an independent new multiplicity carrier, which the no-go note does not exclude, and
+    not a consequence of the deposited corpus.
 
     \medskip
     This sub-programme is the first paper of the Q-series that depends simultaneously on all
@@ -261,7 +267,7 @@ interpretation of the admissible fibre.
       branch supplies only a rank-three degenerate part (Note~2; under its hypotheses Q5b~\cite{Beau2026q5b}), the
       full-rank extension being supplied, and, for it, Q11~\cite{Beau2026q11} leaves the temporal coefficient free
       and derives
-      no coefficient value);
+      no coefficient value;
       it enters the fermionic sector only through \HSpin{}.
       \item Admissible principal bundle $P_{G_\Pi}(M_{\mathrm{eff}}, G_\Pi)$ and gauge connection $A$
       for a supplied compact structure group $G_\Pi$ (Note~3, Q6a).
@@ -413,6 +419,8 @@ interpretation of the admissible fibre.
       In the reading of this note, $\Ew$ is the role of the independent fermionic weak doublet
       $M_L \simeq \mathbb{C}^2$, whose two deposited candidates are excluded by the exact obstructions
       of~\cite{Beau2026nsr}.
+      Those finite-stratum obstructions are unconditional; the Lorentz-lock input of that note is imported from Q14,
+      where the spinor reading of the carrier is under \HSpin{}.
 
       \textit{Theorem~B: Chiral selection and hypercharge constraints} (conditional; the parts carry different
       hypotheses).
@@ -421,15 +429,18 @@ interpretation of the admissible fibre.
       unique covariant antilinear lift of the parity and reverses chirality.
       On the orientation-compatible branch, which is an input, $\Epi$ is left-admissible: $P_R \Epi P_R = 0$.
       This is Lorentz chirality, a statement about the projective residue and $\gamma_5$.
-      The weak chiral selection, the $V-A$ structure, is the representation content of \HWeak{}, with fermions in
-      $P_L \Sbundle \otimes \Ew$ and right-handed components in weak singlets.
+      The weak chiral selection, the $V-A$ structure, is the representation content of \HWeak{},
+      with fermions (the sectors need \HSpin{} as well,
+      for $P_L$ and $P_R$) in $P_L \Sbundle \otimes \Ew$ and right-handed components that carry no factor $\Ew$, their
+      weak character being that of $L_Y^m$ alone.
       Q14 does not derive it from left-admissibility, which is compatible with it but does not select it.
       Under \HSpin{}, \HWeak{} and symbol compatibility, $\UU(1)_Y$ invariance of the projected spectral functional
       then imposes, at the $a_4$ level:
       \[
         \mathrm{Tr}_{\Sbundle}(\gamma_5 Y A_\Pi(x)) = 0 \quad \forall x \in M_{\mathrm{eff}},
       \]
-      where $A_\Pi$ is the $\gamma_5$-weighted $a_4$ Seeley--DeWitt density of $D^2_{\Pi,g,A}$.
+      where $A_\Pi(x)$ is the $\gamma_5$-weighted $a_4$ Seeley--DeWitt density of $D^2_{\Pi,g,A}$, not the
+      anti-Hermitian generator $A_\Pi$ of~\cite{Beau2026pyo}.
       This constraint is not postulated: it is the chiral consistency condition of the same $a_4$
       level that yields Yang--Mills dynamics in the bosonic variation.
       The constraints are those of the gauge-curvature part of $a_4$ only: Q14 does not analyse the
@@ -563,11 +574,12 @@ interpretation of the admissible fibre.
             & C; \HWeak{}, $\Ew$ not constructed \\
           Calibration~\cite{Beau2026nsr}
             & no fermionic weak doublet $M_L$ from these functors on $\Sbundle$
-            & C; \HSpin{} (scalar commutant of the irreducible Weyl factor, Q14 \S2); the no-go proofs of the cited
-              note concern the two deposited candidates (Table~\ref{tab:outputs}) \\
+            & C; finite-stratum obstructions unconditional, Lorentz-lock input (scalar commutant of the irreducible Weyl
+              factor, Q14 \S2) under \HSpin{}; the no-go proofs of the cited note concern the two deposited
+              candidates (Table~\ref{tab:outputs}) \\
           Theorem~B (Lorentz chirality)
             & $P_R \Epi P_R = 0$
-            & C; \HSpin{}, the BI datum (H1)--(H2) of O30, orientation-compatible branch (an input) \\
+            & C; \HSpin{}, the BI datum (H1)--(H2) of O30; definition of the orientation-compatible branch (an input) \\
           Theorem~B ($V-A$)
             & weak chiral selection, left-handed doublet assignment
             & C; \HWeak{}, not derived from left-admissibility \\
@@ -638,9 +650,10 @@ interpretation of the admissible fibre.
     \subsection{Projective Residue as a Schur Complement: localisation and finite/Lorentzian
     separation~\cite{Beau2026prs}}
       This note fixes the structural status of the split $u$ before the explicit $\Epi$.
-      The projected Dirac square has the Schur--Feshbach form $\Epi=-M^{\dagger}M$ with
+      Under \HSpin{}, the projected Dirac square has the Schur--Feshbach form $\Epi=-M^{\dagger}M$ with
       $M=(1-P)\,D\,\Pi_S^{*}$, exhibiting $\Epi$ as the Schur complement of the eliminated spinorial block;
-      $u$ is localised in the $J_\Pi$-odd part of $\Epi^2|_{\Cgen}$ as the antiunitary equivariance defect
+      under \HRes{}, $u$ is localised in the $J_\Pi$-odd part of $\Epi^2|_{\Cgen}$ as the antiunitary equivariance
+      defect
       $\Delta_\chi(P)=\pi_{LL}-\tau\,\overline{\pi_{RR}}\,\tau^{-1}$.
       The finite locking is $J_\Pi$-equivariant, so $u_{\mathrm{fin}}=0$ (finite/Lorentzian separation): the
       split cannot originate in the finite cascade and is a Lorentzian datum, whose existence and stability are
@@ -671,8 +684,8 @@ interpretation of the admissible fibre.
       normalisation $\mathcal N_A$.
       These statements are made on $\Epi^2|_{\Cgen}$ and so use \HRes{}, which is not supplied.
 
-    \subsection{Arithmetic orthogonality of the ADE gate: the conditional status of
-      $\varepsilon$~\cite{Beau2026aog}}
+    \subsection{Spin-stratum type-rigidity: orthogonality of the ADE gate and closure of the chiral
+      lift~\cite{Beau2026aog}}
       This transversal note isolates the logical status of the generation-split value $\varepsilon=1/10$.
       It is a theorem modulo the ADE case-selection gate: the algebra
       $\tfrac{1/2+\varepsilon}{1/2-\varepsilon}=\tfrac{3}{2}\Rightarrow\varepsilon=1/10$ is trivial and
@@ -749,7 +762,7 @@ interpretation of the admissible fibre.
 
     \subsection{Chiral orientation of the directed frontier: $\sigma_L$ as a representation
     type~\cite{Beau2026cho}}
-      This note resolves the chiral weight $\sigma_L$ left deferred by Q11OF.
+      This note resolves the chiral weight $\sigma_L$ left open by Q11OF.
       A parity argument closes the false route $\sigma_L=f(T(e))$: edge inversion $U(e^{-1})=U(e)^{-1}$ and the
       residual reflection both send the $J_\Pi$-odd cascade generator $T(e)\mapsto-T(e)$, so every function of $T$
       has equal arrow- and $\varphi$-parity, whereas the admissible weight must be arrow-even and $\varphi$-odd.
@@ -771,7 +784,7 @@ interpretation of the admissible fibre.
       there~\cite{Beau2026aog}.
       That lift, and the reading of $R_b=W(-I)$ as scalar on the chiral carrier, rest on \HSpin{} and on the
       group-level map of Q14, which is not supplied, so this note records the discharge as conditional on them.
-      It fixes the frontier amplitude datum conditionally and does not derive $u\neq0$, which still requires the
+      It fixes the frontier amplitude datum conditionally and does not derive $u\neq0$, which requires the
       Schur transport~\cite{Beau2026prs}.
 
     \subsection{Eliminated block jet: the Lorentzian projector deformation~\cite{Beau2026ebj}}
@@ -804,6 +817,9 @@ interpretation of the admissible fibre.
       P_\chi^{\mu\nu}$, the Lorentzian genus of the chiral polarisation in the co-metric
       $g^{\mu\nu}=2\eta^{\mu\nu}$ of that note, whose coefficient value the geometric branch does not derive;
       on the Schur-transverse electric branch $\mu_\chi^2<0$, so the split opens spontaneously, $u\neq0$.
+      This holds under the two premises of~\cite{Beau2026prs}, in a symbol-compatible spin frame under \HSpin{}, with
+      \HRes{} for the reading of $u$ on $\Epi^2|_{\Cgen}$, the coefficient $g=2\eta$ not being derived by the
+      geometric branch, and it gives the existence of the split only.
       The sign of $u$ is the spontaneous branch, an orientation-reversing chart exchanging the two branches.
       The magnitude $|u|$ remains dictionary-bound.
 
@@ -979,11 +995,13 @@ interpretation of the admissible fibre.
       \item \textbf{Distinct weak factor \HWeak{}} (not supplied; Hypothesis~2.3 of Q14):
       a Hermitian rank-two bundle $\Ew$ with structure group $\UU(2)$ and a connection, distinct from the factor
       soldered by \HSpin{}, with fermion fields in $P_L \Sbundle \otimes \Ew \otimes L_Y^{k}$ and
-      $P_R \Sbundle \otimes L_Y^{m}$.
+      $P_R \Sbundle \otimes L_Y^{m}$ ($P_L$, $P_R$ exist under \HSpin{}).
       The $\SU(2)_L \times \UU(1)_Y$ data, the $V-A$ structure and the anomaly constraints on the hypercharge weights
       use it.
       Q14 does not construct $\Ew$, and the two deposited candidates for the multiplicity factor $M_L$, which this
       note reads $\Ew$ as replacing, are excluded by~\cite{Beau2026nsr}.
+      Its finite-stratum obstructions are unconditional; its Lorentz-lock input is imported from Q14, where the spinor
+      reading of the carrier is under \HSpin{}.
     \end{enumerate}
 
   \section{Outputs to Downstream Branches}
@@ -1015,10 +1033,11 @@ interpretation of the admissible fibre.
           & C; \HWeak{}, $\Ew$ not constructed \\
         Fermionic weak doublet $M_L$
           & --- (open frontier)
-          & exact obstruction (no-go) for the two deposited candidates~\cite{Beau2026nsr} \\
+          & exact obstruction (no-go) for the two deposited candidates~\cite{Beau2026nsr}; finite-stratum obstructions
+            unconditional, Lorentz-lock input imported from Q14 under \HSpin{} \\
         Lorentz chirality, $P_R \Epi P_R = 0$
           & Chiral structure of $\Epi$
-          & C; \HSpin{}, BI datum (H1)--(H2) of O30, orientation-compatible branch (an input) \\
+          & C; \HSpin{}, BI datum (H1)--(H2) of O30; definition of the orientation-compatible branch (an input) \\
         $V-A$ chiral structure & Weak interaction pheno & C; \HWeak{}, not derived from left-admissibility \\
         Hypercharge weight rigidity from the anomaly trace
           & SM charge assignment
@@ -1098,7 +1117,8 @@ interpretation of the admissible fibre.
 
         \item \textit{$V-A$ chiral structure} (Theorem~B; conditional on \HWeak{}):
         the weak chiral selection, with the weak gauge action carried by the left-handed factor alone and
-        fermions in $P_L \Sbundle \otimes \Ew$, is the representation content of \HWeak{}.
+        fermions in $P_L \Sbundle \otimes \Ew$, is the representation content of \HWeak{}, the sectors $P_L$,
+        $P_R$ needing \HSpin{} as well.
         Left-admissibility is compatible with it but does not select it, and Q14 does not derive the $V-A$ structure
         from $P_R \Epi P_R = 0$ (Remark~3.9).
         This part of Theorem~B does not use the colour module.
@@ -1249,8 +1269,8 @@ interpretation of the admissible fibre.
     Q14~\cite{Beau2026q14}: the antilinear lift $J_\Pi = HK$ dresses the BI parity by the weight grading.
     This does not make Theorems~B and~C unconditional.
     Theorem~B carries \HSpin{} for Lorentz chirality and \HWeak{} for the $V-A$ structure and the anomaly
-    constraints; Theorem~C still carries the supplied rank-three carrier, the hypercharge weight rigidity of Theorem~B
-    still carries the supplied colour module, and the selection of the Standard Model pattern carries in addition the
+    constraints; Theorem~C carries the supplied rank-three carrier, the hypercharge weight rigidity of Theorem~B
+    carries the supplied colour module, and the selection of the Standard Model pattern carries in addition the
     minimal integral normalisation of $L_Y$, whose connection to that pattern Q14 keeps among its own open directions.
     Two open deliverables remain.
 
@@ -1310,7 +1330,8 @@ interpretation of the admissible fibre.
     $\LYuk$, and generation mixing, for which Q14 excludes a complex metaplectic phase as a source of
     $R_{\mathrm{mix}}$ within its step model, where $R_{\mathrm{mix}}$ is not reached by the image of
     $\mathfrak{sl}_2(\mathbb{C})$~\cite{Beau2026q14}; the internal block is treated in~\cite{Beau2026pyo}, where
-    the $J_\Pi$-odd anti-Hermitian part $A_\Pi$ of the lift vanishes, a statement about $A_\Pi$ as defined.
+    the $J_\Pi$-odd anti-Hermitian part $A_\Pi$ of the lift vanishes, a statement about $A_\Pi$ as defined
+    (a generator, not the anomaly density of Q14).
 
     \paragraph{Charged-lepton unit-dispersion target.}
     The phenomenological target for the open charged-lepton masses is stated most sharply not as a mass ratio but
@@ -1336,7 +1357,8 @@ interpretation of the admissible fibre.
     That ordering is a statement about levels, attached to $\Epi$ only through \HRes{}; reading it as an ordering of
     the three generations needs the level-to-generation map, which is not established.
     The Yukawa coupling $\Ypi$ is, schematically, a coupling between the left-handed sector
-    $P_L \Sbundle \otimes \Ew \otimes L_Y^{k}$ and the right-handed sector $P_R \Sbundle \otimes L_Y^{m}$ of \HWeak{};
+    $P_L \Sbundle \otimes \Ew \otimes L_Y^{k}$ and the right-handed sector $P_R \Sbundle \otimes L_Y^{m}$ of \HWeak{}
+    (with \HSpin{} for $P_L$, $P_R$);
     as a sesquilinear Lorentz-invariant form it needs the weak linking carrier $K$ of \HFac{}, and how the weak
     doublet index is absorbed is not constructed here.
     On the generation block $\Ygen$, under \HRes{} and \HSq{}, the squared observable $H_\Pi := \Ygen^\dagger\Ygen$ has
@@ -1459,7 +1481,8 @@ interpretation of the admissible fibre.
     Schur transport with the electric genus of~\cite{Beau2026bim} gives $u\neq0$.
     The external block $R_{\mathrm{mix}}$ is not reached by the image of $\mathfrak{sl}_2(\mathbb{C})$ (Q14,
     Remark~6.4), and $A_\Pi$, the anti-Hermitian part of the $J_\Pi$-odd part of its lift, vanishes as defined
-    in~\cite{Beau2026pyo}, which claims no physical exclusion of the internal block.
+    in~\cite{Beau2026pyo} (a generator, not the anomaly density of Q14), which claims no physical exclusion of the
+    internal block.
     Finally, the dictionary value $\varepsilon=1/10$ is not a capacity fit and is not fixed by
     $\mathrm{Sym}^2(\mathbb{C}^2)$ alone; after the capacity and $\mathrm{Sym}^2$ normalisations are separated, the
     remaining datum is the ADE / type-rigidity ratio $R=3/2$ --- equivalently the prime $5$, or the
