@@ -182,9 +182,9 @@ It does **not** derive the mass spectrum, the Yukawa couplings, or the CKM/PMNS 
   $\mathrm{diag}(1,\tfrac12+u,\tfrac12-u)$, and it is not supplied.
 - **The two hypotheses [H-Spin] and [H-Weak].** Constructing the Lorentzian spin solder from the metaplectic action, and
   a distinct rank-two weak factor $E_{\mathrm{weak}}$ with structure group $\mathrm{U}(2)$ (or showing that the
-  admissible fibre supplies neither); reading the residual reflection $R_b = W(-I)$ as a scalar on the chiral carrier
-  $S_L \oplus S_R$ is the hypothesis [H-WS] of Q11OF, supplied by no source (a group-level map from the finite Weil
-  group to the $\mathrm{SL}(2,\mathbb{C})$ of [H-Spin] is not available).
+  admissible fibre supplies neither); reading the residual reflection $R_b = W(-I)$ as the scalar $-1$ on the chiral
+  carrier $S_L \oplus S_R$ is the hypothesis [H-WS] of Q11OF, supplied by no source (a group-level map from the finite
+  Weil group to the $\mathrm{SL}(2,\mathbb{C})$ of [H-Spin] is not available for a prime $q>5$, e.g. $q=61,101,151$).
 - **An admissible colour sector.** No colour module is derived, so the quark bundle and the rigidity of the hypercharge
   weights both rest on a supplied one, and the Standard Model pattern rests on it too.
   O31 withdraws the co-admissibility of the individual capacity profiles, the uniqueness of $\mathrm{SU}(3)$, the

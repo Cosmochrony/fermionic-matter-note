@@ -413,7 +413,8 @@ interpretation of the admissible fibre.
       antilinear lift of the parity that reverses chirality.
       Left-admissibility ($P_R \Epi P_R = 0$) is the definition of the orientation-compatible branch of Q14
       (Proposition~3.8), an input that the lift does not select.
-      On that branch a non-zero residue must break the $J_\Pi$ parity (Q14, Proposition~3.8): for the Schur residue of a
+      On that branch a non-zero residue must break the $J_\Pi$ parity for $\Epi\preceq0$, an explicit hypothesis of Q14
+      (Q14, Proposition~3.8): for the Schur residue of a
       $J_\Pi$-commuting locking operator, under the chiral splitting and \HGen{}(i) of~\cite{Beau2026prs},
       left-admissibility forces the residue to vanish.
       This is a statement about the projective residue and the Lorentz chirality $\gamma_5$.
@@ -552,9 +553,11 @@ interpretation of the admissible fibre.
       $u_{\mathrm{fin}}=0$~\cite{Beau2026prs}.
       The residual automorphism of the oriented-frontier diagnostic is the central Weil lift
       $R_b=W(-I)=\mathrm{FT}^2$.
-      Reading $R_b$ as a scalar on the chiral carrier $S_L\oplus S_R$, hence commuting with $\gamma_5$, is the
-      hypothesis \HWS{} of Q11OF~\cite{Beau2026q11of}, supplied by no source: a group-level map from the finite Weil
-      group to the $\SL(2,\mathbb{C})$ of \HSpin{} sending $W(-I)$ to $-I$ is not available, and whether the chirality
+      Reading $R_b$ as acting on the chiral carrier $S_L\oplus S_R$ as the scalar $-1$ (part (i): commutation
+      $[\gamma_5,R_b]=0$; part (ii): the value $-1$, used only in AOG) is the hypothesis \HWS{} of
+      Q11OF~\cite{Beau2026q11of}, supplied by no source: a group-level map from the finite Weil
+      group to the $\SL(2,\mathbb{C})$ of \HSpin{} sending $W(-I)$ to $-I$ is not available for a prime $q>5$ (e.g.\
+      $q=61,101,151$), and whether the chirality
       grading removes the residual obstruction without a spacetime parity is open~\cite{Beau2026q14}.
       The remaining amplitude would be fixed by a matching at A4 between the discrete chiral-frontier normalisation
       $\mathcal N_A$~\cite{Beau2026aar} and the Born--Infeld curvature $\mu_\chi^2=\partial_s^2\mathcal B(0)$ of a
@@ -658,9 +661,9 @@ interpretation of the admissible fibre.
       This note fixes the numerical observable for the absolute normalisation of the angular generation
       split before any Weil--BFS computation.
       A Baker--Campbell--Hausdorff reduction in $\mathfrak{sl}_2$ identifies the per-step $J_\Pi$-odd $J_3$ component of
-      the metaplectic cascade generator with the oriented product $ts$ of the two shear parameters, produced by the
+      the metaplectic cascade generator to leading order with the oriented product $ts$ of the two shear parameters, produced by the
       $\mathfrak{sl}_2$ commutator $[E,F]=H$ (Q14, Proposition~6.5), and not with a free shear parameter; the
-      computation uses no Heisenberg bracket.
+      computation in the $\SL(2)$-on-$V$ model of Q14 uses no Heisenberg bracket.
       The observable proposed for the Weil--BFS cascade is the accumulated oriented central-phase increment $A_c$ of the
       Heisenberg lift, normalised by the projected capacity; that $A_c$ carries the $J_3$ signal is an input of that
       note, its resemblance to the shear product being an analogy and not an identification.
@@ -690,10 +693,11 @@ interpretation of the admissible fibre.
       from the $\mathfrak{sl}_2$ commutator $[E,F]=H$.
       Its operator-level statement is that the residual reflection
       $R_b=\varphi\circ J_\Pi^{-1}=W(-I)=\mathrm{FT}^2$ is the central Weil lift.
-      The chiral lift of that reflection is reduced there to one named hypothesis, \HWS{}: $R_b$ acts as a scalar on the
-      chiral carrier $S_L\oplus S_R$, so that $[\gamma_5,R_b]=0$.
+      The chiral lift of that reflection is reduced there to one named hypothesis, \HWS{}: $R_b$ acts on the
+      chiral carrier $S_L\oplus S_R$ as the scalar $-1$ (part (i): $[\gamma_5,R_b]=0$, all that Q11OF and CHO use; part
+      (ii): the value $-1$, used only in AOG).
       No source supplies it: a group-level map from the finite Weil group to the $\SL(2,\mathbb{C})$ of \HSpin{} is not
-      available, and whether the chirality grading removes the $\varphi$-paired obstruction without a spacetime parity
+      available for a prime $q>5$ (e.g.\ $q=61,101,151$), and whether the chirality grading removes the $\varphi$-paired obstruction without a spacetime parity
       is open~\cite{Beau2026q14}.
       The amplitude normalisation $\mathcal N_A$ is a separate question.
       The chiral weight $\sigma_L$ entering this signal is identified, under \HWS{}, in
@@ -760,8 +764,8 @@ interpretation of the admissible fibre.
       from the Galois-spin action $(\zeta_q\mapsto\zeta_q,\,\sqrt{5}\mapsto-\sqrt{5})$ that selection of the
       $\sqrt{5}$-locus would require.
       The same fact places the order-five versus order-ten alternative below projective parity resolution, under
-      \HWS{} of~\cite{Beau2026q11of} (the central reflection $R_b=W(-I)$ being scalar on the chiral carrier, supplied by
-      no source).
+      \HWS{} of~\cite{Beau2026q11of} (the central reflection $R_b=W(-I)$ acting on the chiral carrier as the scalar $-1$,
+      supplied by no source).
       The negative theorem --- that A1--A4, ENI Corollary~6 and the A4 locking do not supply the Galois-spin action ---
       is a no-go for the gate, proved in the present corpus construction by a character-table audit of $2I$ for every
       operation of the spin stratum except the central reflection $R_b$, for which it holds under \HWS{}.
@@ -848,7 +852,7 @@ interpretation of the admissible fibre.
       AOG establishes that, within the Lorentzian chiral lift generated by its present spin stratum, the chiral phase
       carries no Galois-spin factor orthogonal to $\zeta_q$, so that this residual does not arise
       there~\cite{Beau2026aog}.
-      That lift rests on \HSpin{}, and the reading of $R_b=W(-I)$ as scalar on the chiral carrier is \HWS{}, supplied by
+      That lift rests on \HSpin{}, and the reading of $R_b=W(-I)$ as the scalar $-1$ on the chiral carrier is \HWS{}, supplied by
       no source, so this note records the discharge as conditional on them.
       It fixes the frontier amplitude datum conditionally and does not derive $u\neq0$, which would further require a
       transport of the oriented signal to the $J_\Pi$-odd generation sector; the only transport stated
@@ -890,13 +894,14 @@ interpretation of the admissible fibre.
       supplies, only its signature entering.
       The genus is not determined: the central commutator supplies no electric assignment, since the central direction
       is not temporal in the co-metrics of the corpus (the rank-three co-metric of Q5b has a zero central entry, the
-      completion of Q8 is conditional, and Q11 leaves the temporal coefficient free), and no map from the generation
+      conditional completion of Q8 a positive one, and in Q11 the temporal direction is a separate factor with a free
+      coefficient), and no map from the generation
       operator to a two-form is available.
       For $\mu_\chi^2<0$ a $J_\Pi$-conjugate locked pair $\pm s_*$ with a split $u\neq0$ is the hypothesis \HNd{}, not a
       consequence; $\mu_\chi^2>0$ makes the symmetric point a stable minimum, and $\mu_\chi^2=0$ is marginal.
       The quartic coefficient of the radicand depends on the parametrisation of the modulus and selects no lock between
-      a boundary contact and an interior stationary point; for an exactly collinear purely electric ray, under \HF{},
-      the bound is reached at $t_*=\beta/|\mathbf{E}_{F_0}|$ in the chart of that ray.
+      a boundary contact and an interior stationary point; for an exactly collinear purely electric ray, under \HF{} (the construction of the chiral two-form),
+      the bound is reached at $t_*=\beta/|\mathbf{E}_{F_0}|$ in the chart of that ray, when $|\varphi|$ attains it.
       The statements on $u$ use \HRes{} for the reading of $\Epi^2|_{\Cgen}$, together with the hypotheses of
       \cite{Beau2026prs}.
       The sign of $u$ is a branch choice, an orientation-reversing chart exchanging the two branches.
@@ -912,8 +917,7 @@ interpretation of the admissible fibre.
       $\{0,\tfrac12-u,\tfrac12+u\}$ that order three levels for $0<u<\tfrac12$ (degenerate at $u=0$), with a
       scale-independent ratio.
       The ordering is algebra on that model operator, a pinned normal form taken by hypothesis (its even sector is the
-      algebraic value of $(C_2-J_3^2)/C_2$ at $C_2=2$, not a derived Born--Infeld sector), so it is conditional on the
-      pinned ladder.
+      algebraic value of $(C_2-J_3^2)/C_2$ at $C_2=2$, not a derived Born--Infeld sector).
       Reading it as the restriction of $\Epi^2$ is \HRes{}, which is not supplied, and the level-to-generation map is
       not established.
       The mass matrix is a distinct object: no mass value is claimed.
@@ -1332,9 +1336,10 @@ interpretation of the admissible fibre.
         Constructing the principal $\Spin(3,1)$-bundle of \HSpin{} from the metaplectic action, with a four-dimensional
         Lorentzian co-metric on the effective base, is open: the geometric branch supplies only a rank-three degenerate
         co-metric, under its hypotheses, and no source relates the metaplectic action to its frames.
-        Reading the central Weil lift $R_b = W(-I)$ as a scalar on the chiral carrier $S_L\oplus S_R$ is the hypothesis
-        \HWS{} of~\cite{Beau2026q11of}, supplied by no source: a group-level map from the finite Weil group to the
-        $\SL(2,\mathbb{C})$ of \HSpin{} is not available, and whether the chirality grading removes the residual
+        Reading the central Weil lift $R_b = W(-I)$ as acting on the chiral carrier $S_L\oplus S_R$ as the scalar $-1$
+        is the hypothesis \HWS{} of~\cite{Beau2026q11of}, supplied by no source: a group-level map from the finite Weil
+        group to the $\SL(2,\mathbb{C})$ of \HSpin{} is not available for a prime $q>5$ (e.g.\ $q=61,101,151$), and
+        whether the chirality grading removes the residual
         obstruction without a spacetime parity is open.
         Equally open is whether the admissible fibre supplies either of the two factors of \HSpin{} and \HWeak{}.
 
@@ -1374,9 +1379,9 @@ interpretation of the admissible fibre.
     chiral-frontier normalisation $\mathcal N_A$ is fixed maximally, $\mathcal N_A=\theta_{\max}$, in the
     inherited central-phase lift and under \HWS{}~\cite{Beau2026cho}.
     The residual reflection $R_b=\mathrm{FT}^2$ is the central Weil lift.
-    Its commutation with $\gamma_5$ is the hypothesis \HWS{} of~\cite{Beau2026q11of} (scalar action on the chiral
-    carrier), supplied by no source; a group-level map from the finite Weil group to the $\SL(2,\mathbb{C})$ of
-    \HSpin{} is not available, and Q14 states no commutation without it~\cite{Beau2026q14}.
+    Its commutation with $\gamma_5$ is the hypothesis \HWS{} of~\cite{Beau2026q11of} (action on the chiral
+    carrier as the scalar $-1$), supplied by no source; a group-level map from the finite Weil group to the
+    $\SL(2,\mathbb{C})$ of \HSpin{} is not available for a prime $q>5$ (e.g.\ $q=61,101,151$), and Q14 states no commutation without it~\cite{Beau2026q14}.
     The split amplitude would therefore be fixed by a matching at A4 between this discrete normalisation and the
     Born--Infeld curvature $\mu_\chi^2=\partial_s^2\mathcal B(0)$ of a supplied two-form, neither ingredient reducing
     to the other; schematically,
@@ -1396,7 +1401,7 @@ interpretation of the admissible fibre.
     two-form is available; the existence of a locked pair is the hypothesis \HNd{}~\cite{Beau2026bim}.
     Neither amplitude nor selection is settled there: the quartic coefficient of the radicand depends on the
     parametrisation of the modulus and selects no lock, and for an exactly collinear purely electric ray the bound is
-    reached at $t_*=\beta/|\mathbf{E}_{F_0}|$; no choice between a boundary contact and an interior stationary point is
+    reached at $t_*=\beta/|\mathbf{E}_{F_0}|$ when $|\varphi|$ attains it; no choice between a boundary contact and an interior stationary point is
     established~\cite{Beau2026bim}.
     What remains open is the existence of a non-zero split, its value $|u|$ and the Yukawa sector downstream of $u$.
     The value $|u|$ itself is not a parameter-free prediction: it is dictionary-bound through the chiral-frontier
@@ -1506,7 +1511,7 @@ interpretation of the admissible fibre.
     by the companion no-go note~\cite{Beau2026nsr}.
     Lorentz chirality, the left-admissibility of the projective endomorphism $\Epi$, is the definition of the
     orientation-compatible branch of Q14, an input, under \HSpin{} and the Born--Infeld datum of O30 (Theorem~B); on
-    that branch a non-zero residue breaks the $J_\Pi$ parity of the lift.
+    that branch a non-zero residue breaks the $J_\Pi$ parity of the lift for $\Epi\preceq0$, an explicit hypothesis of Q14.
     The $V-A$ structure is a different statement, the representation content of \HWeak{}, and it is not derived from
     left-admissibility.
     Under both hypotheses, the anomaly-cancellation trace constrains the hypercharge weights with no colour
@@ -1530,8 +1535,8 @@ interpretation of the admissible fibre.
     On the model operators of Q14 \S6, the inter-generation splitting is localised: statically obstructed, living in a
     two-dimensional $J_\Pi$-odd lift sector, and vanishing on the symmetric finite front under an equivariant
     construction of the finite locking ($u_{\mathrm{fin}}=0$, $J_\Pi$-equivariant).
-    Reading the residual reflection $R_b=\mathrm{FT}^2$ as a scalar on the chiral carrier, hence commuting with
-    $\gamma_5$, is the hypothesis \HWS{} of Q11OF, supplied by no source.
+    Reading the residual reflection $R_b=\mathrm{FT}^2$ as the scalar $-1$ on the chiral carrier, hence commuting
+    with $\gamma_5$, is the hypothesis \HWS{} of Q11OF, supplied by no source.
     No amplitude mechanism of the splitting is selected: the saturation margin of~\cite{Beau2026bim} is defined for a
     supplied two-form, its genus is not determined, and it selects no lock.
     The generation sector is described by model operators on a distinct supplied doublet, the identification \HRes{}
@@ -1558,11 +1563,13 @@ interpretation of the admissible fibre.
     the normal form $E_0=-\mathrm{diag}(1,2^{-1/2},2^{-1/2})$, that is
     $E_0^2|_{\Cgen}=\mathrm{diag}(1,\tfrac12,\tfrac12)$ read under \HRes{}, an initial condition of the family of that
     note;
-    $\eta=\pm1$ is a sign derived only under \HMult{} ($\eta=+1$ on the finite witness of that note);
+    $\eta=\pm1$ is the product of the sign of $E_0$ on the outer block, derived only under \HMult{}, and of a
+    definitional sign of $T_{J_3}$ ($\eta=+1$ on the finite witness of that note for the stated definition of
+    $T_{J_3}$);
     $s_*$ is the first contact $\Delta_\chi(s_*)=0$ when it exists, a parameter value that transforms under
     reparametrisation of the modulus; and $T_{J_3}$ is the oriented angular observable whose normalised evaluation is
     dictionary-bound through $\mathcal{N}_A$.
-    The factorisation is formal: it is stated under \HGen{}, \HMult{}, \HTr{}, \HF{} and \HNd{}, the
+    The factorisation is formal: it is stated under \HGen{}, \HMult{}, \HTr{}, \HF{} (the construction of the chiral two-form) and \HNd{}, the
     $J_\Pi$-covariance and diagonal-form premises of the saturation-margin note and the localisation hypothesis, and no
     frame satisfying \HGen{}(i)--(iii), \HMult{} and a chiral defect together is exhibited; it fixes no magnitude.
     The localisation hypothesis is open and fails in the explicit family of the eliminated-block note, whose
