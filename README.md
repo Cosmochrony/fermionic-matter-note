@@ -9,6 +9,10 @@ no metric; its Lorentz reading and its electroweak reading are two distinct hypo
 The carrier is supplied rather than selected by the admissibility axioms, and every result below inherits that
 condition.
 
+## Status
+
+Working paper, v3.1 (local candidate; last deposited version 3.0). DOI: [10.5281/zenodo.20562665](https://doi.org/10.5281/zenodo.20562665)
+
 ## Central Question
 
 > The bosonic spectral stratification (gravity at $a_2$, Yang–Mills at $a_4$) derives the bosonic sector of the Standard
