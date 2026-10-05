@@ -758,30 +758,32 @@ interpretation of the admissible fibre.
       note~\cite{Beau2026bim}, where the genus is not determined and no amplitude mechanism is selected (below).
       The statements on $u$ read through $\Epi^2|_{\Cgen}$ use \HRes{}, which is not supplied.
 
-    \subsection{Spin-stratum type-rigidity: orthogonality of the ADE gate and closure of the chiral
-      lift~\cite{Beau2026aog}}
+    \subsection{Spin-stratum type-rigidity: an obstruction to the Galois action on the binary icosahedral stratum, with
+      conditional consequences for the chiral lift~\cite{Beau2026aog}}
       This transversal note isolates the logical status of the generation-split value $\varepsilon=1/10$.
       It is a theorem modulo the ADE case-selection gate: the algebra
       $\tfrac{1/2+\varepsilon}{1/2-\varepsilon}=\tfrac{3}{2}\Rightarrow\varepsilon=1/10$ is trivial and
-      case-independent, so the first-principles status of $\varepsilon$ is exactly that of the gate.
-      The obstruction to the gate is characterised as an arithmetic orthogonality.
+      case-independent, so the first-principles status of $\varepsilon$ is exactly that of the gate, which the note does
+      not settle.
+      The proved result of the note is an obstruction concerning the Galois automorphism
+      $\sigma:\sqrt{5}\mapsto-\sqrt{5}$, not a result on the gate.
       In the compositum $\mathbb{Q}(\zeta_q,\sqrt{5})$ the Born--Infeld parity $c\mapsto q-c$ is complex conjugation
       $(\zeta_q\mapsto\zeta_q^{-1},\,\sqrt{5}\mapsto\sqrt{5})$, lying in a distinct direct factor of the Galois group
-      from the Galois-spin action $(\zeta_q\mapsto\zeta_q,\,\sqrt{5}\mapsto-\sqrt{5})$ that selection of the
-      $\sqrt{5}$-locus would require.
-      The same fact places the order-five versus order-ten alternative below projective parity resolution, under
-      \HWS{} of~\cite{Beau2026q11of} (the central reflection $R_b=W(-I)$ acting on the chiral carrier as the scalar $-1$,
-      supplied by no source).
-      The negative theorem --- that A1--A4, ENI Corollary~6 and the A4 locking do not supply the Galois-spin action ---
-      is a no-go for the gate, proved in the present corpus construction by a character-table audit of $2I$ for every
-      operation of the spin stratum except the central reflection $R_b$, for which it holds under \HWS{}.
-      The full-tower generalisation to every conceivable recursive stratum is established for admissible fibre
-      operations: a realisation audit shows the Galois exchange $\sqrt{5}\mapsto-\sqrt{5}$ does not preserve the
-      binary-icosahedral carrier --- it maps $2I$ onto its opposite-chirality copy, exchanging the two two-dimensional
-      types --- whereas the Born--Infeld parity preserves it and fixes $\sqrt{5}$, so a finite recursive tower of
-      carrier-preserving admissible identifications preserves the arithmetic type~\cite{Beau2026aog}.
-      This is a scope hypothesis on what counts as an admissible fibre operation, not an absolute impossibility of any
-      external equivalence of character tables.
+      from $\sigma=(\zeta_q\mapsto\zeta_q,\,\sqrt{5}\mapsto-\sqrt{5})$.
+      A character-table audit of the binary icosahedral group $2I$ proves that inner conjugations, $-I$ and $J_\Pi$ act
+      trivially on $\mathrm{Irr}(2I)$, whereas $\sigma$ induces the permutation $(2\,2')(3\,3')$.
+      The other generators of the spin stratum enter as clauses of different status.
+      The central reflection $R_b=W(-I)$ acts as $-I$ under \HWS{} of~\cite{Beau2026q11of} (the scalar $-1$ on the
+      chiral carrier, supplied by no source); the A4 locking contributes only a parity-odd sign under the A4
+      hypotheses (\HGen{}, $J_\Pi$-covariance, diagonal form, a locked pair, \HF{}/\HNd{}); the tensor-functor and
+      Schur-projection clauses are modelling assertions, not audited.
+      Relative to these clauses and to the modelling premise [M] that the generator list is complete (every admissible
+      fibre operation is carrier-preserving), no listed operation realises $\sigma$, and a finite recursive tower of
+      such operations preserves the arithmetic type~\cite{Beau2026aog}; the premise [M] is not proved.
+      No link between the gate and $\sigma$ is established: the outer automorphism fixes the order-four class and maps
+      each of the order-five and order-ten loci to itself, so $\sigma$ would be needed to tell the two order-five
+      classes apart, not to choose between the order-four and the order-five locus.
+      The gate therefore stays open, and no obstruction to the gate follows from that note.
       The gate has a concrete generator-set form inside $2I$.
       Once the order-five $\sqrt{5}$-locus is selected, the ratio $3:2$ is not a fit but a forced Cayley-spectral
       invariant, $R=|\lambda_3-1|/|\lambda_1-1|=(\tfrac14)/(\tfrac16)=\tfrac32$ with central level $\lambda_2=1$.
@@ -789,12 +791,16 @@ interpretation of the admissible fibre.
       $\{|\lambda_1-1|,|\lambda_3-1|\}=\{\tfrac15,\tfrac13\}$, hence $R=\tfrac53$ and $\varepsilon=\tfrac18$, not
       $\tfrac1{10}$.
       The open problem is therefore the selection of the order-five locus over the neutral order-four locus, which is
-      not a harmless convention change; the tempting fermionic shortcut does not supply it, the spinorial grading read
-      by the Lorentzian chiral lift being common to both two-dimensional irreducibles and inducing no action on
-      $\mathbb{Q}(\sqrt{5})$~\cite{Beau2026aog}.
-      That reading takes the Lorentzian chiral lift as input, which in Q14 is the spin-solder hypothesis \HSpin{} that
-      AOG does not derive: its Weyl and boost lemmas and its chiral-rigidity and orientation corollaries hold under \HSpin{}
-      (as input) and, for $R_b$, under \HWS{}.
+      not a harmless convention change.
+      A fermionic reading of the spinorial grading is not shown to supply it: the Lorentzian chiral lift, taken as
+      input, induces no action on $\mathbb{Q}(\sqrt{5})$ under the conditions below, so it is no source of
+      $\sigma$~\cite{Beau2026aog}, and since no link between the gate and $\sigma$ is established this does not bear
+      on the selection itself.
+      The Lorentzian chiral lift is an input that AOG does not construct: it is the spin-solder hypothesis \HSpin{} of
+      Q14~\cite{Beau2026q14}, supplied by no source.
+      The Weyl and boost lemmas and the chiral-rigidity corollary of AOG hold under \HSpin{} (as input), the modelling
+      premise [M] and, for $R_b$, \HWS{}; its orientation corollary holds under \HSpin{}, \HWS{}, [M] and the inherited
+      central-phase convention of~\cite{Beau2026cho}, with $\rho_\chi=1$ by definition of $\sigma_L$.
       Hence $\varepsilon=1/10$ is conditional on the gate rather than an independent dictionary parameter, and the
       first-principles front for the value is the gate itself: upstream and structural.
       It is a matching value, fixed by imposing the external ADE ratio on the exit deficits of model operators on
@@ -858,16 +864,16 @@ interpretation of the admissible fibre.
       The result is therefore $[\mathrm{H\text{-}orient}]$ closed in the inherited central-phase lift and under \HWS{};
       the residual
       open point of that note is an additional spin-Galois phase of the full Lorentzian chiral lift, in particular a
-      $\sqrt{5}$ or ADE-spin factor orthogonal to $\zeta_q$, the same arithmetic orthogonality that governs the ADE
-      gate.
-      AOG establishes that, within the Lorentzian chiral lift generated by its present spin stratum, the chiral phase
-      carries no Galois-spin factor orthogonal to $\zeta_q$, so that this residual does not arise
+      $\sqrt{5}$ or ADE-spin factor orthogonal to $\zeta_q$.
+      AOG shows that, taking the Lorentzian chiral lift ($S_L\oplus S_R$,
+      $\mathfrak{mp}(2,\mathbb{R})_{\mathbb{C}}=\mathfrak{sl}_2(\mathbb{C})$) as an input it does not construct, the
+      chiral phase carries no Galois-spin factor orthogonal to $\zeta_q$, so that this residual does not arise
       there~\cite{Beau2026aog}.
-      AOG takes the Lorentzian chiral lift ($S_L\oplus S_R$, $\mathfrak{mp}(2,\mathbb{R})_{\mathbb{C}}=\mathfrak{sl}_2(\mathbb{C})$)
-      as input from Q5b, Q11 and CHO, which in Q14 is the spin-solder hypothesis \HSpin{} that AOG does not derive, and
-      states this discharge under \HSpin{} (as input) and, for $R_b$, under \HWS{} of~\cite{Beau2026q11of} (the reading of
-      $R_b=W(-I)$ as the scalar $-1$ on the chiral carrier), both supplied by no source; this note records the discharge
-      as conditional on \HSpin{} as input and on \HWS{}, and does not extend it.
+      That input is the spin-solder hypothesis \HSpin{} of Q14~\cite{Beau2026q14}, supplied by no source; AOG states
+      the conclusion under \HSpin{} (as input), \HWS{} of~\cite{Beau2026q11of} (the reading of $R_b=W(-I)$ as the scalar
+      $-1$ on the chiral carrier, supplied by no source), the modelling premise [M] that its generator list is
+      complete, and the inherited central-phase convention of CHO, with $\rho_\chi=1$ by definition of $\sigma_L$.
+      This note records the conclusion as conditional on all of these, and does not extend it.
       It fixes the frontier amplitude datum conditionally and does not derive $u\neq0$, which would further require a
       transport of the oriented signal to the $J_\Pi$-odd generation sector; the only transport stated
       in~\cite{Beau2026prs} is the hypothesis \HTr{} for the $\mathfrak{sl}_2$ opening, supplied by no source.
@@ -1286,9 +1292,10 @@ interpretation of the admissible fibre.
         stationary point~\cite{Beau2026bim}.
         The split value $\varepsilon=1/10$ is not an independent dictionary parameter: it is fixed by matching once
         the ADE case-selection gate supplies the external $3:2$ ratio.
-        Its first-principles status is therefore exactly the status of that gate, whose obstruction is isolated in
-        AOG-Note~\cite{Beau2026aog} as an arithmetic orthogonality between Born--Infeld parity and the Galois-spin
-        action.
+        Its first-principles status is therefore exactly the status of that gate, which stays open: AOG-Note~\cite{Beau2026aog}
+        proves only that the listed spin-stratum operations do not realise the Galois action
+        $\sqrt{5}\mapsto-\sqrt{5}$ (under its stated clauses), and establishes no link between that action and the
+        gate.
         Without the explicit Lorentzian $\Epi$, the three-generation mass spectrum and the Yukawa sector cannot be
         derived.
 
@@ -1602,9 +1609,9 @@ interpretation of the admissible fibre.
     exact real counterexample), and no physical exclusion of the internal block or of mixing is claimed.
     Finally, the dictionary value $\varepsilon=1/10$ is not a capacity fit and is not fixed by
     $\mathrm{Sym}^2(\mathbb{C}^2)$ alone; after the capacity and $\mathrm{Sym}^2$ normalisations are separated, the
-    remaining datum is the ADE / type-rigidity ratio $R=3/2$ --- equivalently the prime $5$, or the
+    remaining datum is the ADE ratio $R=3/2$ --- equivalently the prime $5$, or the
     $\sqrt{5}$-gate --- whose selection over the neutral order-four convention ($R=\tfrac53$, $\varepsilon=\tfrac18$)
-    is the single residual lock~\cite{Beau2026aog}.
+    is the single residual lock, left open by~\cite{Beau2026aog}.
 
     The neutrino sector provides a particularly sharp interpretive test case: if particle identity is projective
     rather than primitive, then PMNS-like misalignment is the generic neutral case, while CKM near-alignment is
