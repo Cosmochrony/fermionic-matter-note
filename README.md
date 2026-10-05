@@ -137,11 +137,21 @@ It does **not** derive the mass spectrum, the Yukawa couplings, or the CKM/PMNS 
 
 ## Open Deliverables
 
-- **Explicit $E_\Pi$, splitting amplitude and the Yukawa sector.** The structural form of $E_\Pi$ is fixed as the Schur
-  complement of the eliminated spinorial block; the open part is its explicit Lorentzian block along the $J_\Pi$-odd
-  modulus.
-  The amplitude mechanism is Born-Infeld saturation on the real cascade of the model, and the split value $|u|$ is
-  dictionary-bound through the chiral-frontier normalisation $\mathcal{N}_A$.
+- **Explicit $E_\Pi$, splitting amplitude and the Yukawa sector.** For the compression remainder of the projected Dirac
+  square the structural form is the Schur complement of the eliminated spinorial block, $-N^\dagger N \preceq 0$ with
+  $N=(1-P)^{1/2} D\,\Pi_S^{*}$; that remainder is the projective endomorphism $E_\Pi$ of Q14 only when
+  $\Pi_S D^2 \Pi_S^{*}$ is the Lichnerowicz operator, an identity that no source states, and Q14 assumes
+  $E_\Pi \preceq 0$ as a hypothesis.
+  The open part is the explicit Lorentzian block along the $J_\Pi$-odd modulus.
+  The Schur-null and Schur-transverse loci of the locking operator form a dichotomy proved under explicit hypotheses,
+  and which locus holds is open: the exact $\mathfrak{sl}_2$ opening (produced by $[E,F]=H$) is not transported to the
+  locking operator without the transport hypothesis [H-Tr], supplied by no source.
+  The Born-Infeld saturation margin is defined for a supplied two-form; its Lorentzian genus is not determined, the
+  existence of a non-zero split is the hypothesis [H-Nd], no lock is selected between a boundary contact and an interior
+  stationary point, and no amplitude mechanism is selected.
+  The split value $|u|$ is dictionary-bound through the chiral-frontier normalisation $\mathcal{N}_A$.
+  Under the generation-reading hypothesis [H-Gen] a $J_\Pi$-commuting locking operator gives no split, so a non-zero
+  split would need a locking operator that breaks $J_\Pi$-equivariance, and no mechanism for it is derived.
   Its first-principles front is upstream and structural: the ADE case selection and the level-to-generation map, the
   projective-resolution growth $\Lambda_{\mathrm{proj}}(n)$ and the cascade exponent $\beta$ (no structural bound on
   $\beta$ is available), and the transfer constant $N_{\mathrm{casc}}$.
@@ -172,8 +182,9 @@ It does **not** derive the mass spectrum, the Yukawa couplings, or the CKM/PMNS 
   $\mathrm{diag}(1,\tfrac12+u,\tfrac12-u)$, and it is not supplied.
 - **The two hypotheses [H-Spin] and [H-Weak].** Constructing the Lorentzian spin solder from the metaplectic action, and
   a distinct rank-two weak factor $E_{\mathrm{weak}}$ with structure group $\mathrm{U}(2)$ (or showing that the
-  admissible fibre supplies neither); reading the residual reflection $R_b = W(-I)$ as central in the spin group needs a
-  group-level map from the finite Weil group to the $\mathrm{SL}(2,\mathbb{C})$ of [H-Spin], which is not supplied.
+  admissible fibre supplies neither); reading the residual reflection $R_b = W(-I)$ as a scalar on the chiral carrier
+  $S_L \oplus S_R$ is the hypothesis [H-WS] of Q11OF, supplied by no source (a group-level map from the finite Weil
+  group to the $\mathrm{SL}(2,\mathbb{C})$ of [H-Spin] is not available).
 - **An admissible colour sector.** No colour module is derived, so the quark bundle and the rigidity of the hypercharge
   weights both rest on a supplied one, and the Standard Model pattern rests on it too.
   O31 withdraws the co-admissibility of the individual capacity profiles, the uniqueness of $\mathrm{SU}(3)$, the
