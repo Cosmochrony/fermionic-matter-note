@@ -670,18 +670,23 @@ interpretation of the admissible fibre.
       A direct evaluation on symmetric BFS shells returns $\Theta_{\mathrm{raw}}=0$ identically: the
       symmetric capacity data fix the radial sector but cannot select an oriented angular branch, so the
       orientation prescription is an irreducible input prior to the normalisation $\mathcal N_A$.
-      The capacity audit on the real Weil--BFS pipeline closes the angular onset coefficient: the directed
+      The capacity audit on the exact Heisenberg--BFS frontier fixes the onset central-phase coefficient: the directed
       outgoing-frontier mean $\langle|\Delta A_c|\rangle_{\partial^+}$ is a $q$-independent exact rational sequence
-      (identical across $q\in\{61,101,151,211,307\}$, by integer arithmetic, no fit) with saturation onset exactly
-      $\tfrac13$, so the maximal-locking angular bound is $\theta_{\max}=2\pi/(3q)$.
-      The onset is exact for the standard $\{\pm X,\pm Y\}$ campaign but generator-set dependent, and is not a
+      ($\tfrac13,\tfrac59,\tfrac23,\dots$ per shell, identical across $q\in\{61,101,151,211,307\}$, by integer
+      arithmetic, no fit), whose first-shell (onset) value is $\tfrac13$, so the maximal-locking central-phase bound at
+      the onset shell is $\theta_{\max}^{(1)}=2\pi/(3q)$.
+      The $\widehat I$-normalised bound at $n_3^{\mathrm{obs}}=2$ is $2.114/q$, $2.122/q$, $2.118/q$ for $q=61,101,151$,
+      $0.9$--$1.3\,\%$ above $2\pi/(3q)$, so $\tfrac13$ is an onset coefficient and not the value of the normalised
+      bound at $n_3^{\mathrm{obs}}$.
+      The onset rational is exact for the standard $\{\pm X,\pm Y\}$ campaign but generator-set dependent, and is not a
       generation-count or $\mathrm{Sym}^2$ dimension invariant, so only $\varepsilon$ and the
       level ratio $R=\tfrac32$ are generator-independent.
-      This closes the angular coefficient, not the dictionary value: since $\theta_{\max}\to0$ with $q$, reaching
-      $\varepsilon=1/10$ would require the geometric $\mathrm{Sym}^2$ normalisation
+      This fixes the onset coefficient, not the dictionary value: since $\theta_{\max}^{(1)}\to0$ with $q$, the
+      comparison with $\varepsilon=1/10$ is a required-normalisation diagnostic, whose algebra at the onset shell is
       $\mathcal N_A^{\mathrm{geom}}=3q/(20\pi)$, which neither the capacity nor the $\mathrm{Sym}^2$ data supply,
-      leaving $\varepsilon$ gated by the ADE
-      datum~\cite{Beau2026aog}.
+      leaving $\varepsilon$ gated by the ADE datum~\cite{Beau2026aog}; and, within the input that $A_c$ carries the
+      $J_3$ signal, no value of $\mathcal N_A$ turns $\Theta_{\mathrm{raw}}=0$ into a split.
+      The per-shell rationals are recomputed from the AAR repository alone (standard library only).
 
     \subsection{Q11 Oriented Frontier: recursive diagnostic of the angular generation
     split~\cite{Beau2026q11of}}
@@ -787,6 +792,9 @@ interpretation of the admissible fibre.
       not a harmless convention change; the tempting fermionic shortcut does not supply it, the spinorial grading read
       by the Lorentzian chiral lift being common to both two-dimensional irreducibles and inducing no action on
       $\mathbb{Q}(\sqrt{5})$~\cite{Beau2026aog}.
+      That reading takes the Lorentzian chiral lift as input, which in Q14 is the spin-solder hypothesis \HSpin{} that
+      AOG does not derive: its Weyl and boost lemmas and its chiral-rigidity and orientation corollaries hold under \HSpin{}
+      (as input) and, for $R_b$, under \HWS{}.
       Hence $\varepsilon=1/10$ is conditional on the gate rather than an independent dictionary parameter, and the
       first-principles front for the value is the gate itself: upstream and structural.
       It is a matching value, fixed by imposing the external ADE ratio on the exit deficits of model operators on
@@ -844,7 +852,9 @@ interpretation of the admissible fibre.
       In the inherited Heisenberg central-phase lift the
       edge phase is the linear cyclotomic character $\zeta_q^{\Delta A_c}$, with no Gauss, Maslov, or $\sqrt{5}$
       component; the natural outgoing branch gives $\sigma_L=\operatorname{sign}\Delta A_c$ on the cocycle support,
-      hence $\rho_\chi=1$ and $\mathcal N_A=\theta_{\max}\neq0$, $q$-invariant on $q\in\{61,101,151\}$.
+      hence, by this definition, $\rho_\chi=1$ and $\mathcal N_A=\theta_{\max}\neq0$; the bound is $q$-stable to $0.4\,\%$
+      ($\theta_{\max}\,q=2.114,2.122,2.118$ at $n_3^{\mathrm{obs}}=2$ for $q=61,101,151$), not $q$-invariant, while its
+      per-shell rationals are $q$-independent.
       The result is therefore $[\mathrm{H\text{-}orient}]$ closed in the inherited central-phase lift and under \HWS{};
       the residual
       open point of that note is an additional spin-Galois phase of the full Lorentzian chiral lift, in particular a
@@ -853,10 +863,11 @@ interpretation of the admissible fibre.
       AOG establishes that, within the Lorentzian chiral lift generated by its present spin stratum, the chiral phase
       carries no Galois-spin factor orthogonal to $\zeta_q$, so that this residual does not arise
       there~\cite{Beau2026aog}.
-      AOG states this discharge under \HWS{} of~\cite{Beau2026q11of} only, namely the reading of $R_b=W(-I)$ as the scalar
-      $-1$ on the chiral carrier, supplied by no source, so this note records the discharge as conditional on \HWS{}; AOG
-      takes the Lorentzian chiral lift from Q5b, Q11 and CHO and does not state \HSpin{}, and this note does not extend its
-      statement.
+      AOG takes the Lorentzian chiral lift ($S_L\oplus S_R$, $\mathfrak{mp}(2,\mathbb{R})_{\mathbb{C}}=\mathfrak{sl}_2(\mathbb{C})$)
+      as input from Q5b, Q11 and CHO, which in Q14 is the spin-solder hypothesis \HSpin{} that AOG does not derive, and
+      states this discharge under \HSpin{} (as input) and, for $R_b$, under \HWS{} of~\cite{Beau2026q11of} (the reading of
+      $R_b=W(-I)$ as the scalar $-1$ on the chiral carrier), both supplied by no source; this note records the discharge
+      as conditional on \HSpin{} as input and on \HWS{}, and does not extend it.
       It fixes the frontier amplitude datum conditionally and does not derive $u\neq0$, which would further require a
       transport of the oriented signal to the $J_\Pi$-odd generation sector; the only transport stated
       in~\cite{Beau2026prs} is the hypothesis \HTr{} for the $\mathfrak{sl}_2$ opening, supplied by no source.
@@ -1581,8 +1592,8 @@ interpretation of the admissible fibre.
     inputs and local in the localisation of the odd tangent.
 
     The mass-sector frontier separates into three layers.
-    On model operators, the angular Weil--BFS coefficient is closed in the standard campaign
-    ($\theta_{\max}=2\pi/(3q)$)~\cite{Beau2026aar}; a non-zero $u$ would need, beyond \HRes{}, the transport hypothesis
+    On model operators, the angular onset coefficient is fixed in the standard campaign
+    ($\theta_{\max}^{(1)}=2\pi/(3q)$ at the onset shell)~\cite{Beau2026aar}; a non-zero $u$ would need, beyond \HRes{}, the transport hypothesis
     \HTr{} of~\cite{Beau2026prs}, a Lorentzian genus that~\cite{Beau2026bim} does not determine, and the existence
     hypothesis \HNd{} of a locked pair, none of which is supplied.
     The external block $R_{\mathrm{mix}}$ is not reached by the image of $\mathfrak{sl}_2(\mathbb{C})$ (Q14,
