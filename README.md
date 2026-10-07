@@ -11,7 +11,7 @@ condition.
 
 ## Status
 
-Working paper, v3.1 (local candidate; last deposited version 3.0). DOI: [10.5281/zenodo.20562665](https://doi.org/10.5281/zenodo.20562665)
+Working paper, v3.1. DOI: [10.5281/zenodo.20562665](https://doi.org/10.5281/zenodo.20562665)
 
 ## Central Question
 
