@@ -39,8 +39,9 @@ The generation factor carries a supplied rank-three carrier.
 
 ## Structural Chain
 
-Read on the supplied Heisenberg carrier, not derived from the axioms: the admissibility axioms force irreducibility and
-non-commutation, but neither make the commutator central nor select a finite Heisenberg group (an explicit
+Read on the supplied Heisenberg carrier, not derived from the axioms: the admissibility axioms give irreducibility and
+non-commutation only under a representation-theoretic dictionary and an additional sector reading of A3,
+not derived, and neither make the commutator central nor select a finite Heisenberg group (an explicit
 $\mathfrak{S}_3$ countermodel satisfies the extracted carrier contract).
 
 $$
