@@ -214,7 +214,7 @@ This runs `pdflatex -> bibtex -> pdflatex -> pdflatex -> pdflatex` on `tex/Fermi
 `out/FermionicMatterNote.pdf`.
 The fourth LaTeX pass settles the cross-references, so a build from a clean tree ends with no outstanding rerun warning.
 
-## Candidate changes
+## Changes in version 3.2
 
 The admissible Heisenberg carrier, its associated Weil action and the supplied spinor doublet are distinct.
 Connection-dependent admissible interpretations retain Q6a's two unproved continuum hypotheses: a smooth
