@@ -1,3 +1,5 @@
+Local candidate 3.2; last deposited version 3.1.
+
 This repository contains the source of the **Fermionic Matter Presentation Note** of the Cosmochrony programme
 *The Fermionic Matter Sub-Programme (Presentation Note 6)*.
 
@@ -42,7 +44,7 @@ non-commutation, but neither make the commutator central nor select a finite Hei
 $\mathfrak{S}_3$ countermodel satisfies the extracted carrier contract).
 
 $$
-\Pi \Rightarrow F_n \simeq V_\rho \overset{\text{model}}{\rightsquigarrow} \mathrm{Mp}(2,\mathbb{R}) \Rightarrow
+F_n \overset{\mathrm{model}}{\simeq} \mathcal{H}_c \overset{\text{model}}{\rightsquigarrow} \mathrm{Mp}(2,\mathbb{R}) \Rightarrow
 \mathrm{mp}(2,\mathbb{R})_\mathbb{C} \simeq \mathfrak{sl}_2(\mathbb{C}) \overset{[\text{H-Spin}]}{\rightsquigarrow}
 \mathrm{Spin}(3,1) \simeq \mathrm{SL}(2,\mathbb{C}) \Rightarrow \mathcal{S}_\Pi.
 $$
@@ -211,3 +213,9 @@ bash compile.sh
 This runs `pdflatex -> bibtex -> pdflatex -> pdflatex -> pdflatex` on `tex/FermionicMatterNote.tex` and produces
 `out/FermionicMatterNote.pdf`.
 The fourth LaTeX pass settles the cross-references, so a build from a clean tree ends with no outstanding rerun warning.
+
+## Candidate changes
+
+The admissible Heisenberg carrier, its associated Weil action and the supplied spinor doublet are distinct.
+Connection-dependent admissible interpretations retain Q6a's two unproved continuum hypotheses: a smooth
+effective fibre bundle and a differentiable spatial continuum, the latter open in Q5a.
