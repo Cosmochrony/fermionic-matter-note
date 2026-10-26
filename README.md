@@ -1,5 +1,3 @@
-Local candidate 3.2; last deposited version 3.1.
-
 This repository contains the source of the **Fermionic Matter Presentation Note** of the Cosmochrony programme
 *The Fermionic Matter Sub-Programme (Presentation Note 6)*.
 
@@ -13,7 +11,9 @@ condition.
 
 ## Status
 
-Working paper, v3.1. DOI: [10.5281/zenodo.20562665](https://doi.org/10.5281/zenodo.20562665)
+Working paper, v3.2. DOI: [10.5281/zenodo.20562665](https://doi.org/10.5281/zenodo.20562665)
+
+Version 3.2 was deposited on 2026-10-26 as [Zenodo record 23667583](https://zenodo.org/record/23667583).
 
 ## Central Question
 
